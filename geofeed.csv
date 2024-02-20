@@ -1,15 +1,16 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 17-02-2024 12:46:08
+#Generated on 20-02-2024 13:59:00
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
+2a13:a5c3:2000::/44,US,US-CA,San Jose,
+2a13:a5c3:2010::/44,US,US-NY,New York,
 2a13:a5c3:2020::/44,US,US-MO,Kansas City,
+2a13:a5c3:2100::/44,CA,CA-ON,Ottawa,
 2a13:a5c3:2110::/44,CA,CA-ON,Toronto,
-2a13:a5c3:2000::/40,US,US-NY,New York,
-2a13:a5c3:2100::/40,CA,CA-ON,Ottawa,
-2a13:a5c3:3000::/40,TW,TW-TPE,Taipei,
-2a13:a5c3:3100::/40,HK,CN-HK,Hong Kong,
-2a13:a5c3:3200::/40,JP,JP-13,Tokyo,,
-2a13:a5c3:3300::/40,SG,SG-01,Singapore,
+2a13:a5c3:3100::/40,TW,TW-TPE,Taipei,
+2a13:a5c3:3200::/40,HK,CN-HK,Hong Kong,
+2a13:a5c3:3300::/40,JP,JP-13,Tokyo,,
+2a13:a5c3:3000::/40,SG,SG-01,Singapore,
 2a13:a5c3:4000::/40,NL,NL-NH,Amsterdam,
 2a13:a5c3:4100::/40,DE,DE-HE,Frankfurt,
 2a13:a5c3:4200::/40,DK,	DK-84,Copenhagen,
