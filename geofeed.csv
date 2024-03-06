@@ -16,3 +16,52 @@
 2a13:a5c3:4200::/40,DK,	DK-84,Copenhagen,
 2a13:a5c3:4300::/40,EE,ET,Tallinn,
 2a13:a5c3:4400::/40,GB,GB-LND,London,
+#EU-VPN
+2a0a:6040:5340::/46,AL,AL-01,Tirana,1001
+2a13:a5c3:d004::/46,AD,AD-07,Andorra la Vella,AD500
+2a13:a5c3:d008::/46,AT,AT-09,Vienna,1010
+2a13:a5c3:d00c::/46,BY,BY-07,Minsk,220001
+2a13:a5c3:d010::/46,BE,BE-BRU,Brussels,1000
+2a13:a5c3:d014::/46,BA,BA-BIH,Sarajevo,71000
+2a13:a5c3:d018::/46,BG,BG-23,Sofia,1000
+2a13:a5c3:d01c::/46,HR,HR-21,Zagreb,10000
+2a13:a5c3:d020::/46,CY,CY-01,Nicosia,1010
+2a13:a5c3:d024::/46,CZ,CZ-10,Prague,110 00
+2a13:a5c3:d028::/46,DK,DK-84,Copenhagen,1050
+2a13:a5c3:d02c::/46,EE,EE-37,Tallinn,10120
+2a13:a5c3:d030::/46,FI,FI-01,Helsinki,00100
+2a13:a5c3:d034::/46,FR,FR-J,Paris,75001
+2a13:a5c3:d038::/46,DE,DE-BE,Berlin,10115
+2a13:a5c3:d03c::/46,GR,GR-I,Athens,105 53
+2a13:a5c3:d040::/46,HU,HU-BU,Budapest,1051
+2a13:a5c3:d044::/46,IS,IS-1,Reykjavik,101
+2a13:a5c3:d048::/46,IE,IE-L,Dublin,D02 K857
+2a13:a5c3:d04c::/46,IT,IT-62,Rome,00184
+2a13:a5c3:d050::/46,LV,LV-RIX,Riga,LV-1050
+2a13:a5c3:d054::/46,LI,LI-11,Vaduz,9490
+2a13:a5c3:d058::/46,LT,LT-VL,Vilnius,01124
+2a13:a5c3:d05c::/46,LU,LU-L,Luxembourg City,L-2925
+2a13:a5c3:d060::/46,MK,MK-01,Skopje,1000
+2a13:a5c3:d064::/46,MT,MT-25,Valletta,VLT 1101
+2a13:a5c3:d068::/46,MD,MD-RI,Chisinau,MD-2000
+2a13:a5c3:d06c::/46,MC,MC-8,Monaco,98000
+2a13:a5c3:d070::/46,ME,ME-16,Podgorica,81000
+2a13:a5c3:d074::/46,NL,NL-NH,Amsterdam,1012 JS
+2a13:a5c3:d078::/46,NO,NO-03,Oslo,0164
+2a13:a5c3:d07c::/46,PL,PL-MZ,Warsaw,00-001
+2a13:a5c3:d080::/46,PT,PT-11,Lisbon,1100-585
+2a13:a5c3:d084::/46,RO,RO-B,Bucharest,030167
+2a13:a5c3:d088::/46,RU,RU-MOW,Moscow,101000
+2a13:a5c3:d08c::/46,SM,SM-06,San Marino,47890
+2a13:a5c3:d090::/46,RS,RS-00,Belgrade,11000
+2a13:a5c3:d094::/46,SK,SK-BL,Bratislava,811 01
+2a13:a5c3:d098::/46,SI,SI-061,Ljubljana,1000
+2a13:a5c3:d09c::/46,ES,ES-M,Madrid,28001
+2a13:a5c3:d0a0::/46,SE,SE-AB,Stockholm,111 20
+2a13:a5c3:d0a4::/46,CH,CH-BE,Bern,3000
+2a13:a5c3:d0a8::/46,TR,TR-06,Ankara,06430
+2a13:a5c3:d0ac::/46,UA,UA-32,Kyiv,01001
+2a13:a5c3:d0b0::/46,GB,GB-ENG,London,SW1A 1AA
+2a13:a5c3:d0b4::/46,VA,VA-01,Vatican City,00120
+2a13:a5c3:d0b8::/46,SJ,SJ-21,Longyearbyen,9171
+2a13:a5c3:d0bc::/46,GG,GG-X01,Saint Peter Port,GY1 1AG
