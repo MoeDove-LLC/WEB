@@ -2,6 +2,7 @@
 #Generated on 20-02-2024 13:59:00
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
+2a13:a5c3:1000::/40,TW,TW-TPE,Taipei,
 2a13:a5c3:2000::/44,US,US-CA,San Jose,
 2a13:a5c3:2010::/44,US,US-NY,New York,
 2a13:a5c3:2020::/44,US,US-MO,Kansas City,
