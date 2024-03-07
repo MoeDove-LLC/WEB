@@ -16,7 +16,7 @@
 2a13:a5c3:4200::/40,DK,	DK-84,Copenhagen,
 2a13:a5c3:4300::/40,EE,ET,Tallinn,
 2a13:a5c3:4400::/40,GB,GB-LND,London,
-#EU-VPN
+#MoeDove-One-Europe
 2a13:a5c3:d000::/46,AL,AL-01,Tirana,
 2a13:a5c3:d004::/46,AD,AD-07,Andorra la Vella,
 2a13:a5c3:d008::/46,AT,AT-9,Vienna,
@@ -65,7 +65,7 @@
 2a13:a5c3:d0b4::/46,VA,,Vatican City,
 2a13:a5c3:d0b8::/46,NO,,Agder,
 2a13:a5c3:d0bc::/46,GG,,Saint Peter Port,
-#Africa-VPN
+#MoeDove-One-Africa
 2a13:a5c3:d100::/46,DZ,DZ-16,Algiers,
 2a13:a5c3:d104::/46,AO,AO-LUA,Luanda,
 2a13:a5c3:d108::/46,BJ,BJ-AL,Alibori,
@@ -118,3 +118,4 @@
 2a13:a5c3:d1c4::/46,MA,MA-11,Laayoune,
 2a13:a5c3:d1c8::/46,ZM,ZM-02,Lusaka,
 2a13:a5c3:d1cc::/46,ZW,ZW-HA,Harare,
+#MoeDove-One-Other
