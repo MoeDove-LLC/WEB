@@ -10,11 +10,11 @@
 2a13:a5c3:2110::/44,CA,CA-ON,Toronto,
 2a13:a5c3:3100::/40,TW,TW-TPE,Taipei,
 2a13:a5c3:3200::/40,HK,CN-HK,Hong Kong,
-2a13:a5c3:3300::/40,JP,JP-13,Tokyo,,
+2a13:a5c3:3300::/40,JP,JP-13,Tokyo,
 2a13:a5c3:3000::/40,SG,SG-01,Singapore,
 2a13:a5c3:4000::/40,NL,NL-NH,Amsterdam,
 2a13:a5c3:4100::/40,DE,DE-HE,Frankfurt,
-2a13:a5c3:4200::/40,DK,	DK-84,Copenhagen,
+2a13:a5c3:4200::/40,DK,DK-84,Copenhagen,
 2a13:a5c3:4300::/40,EE,ET,Tallinn,
 2a13:a5c3:4400::/40,GB,GB-LND,London,
 #MoeDove-One-Europe
