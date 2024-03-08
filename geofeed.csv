@@ -19,6 +19,7 @@
 2a13:a5c3:4100::/40,NL,NL-NH,Amsterdam,
 2a13:a5c3:4200::/42,DK,DK-84,Copenhagen,
 2a13:a5c3:4240::/42,GB,GB-LND,London,
+2a13:a5c3:4280::/42,FI,FI-01,Helsinki,
 2a13:a5c3:4300::/42,EE,ET,Tallinn,
 #MoeDove-One-Europe
 2a13:a5c3:d000::/46,AL,AL-01,Tirana,
