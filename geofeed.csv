@@ -14,8 +14,8 @@
 2a13:a5c3:3000::/40,SG,SG-01,Singapore,
 2a13:a5c3:4000::/42,DE,DE-HE,Frankfurt,
 2a13:a5c3:4040::/43,DE,DE-HE,Frankfurt,
-2a13:a5c3:4060::/43,DE,DE-SN,Falkenstein,
-2a13:a5c3:4080::/43,DE,DE-SN,Falkenstein,
+2a13:a5c3:4060::/43,DE,DE-SN,Falkenstein,08223
+2a13:a5c3:4080::/43,DE,DE-SN,Falkenstein,08223
 2a13:a5c3:4100::/40,NL,NL-NH,Amsterdam,
 2a13:a5c3:4200::/42,DK,DK-84,Copenhagen,
 2a13:a5c3:4240::/42,GB,GB-LND,London,
