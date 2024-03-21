@@ -54,6 +54,24 @@
             background-color: rgb(54, 75, 100);
             border: none;
         }
+        .stripeBox{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            max-width: 1200px;
+            border-top: 1px solid rgb(224, 230, 235);
+            border-radius: 16px;
+            background-color: rgb(247, 250, 252);
+            margin-bottom: 18px;
+        }
+        .stripeHT{
+            width: 100%;
+            padding: 16px;
+            border-bottom: 1px solid rgb(224, 230, 235);
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
     </style>
     <section class="bgimage mb-4">
         <h1 class="display-4">Better connected</h1>
@@ -62,10 +80,28 @@
         <p class="lead"> <a class="btn btn-primary btn-lg" href="mailto:noc@moedove.com" role="button">Get in
                 touch</a> </p>
     </section>
-    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-<stripe-pricing-table pricing-table-id="prctbl_1OwgBEP2eRgy0qdzr6ZROkF4"
-publishable-key="pk_live_51OwP0pP2eRgy0qdzqRSMVCJ603S6hBhp453Z0pbBWn2Gw6JwuMC8tfqpFIegX5kJR4bteSrHc9qCrkqlaYK0hvIK008unSTtU0">
-</stripe-pricing-table>
+    <!-- 生成一个div，带一个半透明的灰色上边框 -->
+    <div class="stripeBox">
+        <div class="stripeHT">
+            <span>
+                Buy IXP VM
+            </span>
+        </div>
+        <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+        <stripe-pricing-table pricing-table-id="prctbl_1OwgBEP2eRgy0qdzr6ZROkF4"
+        publishable-key="pk_live_51OwP0pP2eRgy0qdzqRSMVCJ603S6hBhp453Z0pbBWn2Gw6JwuMC8tfqpFIegX5kJR4bteSrHc9qCrkqlaYK0hvIK008unSTtU0">
+        </stripe-pricing-table>
+    </div>
+    <div class="stripeBox">
+        <div class="stripeHT">
+            <span>
+                Sponsor MoeDove
+            </span>
+        </div>
+        <stripe-pricing-table pricing-table-id="prctbl_1OwghMP2eRgy0qdzyEEJmLMu"
+        publishable-key="pk_live_51OwP0pP2eRgy0qdzqRSMVCJ603S6hBhp453Z0pbBWn2Gw6JwuMC8tfqpFIegX5kJR4bteSrHc9qCrkqlaYK0hvIK008unSTtU0">
+        </stripe-pricing-table>
+    </div>
     <div class="container">
         <section id="feature" class="section-padding wow fadeIn delay-05s">
             <div class="container">
