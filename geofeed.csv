@@ -4,6 +4,7 @@
 #prefix,country_code,region_code,city,postal
 2a13:a5c3:1000::/40,TW,TW-TPE,Taipei,
 2a13:a5c3:2000::/44,US,US-CA,San Jose,
+2a13:a5c3:2140::/44,US,US-CA,Los Angeles,
 2a13:a5c3:2010::/44,US,US-NY,New York,
 2a13:a5c3:2020::/44,US,US-MO,Kansas City,
 2a13:a5c3:2100::/44,CA,CA-ON,Ottawa,
@@ -12,6 +13,7 @@
 2a13:a5c3:3200::/40,HK,CN-HK,Hong Kong,
 2a13:a5c3:3300::/40,JP,JP-13,Tokyo,
 2a13:a5c3:3000::/40,SG,SG-01,Singapore,
+2a13:a5c3:3640::/42,UZ,UZ-TO,Toshkent,
 2a13:a5c3:4000::/42,DE,DE-HE,Frankfurt,
 2a13:a5c3:4040::/43,DE,DE-HE,Frankfurt,
 2a13:a5c3:4060::/43,DE,DE-SN,Falkenstein,08223
