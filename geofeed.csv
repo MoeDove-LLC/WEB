@@ -24,6 +24,10 @@
 2a13:a5c3:4240::/42,GB,GB-LND,London,
 2a13:a5c3:4280::/42,FI,FI-18,Helsinki,04360
 2a13:a5c3:4300::/42,EE,EE-37,Tallinn,
+2a13:a5c5:4200::/40,PE,,Lima,
+2a13:a5c5:4000::/40,BR,BR-SP,Sao Paulo,
+2a13:a5c5:4100::/40,AR,,Rosario,
+2a13:a5c3:2580::/41,US,US-FL,Miami,
 #MoeDove-One-Europe
 2a13:a5c3:d000::/46,AL,AL-01,Tirana,
 2a13:a5c3:d004::/46,AD,AD-07,Andorra la Vella,
