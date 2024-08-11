@@ -4,7 +4,7 @@
 #prefix,country_code,region_code,city,postal
 # North America
 2a13:a5c3:2000::/42,US,US-MO,Kansas City,
-2a13:a5c3:2100::/41,US-CA,Los Angeles,
+2a13:a5c3:2100::/41,US,US-CA,Los Angeles,
 2a13:a5c3:2240::/42,US,US-CA,San Jose，
 2a13:a5c3:2200::/42,US,US-CA,Fremont,
 2a13:a5c3:2280::/44,US,US-NV,Las Vegas,
@@ -102,7 +102,7 @@
 2a13:a5c3:d094::/46,SK,SK-BL,Bratislava,
 2a13:a5c3:d098::/46,SI,SI-061,Ljubljana,
 2a13:a5c3:d09c::/46,ES,ES-M,Madrid,
-2a13:a5c3:d0a0::/46,SE，SE-AB,Stockholm,
+2a13:a5c3:d0a0::/46,SE,SE-AB,Stockholm,
 2a13:a5c3:d0a4::/46,CH,CH-BE,Bern,
 2a13:a5c3:d0a8::/46,TR,TR-06,Ankara,
 2a13:a5c3:d0ac::/46,UA,UA-32,Kyiv,
