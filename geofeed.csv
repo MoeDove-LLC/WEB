@@ -13,6 +13,7 @@
 2a13:a5c3:2800::/44,CA,CA-BC,Vancouver,
 2a13:a5c3:2900::/42,CA,CA-ON,Toronto,
 # Asia
+23.149.120.0/24,TW,TW-TPE,Taipei,
 2a13:a5c3:3000::/40,SG,SG-01,Singapore,
 2a13:a5c3:3100::/40,TW,TW-TPE,Taipei,
 2a13:a5c3:3200::/40,HK,CN-HK,Hong Kong,
