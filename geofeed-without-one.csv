@@ -61,3 +61,6 @@
 2a13:a5c3:1940::/43,CN,CN-SD,qingdao,
 2a13:a5c3:1a00::/42,CN,CN-HI,Haikou,
 2a13:a5c3:1a40::/42,CN,CN-HI,Sanya,
+
+# Cooperating Partners
+77.111.100.0/24,SG,SG-01,Singapore,
