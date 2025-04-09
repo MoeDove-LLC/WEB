@@ -17,6 +17,8 @@
 45.87.102.0/23,HK,,Hong Kong,
 157.254.178.0/24,HK,,Hong Kong,
 2602:f92a:220::/44,HK,,Hong Kong,
+77.111.100.0/24,SG,SG-01,Singapore,
+2602:f92a:200::/44,SG,SG-01,Singapore,
 2a13:a5c3:3000::/40,SG,SG-01,Singapore,
 2a13:a5c3:3100::/40,TW,TW-TPE,Taipei,
 2a13:a5c3:3200::/40,HK,,Hong Kong,
@@ -299,8 +301,7 @@
 
 
 # Cooperating Partners
-77.111.100.0/24,SG,SG-01,Singapore,
-2a12:8c00:800::/48,SG,SG-01,Singapore,
+
 45.207.216.0/24,HK,,Hong Kong,
 2a06:a005:872::/48,HK,,Hong Kong,
 23.151.40.0/24,JP,JP-13,Tokyo,
