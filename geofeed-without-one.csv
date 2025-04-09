@@ -13,6 +13,11 @@
 2a13:a5c3:2900::/42,CA,CA-ON,Toronto,
 # Asia
 23.149.120.0/24,TW,TW-TPE,Taipei,
+45.87.102.0/23,HK,,Hong Kong,
+157.254.178.0/24,HK,,Hong Kong,
+2602:f92a:220::/44,HK,,Hong Kong,
+77.111.100.0/24,SG,SG-01,Singapore,
+2602:f92a:200::/44,SG,SG-01,Singapore,
 2a13:a5c3:3000::/40,SG,SG-01,Singapore,
 2a13:a5c3:3100::/40,TW,TW-TPE,Taipei,
 2a13:a5c3:3200::/40,HK,,Hong Kong,
@@ -71,6 +76,4 @@
 23.151.40.0/24,JP,JP-13,Tokyo,
 23.151.104.0/24,JP,JP-13,Tokyo,
 2a13:a5c5:2300::/41,JP,JP-13,Tokyo,
-23.154.104.0/24,HK,,Hong Kong,
-23.162.24.0/24,HK,,Hong Kong,
 2a13:a5c5:2200::/40,HK,,Hong Kong,
