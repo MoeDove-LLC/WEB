@@ -13,6 +13,7 @@
 2a13:a5c3:2900::/42,CA,CA-ON,Toronto,
 # Asia
 23.149.120.0/24,TW,TW-TPE,Taipei,
+45.207.216.0/21,HK,,Hong Kong,
 45.87.102.0/23,HK,,Hong Kong,
 157.254.178.0/24,HK,,Hong Kong,
 2602:f92a:220::/44,HK,,Hong Kong,
@@ -69,9 +70,6 @@
 2a13:a5c3:1a40::/42,CN,CN-HI,Sanya,
 
 # Cooperating Partners
-2a12:8c00:800::/48,SG,SG-01,Singapore,
-45.207.216.0/24,HK,,Hong Kong,
-2a06:a005:872::/48,HK,,Hong Kong,
 23.151.40.0/24,JP,JP-13,Tokyo,
 23.151.104.0/24,JP,JP-13,Tokyo,
 2a13:a5c5:2300::/41,JP,JP-13,Tokyo,
