@@ -69,6 +69,10 @@
 2602:f92a:ff02::/48,TW,TW-TPE,Taipei,
 2602:f92a:ff03::/48,JP,JP-13,Tokyo,
 2602:f92a:ff04::/48,US,US-CA,Los Angeles,
+2602:f92a:ff06::/48,KR,KR-11,Seoul,
+2602:f92a:ff11::/48,NG,NG-LA,Lagos,
+2602:f92a:ff12::/48,TR,TR-06,Ankara,
+2602:f92a:ff15::/48,IN,IN-MH,Mumbai,
 
 
 #MoeDove N2
