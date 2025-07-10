@@ -97,6 +97,8 @@
 77.111.100.0/24,SG,SG-01,Singapore,
 2602:f92a:200::/44,SG,SG-01,Singapore,
 2602:f92a:310::/44,GB,GB-LND,London,
+216.238.54.0/24,DE,DE-HE,Frankfurt,
+2602:f92a:300::/44,DE,DE-HE,Frankfurt,
 
 # Cooperating Partners
 2602:f919:109::/48,SG,SG-01,Singapore,
