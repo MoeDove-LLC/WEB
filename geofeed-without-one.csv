@@ -76,6 +76,7 @@
 
 
 #MoeDove N2
+216.238.52.0/23,US,US-UT,Salt Lake City,
 154.94.226.0/23,US,US-UT,Salt Lake City,
 2602:f92a:100::/46,US,US-UT,Salt Lake City,
 2602:f92a:170::/44,US,US-CA,Los Angeles,
@@ -88,7 +89,6 @@
 45.207.222.0/24,HK,,Hong Kong,
 45.207.223.0/24,HK,,Hong Kong,
 45.87.102.0/24,HK,,Hong Kong,
-216.238.52.0/23,HK,,Hong Kong,
 45.87.102.3/32,US,US-CA,Los Angeles,
 45.207.220.3,US,US-CA,Los Angeles,
 45.87.103.0/24,HK,,Hong Kong,
