@@ -311,6 +311,9 @@
 216.238.54.0/24,DE,DE-HE,Frankfurt,
 2602:f92a:300::/44,DE,DE-HE,Frankfurt,
 
+#MoeDove BN
+2602:f92a:c00::/40,TW,TW-TPE,Taipei,
+
 # Cooperating Partners
 2602:f919:109::/48,SG,SG-01,Singapore,
 2602:f919:110::/48,SG,SG-01,Singapore,
@@ -318,4 +321,5 @@
 23.151.104.0/24,JP,JP-13,Tokyo,
 2a13:a5c5:2300::/41,JP,JP-13,Tokyo,
 2a13:a5c5:2200::/40,HK,,Hong Kong,
+
 
