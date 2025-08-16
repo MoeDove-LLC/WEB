@@ -7,8 +7,8 @@
     --text-color: #f0f8ff;
     --text-muted: #a9b3ce;
     --card-border: #2a3652;
-    --font-main: 'Roboto', sans-serif;
-    --font-heading: 'Teko', sans-serif;
+    --font-main: 'Noto Sans Rounded', sans-serif;
+    --font-heading: 'Noto Sans Rounded', sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
