@@ -314,6 +314,7 @@
 
 #MoeDove BN
 2602:f92a:c00::/40,TW,TW-TPE,Taipei,
+44.31.231.0/24,TW,TW-TPE,Taipei,
 
 #Pigeon Internet
 2602:f92a:a000::/40,TW,TW-TPE,Taipei,
@@ -326,6 +327,7 @@
 23.151.104.0/24,JP,JP-13,Tokyo,
 2a13:a5c5:2300::/41,JP,JP-13,Tokyo,
 2a13:a5c5:2200::/40,HK,,Hong Kong,
+
 
 
 
