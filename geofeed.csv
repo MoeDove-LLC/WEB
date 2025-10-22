@@ -289,6 +289,7 @@
 216.238.52.0/24,US,US-UT,Salt Lake City,
 216.238.53.0/24,US,US-UT,Salt Lake City,
 154.94.226.0/23,US,US-UT,Salt Lake City,
+66.93.14.0/24,US,US-UT,Salt Lake City,
 2602:f92a:100::/46,US,US-UT,Salt Lake City,
 2602:f92a:170::/44,US,US-CA,Los Angeles,
 45.207.216.0/24,SG,SG-01,Singapore,
@@ -328,6 +329,7 @@
 2a14:7580:758::/48,NL,NL-NH,Amsterdam,
 2602:F92A:A47C::/48,NL,NL-NH,Amsterdam,
 208.68.182.0/24,TW,TW-TPE,Taipei,
+
 
 
 
