@@ -294,7 +294,6 @@
 2602:f92a:170::/44,US,US-CA,Los Angeles,
 45.207.216.0/24,SG,SG-01,Singapore,
 45.207.217.0/24,GB,GB-LND,London,EC3B 7HX
-45.207.217.192/26,FR,FR-HDF,Gravelines,
 45.207.218.0/24,HK,,Hong Kong,
 45.207.219.0/24,HK,,Hong Kong,
 45.207.220.0/24,HK,,Hong Kong,
@@ -314,11 +313,15 @@
 216.238.54.0/24,DE,DE-HE,Frankfurt,
 2602:f92a:300::/44,DE,DE-HE,Frankfurt,
 
-#MoeDove BN
+# Shisaku Labs
+45.207.217.192/26,FR,FR-HDF,Gravelines,
+2a0f:1cc1:42c0::/44,FR,FR-HDF,Gravelines,
+
+# MoeDove BN
 2602:f92a:c00::/40,TW,TW-TPE,Taipei,
 44.31.231.0/24,TW,TW-TPE,Taipei,
 
-#Pigeon Internet
+# Pigeon Internet
 2602:f92a:a000::/40,TW,TW-TPE,Taipei,
 44.30.30.0/24,JP,JP-13,Tokyo,
 
@@ -330,6 +333,7 @@
 2a14:7580:758::/48,NL,NL-NH,Amsterdam,
 2602:F92A:A47C::/48,NL,NL-NH,Amsterdam,
 208.68.182.0/24,TW,TW-TPE,Taipei,
+
 
 
 
