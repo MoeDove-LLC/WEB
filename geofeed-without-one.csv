@@ -86,7 +86,6 @@
 2602:f92a:170::/44,US,US-CA,Los Angeles,
 45.207.216.0/24,SG,SG-01,Singapore,
 45.207.217.0/24,GB,GB-LND,London,EC3B 7HX
-45.207.217.192/26,FR,FR-HDF,Gravelines,
 45.207.218.0/24,HK,,Hong Kong,
 45.207.219.0/24,HK,,Hong Kong,
 45.207.220.0/24,HK,,Hong Kong,
@@ -104,6 +103,10 @@
 2602:f92a:310::/44,GB,GB-LND,London,
 216.238.54.0/24,DE,DE-HE,Frankfurt,
 2602:f92a:300::/44,DE,DE-HE,Frankfurt,
+
+# Shisaku Labs
+45.207.217.192/26,FR,FR-HDF,Gravelines,
+2a0f:1cc1:42c0::/44,FR,FR-HDF,Gravelines,
 
 #MoeDove BN
 2602:f92a:c00::/40,TW,TW-TPE,Taipei,
