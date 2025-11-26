@@ -359,15 +359,12 @@
 2602:F92A:A47C::/48,NL,NL-NH,Amsterdam,
 208.68.182.0/24,TW,TW-TPE,Taipei,
 
+# Geofeed for AS210352 (ZeroWolf Network)
 
-
-
-
-
-
-
-
-
-
-
-
+2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
+2a0f:1cc5:f01::/48,HK,,Hong Kong,
+2a0f:1cc5:f02::/48,JP,JP-13,Tokyo,
+2a0f:1cc5:f03::/48,GB,GB-LND,London,
+2a0f:1cc5:f04::/48,TW,TW-TPE,Taipei,
+2a0f:1cc5:f05::/48,HK,,Hong Kong,
+2a0f:1cc5:f06::/48,US,US-UT,Salt Lake City,
