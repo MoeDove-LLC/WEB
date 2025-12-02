@@ -340,6 +340,16 @@
 23.151.104.0/24,JP,JP-13,Tokyo,
 2602:f92a:230::/44,JP,JP-13,Tokyo,
 
+#N2-new
+169.40.168.0/24,HK,,Hong Kong,
+169.40.169.0/24,HK,,Hong Kong,
+169.40.170.0/24,HK,,Hong Kong,
+169.40.171.0/24,HK,,Hong Kong,
+169.40.172.0/24,HK,,Hong Kong,
+169.40.173.0/24,SG,SG-01,Singapore,
+169.40.174.0/24,GB,GB-LND,London,EC3B 7HX
+169.40.175.0/24,GB,GB-LND,London,EC3B 7HX
+
 # Shisaku Labs
 45.207.217.192/26,FR,FR-HDF,Gravelines,
 2a0f:1cc1:42c0::/44,FR,FR-HDF,Gravelines,
@@ -369,5 +379,7 @@
 2a0f:1cc5:f03::/48,GB,GB-LND,London,
 2a0f:1cc5:f04::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:f05::/48,HK,,Hong Kong,
-
 2a0f:1cc5:f06::/48,US,US-UT,Salt Lake City,
+
+
+
