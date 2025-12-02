@@ -115,6 +115,8 @@
 2602:f92a:310::/44,GB,GB-LND,London,
 216.238.54.0/24,DE,DE-HE,Frankfurt,
 2602:f92a:300::/44,DE,DE-HE,Frankfurt,
+23.151.104.0/24,JP,JP-13,Tokyo,
+2602:f92a:230::/44,JP,JP-13,Tokyo,
 
 # Shisaku Labs
 45.207.217.192/26,FR,FR-HDF,Gravelines,
