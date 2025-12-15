@@ -16,10 +16,10 @@
 
 <body>
 
-    <header>
+    <header id="main-header">
         <nav class="container">
             <a href="index.html" class="logo" aria-label="MoeDove LLC">
-                <img src="MoeDove-Logo.svg" alt="MoeDove LLC" class="logo-img">
+                <img src="MoeDove-Logo.png" alt="MoeDove LLC" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="#" class="active" data-lang="navHome">Home</a></li>
@@ -27,17 +27,30 @@
                 <li><a href="non-profit.html" data-lang="navNonProfit">Non-Profit Projects</a></li>
                 <li><a href="https://network.moedove.com/" data-lang="navNetwork">Our Network</a></li>
             </ul>
-            <div class="lang-selector">
-                <div class="custom-select" id="custom-language-selector">
-                    <div class="select-selected">繁體中文</div>
-                    <div class="select-items select-hide">
-                        <div data-value="en">English</div>
-                        <div data-value="zh-cn">简体中文</div>
-                        <div data-value="zh-tw" class="same-as-selected">繁體中文</div>
+            <div class="header-right">
+                <div class="lang-selector">
+                    <div class="custom-select" id="custom-language-selector">
+                        <div class="select-selected">繁體中文</div>
+                        <div class="select-items select-hide">
+                            <div data-value="en">English</div>
+                            <div data-value="zh-cn">简体中文</div>
+                            <div data-value="zh-tw" class="same-as-selected">繁體中文</div>
+                        </div>
                     </div>
                 </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#" class="active" data-lang="navHome">Home</a>
+            <a href="#mission" data-lang="navServices">Our Mission</a>
+            <a href="non-profit.html" data-lang="navNonProfit">Non-Profit Projects</a>
+            <a href="https://network.moedove.com/" data-lang="navNetwork">Our Network</a>
+        </div>
     </header>
 
     <main>

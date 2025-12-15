@@ -69,6 +69,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialLang = getInitialLanguage();
     setLanguage(initialLang);
 
+    // --- Header Scroll Effect ---
+    const header = document.getElementById('main-header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+    });
+
+    // --- Mobile Menu Toggle ---
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        });
+    });
+
     // --- NEW: Animated Counter for Stats Bar ---
     const counters = document.querySelectorAll('.stat-number');
     const speed = 200; // The lower the number, the faster the count
