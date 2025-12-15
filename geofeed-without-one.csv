@@ -148,3 +148,14 @@
 2a0f:1cc5:f04::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:f05::/48,HK,,Hong Kong,
 2a0f:1cc5:f06::/48,US,US-UT,Salt Lake City,
+
+# Geofeed for AS150289 (Sun YanZheng)
+
+2a0f:1cc5:800::/44,HK,,Hong Kong,
+2a0f:1cc5:810::/44,HK,,Hong Kong,
+2a0f:1cc5:81a::/48,HK,,Hong Kong,
+2a0f:1cc5:81b::/48,HK,,Hong Kong,
+2a0f:1cc5:820::/44,TW,TW-TPE,Taipei,
+2a0f:1cc5:821::/48,TW,TW-TPE,Taipei,
+2a0f:1cc5:8a0::/44,CH,CH-BE,Bern,
+2a0f:1cc5:8a0::/48,CH,CH-BE,Bern,
