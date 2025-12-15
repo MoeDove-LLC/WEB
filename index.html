@@ -28,11 +28,14 @@
                 <li><a href="https://network.moedove.com/" data-lang="navNetwork">Our Network</a></li>
             </ul>
             <div class="lang-selector">
-                <select id="language-switcher">
-                    <option value="en">English</option>
-                    <option value="zh-cn">简体中文</option>
-                    <option value="zh-tw">繁體中文</option>
-                </select>
+                <div class="custom-select" id="custom-language-selector">
+                    <div class="select-selected">繁體中文</div>
+                    <div class="select-items select-hide">
+                        <div data-value="en">English</div>
+                        <div data-value="zh-cn">简体中文</div>
+                        <div data-value="zh-tw" class="same-as-selected">繁體中文</div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>

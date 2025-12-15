@@ -1,8 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Language Switcher Logic (Same as before) ---
-    const languageSwitcher = document.getElementById('language-switcher');
+    // --- Custom Language Switcher Logic ---
+    const customSelect = document.getElementById('custom-language-selector');
+    const selectSelected = customSelect.querySelector('.select-selected');
+    const selectItems = customSelect.querySelector('.select-items');
+    const selectOptions = selectItems.querySelectorAll('div');
     const elementsToTranslate = document.querySelectorAll('[data-lang]');
+
+    const languageMap = {
+        'en': 'English',
+        'zh-cn': '简体中文',
+        'zh-tw': '繁體中文'
+    };
 
     const setLanguage = (lang) => {
         document.documentElement.lang = lang;
@@ -13,6 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         localStorage.setItem('moedove-lang', lang);
+        selectSelected.textContent = languageMap[lang];
+
+        // Update selected state
+        selectOptions.forEach(option => {
+            option.classList.remove('same-as-selected');
+            if (option.getAttribute('data-value') === lang) {
+                option.classList.add('same-as-selected');
+            }
+        });
     };
 
     const getInitialLanguage = () => {
@@ -24,10 +42,31 @@ document.addEventListener('DOMContentLoaded', () => {
         return 'en';
     };
 
-    languageSwitcher.addEventListener('change', (event) => setLanguage(event.target.value));
+    // Toggle dropdown
+    selectSelected.addEventListener('click', (e) => {
+        e.stopPropagation();
+        selectItems.classList.toggle('select-hide');
+        selectSelected.classList.toggle('select-arrow-active');
+    });
+
+    // Select option
+    selectOptions.forEach(option => {
+        option.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const value = option.getAttribute('data-value');
+            setLanguage(value);
+            selectItems.classList.add('select-hide');
+            selectSelected.classList.remove('select-arrow-active');
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+        selectItems.classList.add('select-hide');
+        selectSelected.classList.remove('select-arrow-active');
+    });
 
     const initialLang = getInitialLanguage();
-    languageSwitcher.value = initialLang;
     setLanguage(initialLang);
 
     // --- NEW: Animated Counter for Stats Bar ---
@@ -46,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             counter.innerText = target;
         }
     };
-    
+
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
