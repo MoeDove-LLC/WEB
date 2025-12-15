@@ -32,6 +32,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
 }
 
 body {
@@ -493,6 +494,24 @@ footer {
         display: none;
     }
 
+    .lang-selector {
+        display: flex;
+    }
+
+    header {
+        padding: 12px 0;
+    }
+
+    .logo-img {
+        height: 36px;
+    }
+
+    .hero {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        padding: 40px 0;
+    }
+
     .hero-title {
         font-size: 40px;
     }
@@ -516,5 +535,9 @@ footer {
 
     .mission-content p {
         font-size: 19px;
+    }
+
+    section {
+        padding: 48px 0;
     }
 }
