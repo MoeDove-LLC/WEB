@@ -1,5 +1,46 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Theme Management ---
+    const getSystemTheme = () => {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+
+    const getInitialTheme = () => {
+        const savedTheme = localStorage.getItem('moedove-theme');
+        if (savedTheme) return savedTheme;
+        return getSystemTheme();
+    };
+
+    const setTheme = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('moedove-theme', theme);
+    };
+
+    const toggleTheme = () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    };
+
+    // Initialize theme
+    const initialTheme = getInitialTheme();
+    setTheme(initialTheme);
+
+    // Theme toggle button event listener
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+
+    // Listen for system theme changes (optional: auto-update if user hasn't manually set a preference)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        // Only auto-update if user hasn't manually set a preference
+        if (!localStorage.getItem('moedove-theme')) {
+            setTheme(e.matches ? 'dark' : 'light');
+        }
+    });
+
+
     // --- Custom Language Switcher Logic ---
     const customSelect = document.getElementById('custom-language-selector');
     const selectSelected = customSelect.querySelector('.select-selected');
