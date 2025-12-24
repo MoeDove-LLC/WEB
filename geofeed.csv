@@ -283,6 +283,8 @@
 2602:f92a:ff14::/48,JP,JP-13,Tokyo,
 2602:f92a:ff15::/48,IN,IN-MH,Mumbai,
 2602:f92a:ff16::/48,EG,EG-ALX,Alexandria,
+2602:f92a:ff17::/48,TW,TW-TPE,Taipei,
+2602:f92a:ff18::/48,JP,JP-13,Tokyo,
 
 #LYCHEEN-DIA-B
 2602:f92a:fe00::/48,CN,CN-BJ,Beijing,
