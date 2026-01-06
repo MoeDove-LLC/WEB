@@ -64,6 +64,9 @@
 2a13:a5c3:1a00::/42,CN,CN-HI,Haikou,
 2a13:a5c3:1a40::/42,CN,CN-HI,Sanya,
 
+
+
+
 #LYCHEEN-DIA
 2602:f92a:ff00::/48,CN,CN-BJ,Beijing,
 2602:f92a:ff01::/48,MO,,Macao,
@@ -74,6 +77,12 @@
 2602:f92a:ff11::/48,NG,NG-LA,Lagos,
 2602:f92a:ff12::/48,TR,TR-06,Ankara,
 2602:f92a:ff15::/48,IN,IN-MH,Mumbai,
+
+#MDONE
+2a13:a5c3:d600::/46,CN,CN-BJ,Beijing,
+2a13:a5c3:d680::/46,TW,TW-TPE,Taipei,
+2a13:a5c3:d684::/46,JP,JP-13,Tokyo,
+2a13:a5c3:d688::/46,,MO,,Macao,
 
 #LYCHEEN-DIA-B
 2602:f92a:fe00::/48,CN,CN-BJ,Beijing,

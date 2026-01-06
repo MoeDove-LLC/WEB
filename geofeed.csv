@@ -258,6 +258,9 @@
 2a13:a5c3:d66c::/46,IS,,Reykjavik,
 2a13:a5c3:d678::/46,NG,NG-LA,Lagos,
 2a13:a5c3:d67c::/46,TR,TR-06,Ankara,
+2a13:a5c3:d680::/46,TW,TW-TPE,Taipei,
+2a13:a5c3:d684::/46,JP,JP-13,Tokyo,
+2a13:a5c3:d688::/46,,MO,,Macao,
 
 #LYCHEEN-DIA
 2602:f92a:ff00::/48,CN,CN-BJ,Beijing,
@@ -283,6 +286,7 @@
 2602:f92a:ff14::/48,JP,JP-13,Tokyo,
 2602:f92a:ff15::/48,IN,IN-MH,Mumbai,
 2602:f92a:ff16::/48,EG,EG-ALX,Alexandria,
+
 
 #LYCHEEN-DIA-B
 2602:f92a:fe00::/48,CN,CN-BJ,Beijing,
