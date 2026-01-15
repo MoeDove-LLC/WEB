@@ -71,7 +71,7 @@ const zhCnPrivacy = {
     privacySection7Title: "7. 您的权利（美国与GDPR）",
     privacySection7Intro: "根据您所在的位置，您可能拥有以下权利：",
     privacySection7Item1: "访问与更正：请求获取您的数据副本并更正不准确之处的权利。",
-    privacySection7Item2: "删除权（"被遗忘权"）：请求删除您的数据的权利，但须遵守RIR资源保留要求和法律义务。",
+    privacySection7Item2: "删除权：请求删除您的数据的权利，但须遵守RIR资源保留要求和法律义务。",
     privacySection7Item3: "数据可移植性：以结构化、常用格式接收您的数据的权利。",
     privacySection7Item4: "选择退出/反对：基于合法利益或直接营销反对处理的权利。",
     privacySection7Item5: "限制处理：在某些情况下请求我们限制如何使用您的数据的权利。",
