@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 27-05-2024 10:18:20
+#Generated on 30-01-2026 11:56:20
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -370,3 +370,6 @@
 2a0f:1cc5:821::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:8a0::/44,CH,CH-BE,Bern,
 2a0f:1cc5:8a0::/48,CH,CH-BE,Bern,
+
+# Geofeed for AS202335 (Haima)
+2a0f:1cc5:2600::/44,DE,DE-HE,Frankfurt,
