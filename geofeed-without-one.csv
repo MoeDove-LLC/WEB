@@ -155,3 +155,9 @@
 2a0f:1cc5:821::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:8a0::/44,CH,CH-BE,Bern,
 2a0f:1cc5:8a0::/48,CH,CH-BE,Bern,
+
+# Geofeed for AS202335 (Haima)
+2a0f:1cc5:2600::/44,DE,DE-HE,Frankfurt,
+
+# Geofeed for AS201765
+45.202.245.0/24,KP,KP-01,Pyongyang,
