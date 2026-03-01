@@ -203,18 +203,9 @@
     <header class="sticky top-0 z-40 w-full border-b border-white/5 bg-black/40 backdrop-blur-2xl backdrop-saturate-150">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-3 group cursor-pointer" onclick="window.scrollTo(0,0)">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-b from-white/20 to-white/5 flex items-center justify-center border border-white/10 group-hover:border-white/30 shadow-glass-edge transition-all duration-300 relative overflow-hidden">
-                    <div class="absolute inset-0 bg-white/20 blur-md opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <!-- Placeholder Dove/Network Icon for MoeDove -->
-                    <svg class="w-5 h-5 relative z-10 group-hover:scale-110 transition-transform duration-300 filter drop-shadow-[0_0_8px_rgba(255,255,255,0.5)] text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
-                    MoeDove
-                </h1>
+                <!-- 替换为原生 Logo -->
+                <img src="https://www.moedove.com/MoeDove-Logo.png" alt="MoeDove LLC" class="h-9 sm:h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">
+                <h1 class="sr-only">MoeDove LLC</h1>
             </div>
             
             <div class="hidden md:flex items-center space-x-8 absolute left-1/2 -translate-x-1/2">
@@ -310,10 +301,10 @@
             <div class="spotlight-card rounded-2xl border border-white/5 bg-zinc-900/60 backdrop-blur-xl backdrop-saturate-150 p-5 shadow-glass-edge group hover:-translate-y-1.5 hover:shadow-glow transition-all duration-500 ease-smooth">
                 <div class="relative-content flex flex-col items-center text-center space-y-1">
                     <div class="w-10 h-10 rounded-full bg-pink-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(236,72,153,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
-                        <i data-lucide="shield-check" class="w-5 h-5 text-pink-400 group-hover:text-pink-300"></i>
+                        <i data-lucide="git-branch" class="w-5 h-5 text-pink-400 group-hover:text-pink-300"></i>
                     </div>
-                    <span class="text-3xl font-black text-white tracking-tight"><span class="counter" data-target="99">0</span>.9%</span>
-                    <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsUptime">SLA Guarantee</span>
+                    <span class="text-3xl font-black text-white tracking-tight"><span class="counter" data-target="100">0</span>+</span>
+                    <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsDownstreams">Downstreams</span>
                 </div>
             </div>
         </section>
@@ -371,12 +362,9 @@
 
     <footer class="border-t border-white/5 bg-black/80 backdrop-blur-xl py-12 mt-20 relative z-10">
         <div class="max-w-6xl mx-auto px-4 flex flex-col items-center justify-center space-y-4 text-center">
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-white/10 to-transparent border border-white/10 flex items-center justify-center shadow-glow p-2 hover:scale-110 transition-transform cursor-pointer">
-                <!-- Footer logo placeholder -->
-                <svg class="w-full h-full text-zinc-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+            <!-- 替换为原生 Logo -->
+            <div class="flex items-center justify-center mb-2">
+                <img src="https://www.moedove.com/MoeDove-Logo.png" alt="MoeDove Logo" class="h-14 sm:h-16 w-auto object-contain hover:scale-110 transition-transform duration-300 filter drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] cursor-pointer" onclick="window.scrollTo(0,0)">
             </div>
             <p class="font-bold text-zinc-300 text-sm">&copy; <span id="year"></span> MoeDove LLC. <span data-lang="footerRights">All Rights Reserved.</span></p>
             <div class="flex items-center justify-center gap-4 text-xs font-mono text-zinc-600">
@@ -603,7 +591,7 @@
                 "statsCountries": "Countries & Regions",
                 "statsCapacity": "Gbps Capacity",
                 "statsPeers": "Peering Partners",
-                "statsUptime": "SLA Guarantee",
+                "statsDownstreams": "Downstreams",
                 "missionTitle": "Our Non-Profit Mission",
                 "missionSub1": "Community Driven",
                 "missionSub2": "Infrastructure & Education",
@@ -626,7 +614,7 @@
                 "statsCountries": "國家與地區",
                 "statsCapacity": "Gbps 網路容量",
                 "statsPeers": "互聯合作夥伴",
-                "statsUptime": "SLA 服務保證",
+                "statsDownstreams": "下游數量",
                 "missionTitle": "我們的非營利使命",
                 "missionSub1": "社群驅動",
                 "missionSub2": "基礎設施與教育",
@@ -649,7 +637,7 @@
                 "statsCountries": "国家与地区",
                 "statsCapacity": "Gbps 网络容量",
                 "statsPeers": "互联合作伙伴",
-                "statsUptime": "SLA 服务保证",
+                "statsDownstreams": "下游数量",
                 "missionTitle": "我们的非营利使命",
                 "missionSub1": "社区驱动",
                 "missionSub2": "基础设施与教育",
