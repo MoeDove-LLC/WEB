@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/translations.js"></script>
     
     <script>
         tailwind.config = {
@@ -330,7 +331,7 @@
                     </div>
                     <h4 class="text-lg font-bold text-white tracking-wide" data-lang="missionSub1">Community Driven</h4>
                     <p class="text-sm text-zinc-400 leading-relaxed font-medium" data-lang="missionText1">
-                        MoeDove LLC stands apart from traditional commercial entities. We are a community-driven organization dedicated to strengthening the global digital infrastructure. Our primary goal is not profit, but the advancement of network stability, accessibility, and education.
+                        MoeDove LLC is a registered business entity, yet we stand apart—we actively adopt community suggestions and are dedicated to strengthening the global digital infrastructure. Our primary goal is not profit, but the advancement of network stability, accessibility, and education.
                     </p>
                 </div>
 
@@ -341,7 +342,7 @@
                     </div>
                     <h4 class="text-lg font-bold text-white tracking-wide" data-lang="missionSub2">Infrastructure & Education</h4>
                     <p class="text-sm text-zinc-400 leading-relaxed font-medium" data-lang="missionText2">
-                        We proudly host the RIPE NCC K-ROOT node in Hong Kong to bolster regional DNS resilience. Furthermore, we provide free BGP Virtual Machines to researchers and enthusiasts, fostering the next generation of network engineers.
+                        We proudly host the RIPE NCC K-ROOT node in Hong Kong to bolster regional DNS resilience. Furthermore, we provide free BGP Connection to researchers and enthusiasts, fostering the next generation of network engineers.
                     </p>
                 </div>
 
@@ -368,9 +369,9 @@
             </div>
             <p class="font-bold text-zinc-300 text-sm">&copy; <span id="year"></span> MoeDove LLC. <span data-lang="footerRights">All Rights Reserved.</span></p>
             <div class="flex items-center justify-center gap-4 text-xs font-mono text-zinc-600">
-                <a href="#" class="hover:text-zinc-300 transition-colors">Privacy Policy</a>
+                <a href="privacy.html" class="hover:text-zinc-300 transition-colors" data-lang="footerPrivacy">Privacy Policy</a>
                 <span>|</span>
-                <a href="#" class="hover:text-zinc-300 transition-colors">Terms of Service</a>
+                <a href="tos.html" class="hover:text-zinc-300 transition-colors" data-lang="footerTOS">Terms of Service</a>
             </div>
         </div>
     </footer>
@@ -576,78 +577,8 @@
 
         // ==========================================
         // 国际化 (i18n) 语言切换模块
+        // translations 对象来自外部 js/translations.js
         // ==========================================
-        const translations = {
-            "en": {
-                "metaTitle": "MoeDove LLC - Global Digital Infrastructure",
-                "navHome": "Home",
-                "navServices": "Our Mission",
-                "navNonProfit": "Non-Profit Projects",
-                "navNetwork": "Our Network",
-                "ciraBannerText": "Explore our advanced Internet Routing Analytics project:",
-                "heroTitle": "Engineering the Future of <br/> Digital Infrastructure.",
-                "heroSubtitle": "Integrated Cloud, Broadband, and Dedicated Line solutions on a world-class global network.",
-                "heroButton": "Contact NOC",
-                "statsCountries": "Countries & Regions",
-                "statsCapacity": "Gbps Capacity",
-                "statsPeers": "Peering Partners",
-                "statsDownstreams": "Downstreams",
-                "missionTitle": "Our Non-Profit Mission",
-                "missionSub1": "Community Driven",
-                "missionSub2": "Infrastructure & Education",
-                "missionSub3": "Affordable Resources",
-                "missionText1": "MoeDove LLC stands apart from traditional commercial entities. We are a community-driven organization dedicated to strengthening the global digital infrastructure. Our primary goal is not profit, but the advancement of network stability, accessibility, and education.",
-                "missionText2": "We proudly host the RIPE NCC K-ROOT node in Hong Kong to bolster regional DNS resilience. Furthermore, we provide free BGP Virtual Machines to researchers and enthusiasts, fostering the next generation of network engineers.",
-                "missionText3": "To support our community, we also offer RIPE and ARIN LIR services (ASN registration and IP allocation) strictly at cost price. We believe in open, affordable access to internet resources for everyone.",
-                "footerRights": "All Rights Reserved."
-            },
-            "zh-tw": {
-                "metaTitle": "MoeDove LLC - 全球數位基礎設施",
-                "navHome": "首頁",
-                "navServices": "我們的使命",
-                "navNonProfit": "非營利專案",
-                "navNetwork": "我們的網路",
-                "ciraBannerText": "探索我們先進的網際網路路由分析專案：",
-                "heroTitle": "建構數位基礎設施的<br/>未來藍圖。",
-                "heroSubtitle": "在世界級的全球網路上提供整合的雲端、寬頻與專線解決方案。",
-                "heroButton": "聯絡 NOC",
-                "statsCountries": "國家與地區",
-                "statsCapacity": "Gbps 網路容量",
-                "statsPeers": "互聯合作夥伴",
-                "statsDownstreams": "下游數量",
-                "missionTitle": "我們的非營利使命",
-                "missionSub1": "社群驅動",
-                "missionSub2": "基礎設施與教育",
-                "missionSub3": "負擔得起的資源",
-                "missionText1": "MoeDove LLC 與傳統商業實體不同。我們是一個由社群驅動的組織，致力於強化全球數位基礎設施。我們的主要目標不是營利，而是推動網路穩定性、可及性與教育。",
-                "missionText2": "我們很榮幸在香港託管 RIPE NCC K-ROOT 節點，以增強區域 DNS 的韌性。此外，我們為研究人員和愛好者提供免費的 BGP 虛擬機，培養下一代網路工程師。",
-                "missionText3": "為了支持我們的社群，我們也嚴格按照成本價提供 RIPE 和 ARIN LIR 服務（ASN 註冊和 IP 分配）。我們堅信每個人都應享有開放、負擔得起的網際網路資源。",
-                "footerRights": "版權所有。"
-            },
-            "zh-cn": {
-                "metaTitle": "MoeDove LLC - 全球数字基础设施",
-                "navHome": "首页",
-                "navServices": "我们的使命",
-                "navNonProfit": "非营利项目",
-                "navNetwork": "我们的网络",
-                "ciraBannerText": "探索我们先进的互联网路由分析项目：",
-                "heroTitle": "构建数字基础设施的<br/>未来蓝图。",
-                "heroSubtitle": "在世界级的全球网络上提供集成的云、宽带和专线解决方案。",
-                "heroButton": "联系 NOC",
-                "statsCountries": "国家与地区",
-                "statsCapacity": "Gbps 网络容量",
-                "statsPeers": "互联合作伙伴",
-                "statsDownstreams": "下游数量",
-                "missionTitle": "我们的非营利使命",
-                "missionSub1": "社区驱动",
-                "missionSub2": "基础设施与教育",
-                "missionSub3": "负担得起的资源",
-                "missionText1": "MoeDove LLC 与传统商业实体不同。我们是一个由社区驱动的组织，致力于强化全球数字基础设施。我们的主要目标不是营利，而是推动网络稳定性、可及性与教育。",
-                "missionText2": "我们很荣幸在香港托管 RIPE NCC K-ROOT 节点，以增强区域 DNS 的韧性。此外，我们为研究人员和爱好者提供免费的 BGP 虚拟机，培养下一代网络工程师。",
-                "missionText3": "为了支持我们的社区，我们也严格按照成本价提供 RIPE 和 ARIN LIR 服务（ASN 注册和 IP 分配）。我们坚信每个人都应享有开放、负担得起的互联网资源。",
-                "footerRights": "版权所有。"
-            }
-        };
 
         const langBtn = document.getElementById('lang-btn');
         const langMenu = document.getElementById('lang-menu');
