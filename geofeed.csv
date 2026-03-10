@@ -373,6 +373,9 @@
 
 # Geofeed for AS202335 (Haima)
 2a0f:1cc5:2600::/44,DE,DE-HE,Frankfurt,
+2a0f:1cc5:2610::/44,GB,GB-LND,London,
+2a0f:1cc5:2620::/44,NL,NL-NH,Amsterdam,
+2a0f:1cc5:2640::/44,US,US-MO,Kansas City,
 
 # Geofeed for AS201765
 45.202.245.0/24,KP,KP-01,Pyongyang,
