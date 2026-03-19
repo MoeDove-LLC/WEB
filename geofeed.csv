@@ -380,3 +380,6 @@
 
 # Geofeed for AS201765
 45.202.245.0/24,KP,KP-01,Pyongyang,
+
+# Geofeed for AS140227
+142.248.136.0/22,JP,JP-13,Tokyo,
