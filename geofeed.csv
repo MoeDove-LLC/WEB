@@ -377,6 +377,7 @@
 2a0f:1cc5:2620::/44,NL,NL-NH,Amsterdam,
 2a0f:1cc5:2640::/44,US,US-MO,Kansas City,
 2a0f:1cc5:2650::/44,SG,SG-01,Singapore,
+2a0f:1cc5:2660::/44,JP,JP-13,Tokyo,
 
 # Geofeed for AS201765
 45.202.245.0/24,KP,KP-01,Pyongyang,
