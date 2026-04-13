@@ -304,6 +304,8 @@
 45.207.222.0/24,HK,,Hong Kong,
 45.207.223.0/24,HK,,Hong Kong,
 45.87.102.0/24,HK,,Hong Kong,
+45.196.238.0/24,HK,,Hong Kong,
+45.196.239.0/24,GB,GB-LND,London,EC3B 7HX
 45.87.102.3/32,US,US-CA,Los Angeles,
 45.207.220.3/32,US,US-CA,Los Angeles,
 45.87.103.0/24,HK,,Hong Kong,
@@ -481,6 +483,7 @@
 154.19.100.0/22,US,US-CA,Los Angeles,
 154.19.112.0/21,US,US-CA,Los Angeles,
 154.19.120.0/21,US,US-CA,Los Angeles,
+<<<<<<< HEAD
 104.143.44.0/24,US,US-CA,Los Angeles,
 104.143.45.0/24,US,US-CA,Los Angeles,
 154.23.188.0/24,US,US-CA,Los Angeles,
@@ -491,3 +494,10 @@
 154.39.80.0/24,US,US-CA,Los Angeles,
 154.39.81.0/24,US,US-CA,Los Angeles,
 154.39.82.0/24,US,US-CA,Los Angeles,
+=======
+104.143.44.0/23,US,US-CA,Los Angeles,
+154.23.188.0/22,US,US-CA,Los Angeles,
+154.39.79.0/32,US,US-CA,Los Angeles,
+154.39.80.0/23,US,US-CA,Los Angeles,
+154.39.82.0/32,US,US-CA,Los Angeles,
+>>>>>>> 00be2dccc0952127d6444c7bc8d922dfbbf88844
