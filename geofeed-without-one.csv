@@ -136,7 +136,7 @@
 208.68.181.0/24,NL,NL-NH,Amsterdam,
 2a14:7580:758::/48,NL,NL-NH,Amsterdam,
 2602:F92A:A47C::/48,NL,NL-NH,Amsterdam,
-208.68.182.0/24,TW,TW-TPE,Taipei,
+208.68.182.0/24,JP,JP-13,Chiyoda,100-0004
 
 # Geofeed for AS210352 (ZeroWolf Network)
 
@@ -161,10 +161,14 @@
 
 # Geofeed for AS202335 (Haima)
 2a0f:1cc5:2600::/44,DE,DE-HE,Frankfurt,
-2a0f:1cc5:2610::/44,GB,GB-LND,London,
-2a0f:1cc5:2620::/44,NL,NL-NH,Amsterdam,
-2a0f:1cc5:2640::/44,US,US-MO,Kansas City,
-2a0f:1cc5:2650::/44,SG,SG-01,Singapore,
+2a0f:1cc5:2608::/45,GB,GB-LND,London,
+2a0f:1cc5:2608:2500::/64,GB,GB-SHF,Sheffield,
+2a0f:1cc5:2608:2501::/64,GB,GB-SHF,Sheffield,
+2a0f:1cc5:2610::/45,NL,NL-NH,Amsterdam,
+2a0f:1cc5:26c0::/44,US,US-MO,Kansas City,
+2a0f:1cc5:2680::/46,SG,SG-01,Singapore,
+2a0f:1cc5:2640::/45,JP,JP-13,Tokyo,
+
 
 # Geofeed for AS201765
 45.202.245.0/24,KP,KP-01,Pyongyang,
