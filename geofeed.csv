@@ -496,3 +496,6 @@ a0f:1cc5:2600::/44,DE,DE-HE,Frankfurt,
 154.39.80.0/24,US,US-CA,Los Angeles,
 154.39.81.0/24,US,US-CA,Los Angeles,
 154.39.82.0/24,US,US-CA,Los Angeles,
+
+# AS199794 EMOCLOUD LIMITED
+87.232.80.0/24,HK,,Hong Kong,
