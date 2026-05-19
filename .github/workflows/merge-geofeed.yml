@@ -1,0 +1,68 @@
+name: Merge Geofeed
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge-geofeed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download remote geofeed
+        run: |
+          curl -sSfL -o remote-geofeed.csv \
+            "https://raw.githubusercontent.com/MoeDove-LLC/moegeo/refs/heads/main/output/geofeed.csv"
+
+      - name: Generate merged geofeed.csv
+        run: |
+          {
+            # Header (without date — date is added later if data changed)
+            echo '#This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)'
+            echo '#If you have any questions or need assistance with the data, please contact us.'
+            echo '#prefix,country_code,region_code,city,postal'
+
+            # Part 1: geofeed-without-one.csv (skip comment header lines that we already added)
+            tail -n +4 geofeed-without-one.csv
+
+            # Part 2: one.csv
+            cat one.csv
+
+            # Part 3: remote moegeo geofeed
+            echo ''
+            echo '# === Community Geofeed (from moegeo) ==='
+            cat remote-geofeed.csv
+          } > geofeed.csv.new
+
+      - name: Check for changes
+        id: check
+        run: |
+          # Strip the date line from the current file for comparison
+          grep -v '^#Generated on ' geofeed.csv > geofeed.csv.old-stripped || true
+
+          # Compare stripped current vs new (new has no date line)
+          if diff -q geofeed.csv.old-stripped geofeed.csv.new > /dev/null 2>&1; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Insert date and commit
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          # Insert the date line after the first header line
+          sed -i '1a #Generated on '"$(date -u +'%d-%m-%Y %H:%M:%S')" geofeed.csv.new
+          mv geofeed.csv.new geofeed.csv
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add geofeed.csv
+          git commit -m "chore: update geofeed.csv [$(date -u +'%Y-%m-%d %H:%M')]"
+          git push

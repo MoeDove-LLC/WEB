@@ -13,7 +13,6 @@
 2a13:a5c3:2900::/42,CA,CA-ON,Toronto,
 # Asia
 23.149.120.0/24,HK,,Hong Kong,
-5.160.111.0/24,TW,TW-TPE,Taipei,
 2a13:a5c3:3000::/40,SG,SG-01,Singapore,
 2a13:a5c3:3100::/40,TW,TW-TPE,Taipei,
 2a13:a5c3:3200::/40,HK,,Hong Kong,
@@ -138,15 +137,6 @@
 2602:F92A:A47C::/48,NL,NL-NH,Amsterdam,
 208.68.182.0/24,JP,JP-13,Chiyoda,100-0004
 
-# Geofeed for AS210352 (ZeroWolf Network)
-
-2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
-2a0f:1cc5:f01::/48,HK,,Hong Kong,
-2a0f:1cc5:f02::/48,JP,JP-13,Tokyo,
-2a0f:1cc5:f03::/48,GB,GB-LND,London,
-2a0f:1cc5:f04::/48,TW,TW-TPE,Taipei,
-2a0f:1cc5:f05::/48,HK,,Hong Kong,
-2a0f:1cc5:f06::/48,US,US-UT,Salt Lake City,
 
 # Geofeed for AS150289 (Sun YanZheng)
 
@@ -169,9 +159,6 @@
 2a0f:1cc5:2680::/46,SG,SG-01,Singapore,
 2a0f:1cc5:2640::/45,JP,JP-13,Tokyo,
 
-
-# Geofeed for AS201765
-45.202.245.0/24,KP,KP-01,Pyongyang,
 
 # Geofeed for AS140227
 #日本
