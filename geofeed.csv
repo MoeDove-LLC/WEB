@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 19-05-2026 04:22:16
+#Generated on 20-05-2026 02:35:12
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -468,8 +468,8 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-05-18T06:10:12.320133+00:00
-# Total prefixes: 44
+# Generated at: 2026-05-19T06:04:13.383914+00:00
+# Total prefixes: 163
 
 # AS200078 - Potat0 Network - Last change: Sun, 01 Feb 2026 06:16:27 GMT
 2a13:b487:1101::/48,CN,CN-SH,Shanghai,
@@ -489,7 +489,21 @@
 2a0f:1cc5:150::/44,TW,TW-TPE,Taipei,10060
 2a0f:1cc5:160::/44,NL,NL-NH,Amsterdam,1011AB
 
-# AS210352 - ZeroWolf Network - Last change: Sun, 17 May 2026 17:23:27 GMT
+# AS209294 - FansNET - Last change: Mon, 18 May 2026 09:38:43 GMT
+44.31.212.1/32,CN,CN-HB,Wuhan,
+44.31.212.2/31,HK,,,
+44.31.212.4/31,JP,JP-13,Tokyo,
+44.31.212.6/31,JP,JP-13,Tokyo,
+44.31.212.8/31,JP,JP-13,Tokyo,
+44.31.212.10/31,US,US-MO,Kansas City,
+44.31.212.14/31,HK,,,
+44.31.212.16/31,NL,NL-NH,Amsterdam,
+44.31.212.24/29,JP,JP-13,Tokyo,
+44.31.212.128/25,JP,JP-13,Tokyo,
+2a01:e281:a400::/48,CN,CN-HB,Wuhan,
+2a01:e281:a410::/44,JP,JP-13,Tokyo,
+
+# AS210352 - ZeroWolf Network - Last change: Mon, 18 May 2026 17:09:49 GMT
 2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:f01::/48,HK,,Hong Kong,
 2a0f:1cc5:f02::/48,JP,JP-13,Tokyo,
@@ -501,7 +515,7 @@
 2a0f:1cc5:f08::/48,NL,NL-NH,Amsterdam,
 2a0f:1cc5:f09::/48,US,US-CA,San Jose,
 2602:f92a:a47d::/48,TW,TW-TPE,Taipei,
-2406:840:9178::/48,TW,TW-TPE,Taipei,
+2406:840:9178::/48,US,US-CA,San Jose,
 
 # AS214955 - LaunchPad Network - Last change: Fri, 20 Mar 2026 13:45:04 GMT
 2a0f:1cc5:2d01::/48,CH,,Bern,
@@ -524,3 +538,112 @@
 44.30.89.0/24,JP,JP-13,Tokyo,113-0033
 2a0f:1cc5:1e00::/48,JP,JP-13,Tokyo,113-0033
 2a0f:1cc5:1e01::/48,JP,JP-13,Tokyo,113-0033
+
+# AS402333 - Tianshome Network Services - Last change: Tue, 19 May 2026 06:04:13 GMT
+2001:678:1184:8500::/56,HK,,Hong Kong (Chek Lap Kok),
+2001:678:1184:8700::/56,MO,,Macau (Taipa),
+2001:678:1184:4400::/56,GB,GB-ENG,London,E14 9SZ
+2001:678:1184:4500::/56,DE,DE-HE,Frankfurt,D-60314
+2001:678:1184:1400::/56,CA,CA-QC,Brossard,J4Y
+2001:678:1184:1500::/56,CA,CA-QC,Westmont,H3Z
+2001:678:1184:1300::/56,US,US-NY,Manhattan,10280
+2001:678:1184:1900::/56,US,US-NY,Brooklyn,11213
+2001:678:1184:1a00::/56,US,US-NY,Crown Heights,11213
+2001:678:1184:1b00::/56,US,US-NY,Crown Heights (Brooklyn),11213
+2001:678:1184:1c00::/56,US,US-NY,Battery Park City,10280
+2001:678:1184:1d00::/56,US,US-NY,Battery Park City (Manhattan),10280
+2001:678:1184:1e00::/56,US,US-NY,Financial District,10005
+2001:678:1184:1f00::/56,US,US-NY,Financial District (Manhattan),10005
+2001:678:1184:600::/56,SG,,Changi,819642
+2001:678:1184:1700::/56,CA,CA-BC,Vancouver,V6T
+2001:678:1184:8100::/56,JP,JP-13,Chiyoda City,102-0083
+2001:678:1184:8800::/56,TW,TW-TAO,Taoyuan,321000
+2001:678:1184:8600::/56,CN,CN-SH,Yangpu,200433
+2001:678:1184:9700::/56,IL,IL-TA,Rosh HaAyin,4809139
+2001:678:1184:f000::/56,NZ,NZ-AUK,Auckland,1050
+2a0f:1cc5:1285::/48,HK,,Hong Kong (Chek Lap Kok),
+2a0f:1cc5:1287::/48,MO,,Macau (Taipa),
+2a0f:1cc5:1244::/48,GB,GB-ENG,London,E14 9SZ
+2a0f:1cc5:1245::/48,DE,DE-HE,Frankfurt,D-60314
+2a0f:1cc5:1214::/48,CA,CA-QC,Brossard,J4Y
+2a0f:1cc5:1215::/48,CA,CA-QC,Westmont,H3Z
+2a0f:1cc5:1213::/48,US,US-NY,Manhattan,10280
+2a0f:1cc5:1219::/48,US,US-NY,Brooklyn,11213
+2a0f:1cc5:121a::/48,US,US-NY,Crown Heights,11213
+2a0f:1cc5:121b::/48,US,US-NY,Crown Heights (Brooklyn),11213
+2a0f:1cc5:121c::/48,US,US-NY,Battery Park City,10280
+2a0f:1cc5:121d::/48,US,US-NY,Battery Park City (Manhattan),10280
+2a0f:1cc5:121e::/48,US,US-NY,Financial District,10005
+2a0f:1cc5:121f::/48,US,US-NY,Financial District (Manhattan),10005
+2a0f:1cc5:1260::/48,SG,,Changi,819642
+2a0f:1cc5:1217::/48,CA,CA-BC,Vancouver,V6T
+2a0f:1cc5:1281::/56,JP,JP-13,Chiyoda City,102-0083
+2a0f:1cc5:1286::/48,CN,CN-SH,Yangpu,200433
+2a0f:1cc5:1288::/48,TW,TW-TAO,Taoyuan,321000
+2a0f:1cc5:1297::/48,IL,IL-TA,Rosh HaAyin,4809139
+2a0f:1cc5:12f0::/48,NZ,NZ-AUK,Auckland,1050
+2a14:67c3:770:8500::/56,HK,,Hong Kong (Chek Lap Kok),
+2a14:67c3:770:8700::/56,MO,,Macau (Taipa),
+2a14:67c3:770:4400::/56,GB,GB-ENG,London,E14 9SZ
+2a14:67c3:770:4500::/56,DE,DE-HE,Frankfurt,D-60314
+2a14:67c3:770:1400::/56,CA,CA-QC,Brossard,J4Y
+2a14:67c3:770:1500::/56,CA,CA-QC,Westmont,H3Z
+2a14:67c3:770:1300::/56,US,US-NY,Manhattan,10280
+2a14:67c3:770:1a00::/56,US,US-NY,Crown Heights,11213
+2a14:67c3:770:1b00::/56,US,US-NY,Crown Heights (Brooklyn),11213
+2a14:67c3:770:1c00::/56,US,US-NY,Battery Park City,10280
+2a14:67c3:770:1d00::/56,US,US-NY,Battery Park City (Manhattan),10280
+2a14:67c3:770:1e00::/56,US,US-NY,Financial District,10005
+2a14:67c3:770:1f00::/56,US,US-NY,Financial District (Manhattan),10005
+2a14:67c3:770:600::/56,SG,,Changi,819642
+2a14:67c3:770:1700::/56,CA,CA-BC,Vancouver,V6T
+2a14:67c3:770:8100::/56,JP,JP-13,Chiyoda City,102-0083
+2a14:67c3:770:8600::/56,CN,CN-SH,Yangpu,200433
+2a14:67c3:770:8800::/56,TW,TW-TAO,Taoyuan,321000
+2a14:67c3:770:9700::/56,IL,IL-TA,Rosh HaAyin,4809139
+2a14:67c3:770:f000::/56,NZ,NZ-AUK,Auckland,1050
+2602:f92a:a448:5000::/52,HK,,Hong Kong (Chek Lap Kok),
+2602:f92a:a448:7000::/52,MO,,Macau (Taipa),
+2602:f92a:a444:4000::/52,GB,GB-ENG,London,E14 9SZ
+2602:f92a:a444:5000::/52,DE,DE-HE,Frankfurt,D-60314
+2602:f92a:a441:4000::/52,CA,CA-QC,Brossard,J4Y
+2602:f92a:a441:5000::/52,CA,CA-QC,Westmont,H3Z
+2602:f92a:a441:3000::/52,US,US-NY,Manhattan,10280
+2602:f92a:a441:a000::/52,US,US-NY,Crown Heights,11213
+2602:f92a:a441:b000::/52,US,US-NY,Crown Heights (Brooklyn),11213
+2602:f92a:a441:c000::/52,US,US-NY,Battery Park City,10280
+2602:f92a:a441:d000::/52,US,US-NY,Battery Park City (Manhattan),10280
+2602:f92a:a441:e000::/52,US,US-NY,Financial District,10005
+2602:f92a:a441:f000::/52,US,US-NY,Financial District (Manhattan),10005
+2602:f92a:a446::/52,SG,,Changi,819642
+2602:f92a:a441:7000::/52,CA,CA-BC,Vancouver,V6T
+2602:f92a:a448:1000::/52,JP,JP-13,Chiyoda City,102-0083
+2602:f92a:a448:6000::/52,CN,CN-SH,Yangpu,200433
+2602:f92a:a448:8000::/52,TW,TW-TAO,Taoyuan,321000
+2602:f92a:a449:7000::/52,IL,IL-TA,Rosh HaAyin,4809139
+2602:f92a:a44f::/52,NZ,NZ-AUK,Auckland,1050
+23.158.20.128/30,CA,CA-QC,Brossard,J4Y
+23.158.20.132/30,CA,CA-QC,Westmont,H3Z
+23.158.20.136/30,HK,,Hong Kong (Chek Lap Kok),
+23.158.20.140/30,MO,,Macau (Taipa),
+23.158.20.144/30,GB,GB-ENG,London,E14 9SZ
+23.158.20.148/30,DE,DE-HE,Frankfurt,D-60314
+23.158.20.152/30,US,US-NY,Battery Park City (Manhattan),10280
+23.158.20.156/30,US,US-NY,Financial District (Manhattan),10005
+23.158.20.160/30,US,US-NY,Crown Heights (Brooklyn),11213
+23.158.20.164/30,US,US-CA,Mountain View,94043
+23.158.20.168/30,US,US-WA,Seattle,98125
+23.158.20.172/30,US,US-DC,Washington,20002
+23.158.20.176/30,US,US-MA,Cambridge,02139
+23.158.20.180/30,US,US-GA,Georgia,30332
+23.158.20.184/30,SG,,Changi,819642
+23.158.20.188/30,CA,CA-BC,Vancouver,V6T
+23.158.20.192/30,JP,JP-13,Chiyoda City,102-0083
+23.158.20.196/30,JP,JP-23,Nisshin,470-0193
+23.158.20.200/30,CN,CN-SH,Yangpu,200433
+23.158.20.208/30,TW,TW-TAO,Taoyuan,321000
+23.158.20.212/30,IL,IL-TA,Rosh HaAyin,4809139
+23.158.20.216/30,NZ,NZ-AUK,Auckland,1050
+23.158.20.220/30,NZ,NZ-AUK,Auckland,1050
+23.158.20.224/30,AU,AU-NSW,Melbourne,3004
+23.158.20.228/30,AU,AU-NSW,Melbourne,3004
