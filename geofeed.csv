@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 20-05-2026 02:35:12
+#Generated on 21-05-2026 02:36:33
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -468,8 +468,8 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-05-19T06:04:13.383914+00:00
-# Total prefixes: 163
+# Generated at: 2026-05-20T06:04:02.194452+00:00
+# Total prefixes: 182
 
 # AS200078 - Potat0 Network - Last change: Sun, 01 Feb 2026 06:16:27 GMT
 2a13:b487:1101::/48,CN,CN-SH,Shanghai,
@@ -503,7 +503,7 @@
 2a01:e281:a400::/48,CN,CN-HB,Wuhan,
 2a01:e281:a410::/44,JP,JP-13,Tokyo,
 
-# AS210352 - ZeroWolf Network - Last change: Mon, 18 May 2026 17:09:49 GMT
+# AS210352 - ZeroWolf Network - Last change: Tue, 19 May 2026 16:17:17 GMT
 2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:f01::/48,HK,,Hong Kong,
 2a0f:1cc5:f02::/48,JP,JP-13,Tokyo,
@@ -515,7 +515,7 @@
 2a0f:1cc5:f08::/48,NL,NL-NH,Amsterdam,
 2a0f:1cc5:f09::/48,US,US-CA,San Jose,
 2602:f92a:a47d::/48,TW,TW-TPE,Taipei,
-2406:840:9178::/48,US,US-CA,San Jose,
+2406:840:9178::/48,TW,TW-TPE,Taipei,
 
 # AS214955 - LaunchPad Network - Last change: Fri, 20 Mar 2026 13:45:04 GMT
 2a0f:1cc5:2d01::/48,CH,,Bern,
@@ -538,6 +538,27 @@
 44.30.89.0/24,JP,JP-13,Tokyo,113-0033
 2a0f:1cc5:1e00::/48,JP,JP-13,Tokyo,113-0033
 2a0f:1cc5:1e01::/48,JP,JP-13,Tokyo,113-0033
+
+# AS215502 - Yxom Network - Last change: Wed, 20 May 2026 06:04:01 GMT
+2a13:aac4:f000::/44,HK,,Central and Western,
+2a13:aac4:f00c::/48,HK,,Central and Western,
+2a13:aac4:f00d::/48,US,US-NV,Las Vegas,89119
+2a06:9f81:4600::/44,TW,TW-TPE,Taipei,
+2a06:9f81:4610::/44,JP,JP-13,Tokyo,151-0053
+2a06:9f81:4620::/44,DE,DE-HE,Frankfurt,
+2a06:9f81:4640::/44,US,US-NV,Las Vegas,89119
+2a06:9f81:4650::/44,NL,NL-NH,Amsterdam,
+2a0f:6284:4c00::/44,SG,,Singapore,
+2a0f:6284:4c30::/48,KR,KR-11,Seoul,
+2a0f:6284:4c40::/44,TW,TW-TPE,Taipei,
+2a0f:6284:4c50::/44,SG,,Singapore,
+2a0f:6284:4c60::/44,JP,JP-13,Tokyo,
+2a0f:6284:4c80::/44,SG,,Singapore,
+2a0f:6284:4c90::/44,CH,CH-ZH,Zurich,
+2a0f:6284:4ca0::/44,AU,AU-NSW,Sydney,
+2a0f:6284:4cc0::/44,US,US-CA,San Francisco,
+2a0f:6284:4cd0::/44,DE,DE-HE,Frankfurt,
+2a14:67c3:30::/44,GB,GB-LND,London,
 
 # AS402333 - Tianshome Network Services - Last change: Tue, 19 May 2026 06:04:13 GMT
 2001:678:1184:8500::/56,HK,,Hong Kong (Chek Lap Kok),
