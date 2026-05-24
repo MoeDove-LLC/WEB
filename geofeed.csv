@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 23-05-2026 02:14:38
+#Generated on 24-05-2026 02:33:15
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -468,8 +468,8 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-05-22T06:03:24.782267+00:00
-# Total prefixes: 182
+# Generated at: 2026-05-23T05:36:50.179853+00:00
+# Total prefixes: 221
 
 # AS200078 - Potat0 Network - Last change: Sun, 01 Feb 2026 06:16:27 GMT
 2a13:b487:1101::/48,CN,CN-SH,Shanghai,
@@ -516,6 +516,47 @@
 2a0f:1cc5:f09::/48,US,US-CA,San Jose,
 2602:f92a:a47d::/48,TW,TW-TPE,Taipei,
 2406:840:9178::/48,TW,TW-TPE,Taipei,
+
+# AS214731 - ETO Networks Limited - Last change: Sat, 23 May 2026 05:36:48 GMT
+2a01:e281:ad00::/43,US,US-NV,Las Vegas,
+2a01:e281:ad20::/43,SG,,Singapore,
+2a01:e281:ad40::/43,TW,TW-TPE,Taipei,
+2a01:e281:ad60::/43,JP,JP-12,Tokyo,
+2a01:e281:ad80::/43,HK,,Hong Kong,
+2a14:7c0:5201::/48,AR,,,
+2a14:7c0:5202::/48,MY,,,
+2a14:7c0:5203::/48,ID,,,
+2a14:7c0:5204::/48,PH,,,
+2a14:7c0:5205::/48,VN,,,
+2a14:7c0:5206::/48,TH,,,
+2a14:7c0:5207::/48,TR,,,
+2a14:7c0:5208::/48,CN,,,
+2a14:7581:c000::/44,GB,GB-LND,London,
+2a14:7581:c010::/44,US,US-WA,Seattle,
+2a14:7581:c020::/44,DE,DE-HE,Frankfurt am Main,
+2a14:7581:c030::/44,NL,NL-NH,Amsterdam,
+2a14:7581:c040::/44,FR,,Paris,
+2a14:7581:c050::/44,IT,IT-MI,Milan,
+2a14:7581:c060::/44,CA,CA-BC,Vancouver,
+2a14:7581:c070::/44,ZA,ZA-GP,Johannesburg,
+2a14:7581:c080::/44,AE,,,
+2a14:7581:c090::/44,NG,,,
+2a14:7581:c0a0::/44,MD,,,
+2a06:1281:4000::/44,HK,,Hong Kong,
+2a06:1281:4010::/44,TW,TW-TPE,Taipei,
+2a06:1281:4020::/44,KR,,Seoul,
+2a06:1281:4030::/44,SG,,Singapore,
+2a06:1281:4040::/44,US,US-NV,Las Vegas,
+2a06:1281:4050::/44,JP,JP-12,Tokyo,
+2a06:1281:4060::/44,MO,,Macao,
+2a06:1281:4070::/44,US,US-NV,Las Vegas,
+2a06:1281:4080::/44,IN,IN-MH,Mumbai,
+2a06:1281:4090::/44,SG,,Singapore,
+2a06:1281:40a0::/44,TW,TW-TPE,Taipei,
+2a06:1281:40b0::/44,AU,AU-NSW,Sydney,
+2a06:1281:40c0::/44,US,US-CA,San Jose,
+2a06:1281:40d0::/44,US,US-CA,San Jose,
+2a06:1281:40e0::/44,HK,,Hong Kong,
 
 # AS214955 - LaunchPad Network - Last change: Fri, 20 Mar 2026 13:45:04 GMT
 2a0f:1cc5:2d01::/48,CH,,Bern,
