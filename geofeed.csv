@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 24-05-2026 02:33:15
+#Generated on 25-05-2026 02:42:00
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -468,7 +468,7 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-05-23T05:36:50.179853+00:00
+# Generated at: 2026-05-24T05:58:33.500845+00:00
 # Total prefixes: 221
 
 # AS200078 - Potat0 Network - Last change: Sun, 01 Feb 2026 06:16:27 GMT
