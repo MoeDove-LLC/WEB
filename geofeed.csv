@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 26-05-2026 02:31:36
+#Generated on 27-05-2026 02:40:56
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -271,6 +271,32 @@
 154.39.81.0/24,US,US-CA,Los Angeles,
 154.39.82.0/24,US,US-CA,Los Angeles,
 
+#USA-NewIP-Block
+177.2.16.0/20,US,US-CA,Los Angeles,
+177.2.176.0/21,US,US-CA,Los Angeles,
+177.3.32.0/20,US,US-CA,Los Angeles,
+177.3.80.0/21,US,US-CA,Los Angeles,
+177.5.48.0/20,US,US-CA,Los Angeles,
+177.7.128.0/20,US,US-CA,Los Angeles,
+#SG-NewIP-Block
+177.4.0.0/20,SG,SG-01,Singapor
+177.5.64.0/20,SG,SG-01,Singapor
+#JP-NewIP-Block
+177.2.184.0/21,JP,JP-13,Tokyo,
+177.3.88.0/21,JP,JP-13,Tokyo,
+#HK-NewIP-Block
+177.4.0.0/20,HK,,Hong Kong,
+177.4.32.0/20,HK,,Hong Kong,
+177.5.112.0/20,HK,,Hong Kong,
+177.6.176.0/20,HK,,Hong Kong,
+179.236.96.0/21,HK,,Hong Kong,
+177.5.176.0/20,HK,,Hong Kong,
+191.223.32.0/20,HK,,Hong Kong,
+177.5.64.0/20,HK,,Hong Kong,
+179.236.104.0/21,HK,,Hong Kong,
+177.201.224.0/20,HK,,Hong Kong,
+177.4.80.0/20,HK,,Hong Kong,
+
 # AS199794 EMOCLOUD LIMITED
 87.232.80.0/24,HK,,Hong Kong,#MoeDove-One-Europe
 2a13:a5c3:d000::/46,AL,AL-01,Tirana,
@@ -468,8 +494,8 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-05-25T06:23:56.237875+00:00
-# Total prefixes: 221
+# Generated at: 2026-05-26T06:03:21.669093+00:00
+# Total prefixes: 242
 
 # AS200078 - Potat0 Network - Last change: Sun, 01 Feb 2026 06:16:27 GMT
 2a13:b487:1101::/48,CN,CN-SH,Shanghai,
@@ -503,7 +529,7 @@
 2a01:e281:a400::/48,CN,CN-HB,Wuhan,
 2a01:e281:a410::/44,JP,JP-13,Tokyo,
 
-# AS210352 - ZeroWolf Network - Last change: Tue, 19 May 2026 16:17:17 GMT
+# AS210352 - ZeroWolf Network - Last change: Mon, 25 May 2026 18:23:11 GMT
 2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:f01::/48,HK,,Hong Kong,
 2a0f:1cc5:f02::/48,JP,JP-13,Tokyo,
@@ -514,8 +540,8 @@
 2a0f:1cc5:f07::/48,HK,,Hong Kong,
 2a0f:1cc5:f08::/48,NL,NL-NH,Amsterdam,
 2a0f:1cc5:f09::/48,US,US-CA,San Jose,
-2602:f92a:a47d::/48,TW,TW-TPE,Taipei,
-2406:840:9178::/48,TW,TW-TPE,Taipei,
+2602:f92a:a47d::/48,US,US-CA,Los Angeles,
+2406:840:9178::/48,US,US-CA,Los Angeles,
 
 # AS214731 - ETO Networks Limited - Last change: Sat, 23 May 2026 05:36:48 GMT
 2a01:e281:ad00::/43,US,US-NV,Las Vegas,
@@ -709,3 +735,26 @@
 23.158.20.220/30,NZ,NZ-AUK,Auckland,1050
 23.158.20.224/30,AU,AU-NSW,Melbourne,3004
 23.158.20.228/30,AU,AU-NSW,Melbourne,3004
+
+# AS54286 - Taipei101 Network LLC - Last change: Tue, 26 May 2026 06:03:21 GMT
+23.147.120.0/24,US,US-CA,El Segundo,90245
+64.49.28.0/24,US,US-CA,El Segundo,90245
+23.147.120.231/32,MO,MO,Taipa,420
+23.147.120.232/32,KR,KR-11,Seoul,1006
+23.147.120.233/32,SG,SG-01,Downtown Core,18906
+23.147.120.250/32,TW,TW-TTT,Lyudao Township,951002
+23.147.120.251/32,TW,TW-TTT,Lyudao Township,951002
+23.147.120.252/32,TW,TW-TTT,Lyudao Township,951003
+23.147.120.253/32,TW,TW-TTT,Lyudao Township,951004
+23.147.120.254/32,TW,TW-TTT,Lyudao Township,951005
+2602:faa8:205::/48,US,US-CA,El Segundo,90245
+85.149.222.0/24,TW,TW-TTT,Lyudao Township,951005
+2602:faa8:89::/48,TW,TW-TTT,Lyudao Township,951005
+2602:faa8:204::/48,TW,TW-TTT,Lyudao Township,951005
+2a14:7dc0:530::/48,TW,TW-TTT,Lyudao Township,951005
+2a14:7dc0:531::/48,TW,TW-TTT,Lyudao Township,951005
+2a14:7dc0:532::/48,TW,TW-TTT,Lyudao Township,951005
+2a14:7dc0:533::/48,TW,TW-TTT,Lyudao Township,951005
+216.23.110.0/23,HK,HK-ISL,Lamma Island,999077
+216.23.108.0/23,JP,JP-36,Okuizumo,699-1511
+85.149.216.0/23,JP,JP-36,Okuizumo,699-1511
