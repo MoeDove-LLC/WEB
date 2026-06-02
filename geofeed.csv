@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 01-06-2026 02:51:55
+#Generated on 02-06-2026 02:49:11
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -494,8 +494,8 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-05-31T06:14:18.442645+00:00
-# Total prefixes: 281
+# Generated at: 2026-06-01T06:51:26.987648+00:00
+# Total prefixes: 283
 
 # AS153376 - Jilin Province Brick Business Service Limited - Last change: Thu, 28 May 2026 07:24:37 GMT
 2406:840:e600::/44,CN,CN-JL,Changchun,
@@ -556,7 +556,7 @@
 2a01:e281:a400::/48,CN,CN-HB,Wuhan,
 2a01:e281:a410::/44,JP,JP-13,Tokyo,
 
-# AS210352 - ZeroWolf Network - Last change: Mon, 25 May 2026 18:23:11 GMT
+# AS210352 - ZeroWolf Network - Last change: Sun, 31 May 2026 14:01:23 GMT
 2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:f01::/48,HK,,Hong Kong,
 2a0f:1cc5:f02::/48,JP,JP-13,Tokyo,
@@ -564,11 +564,14 @@
 2a0f:1cc5:f04::/48,HK,,Hong Kong,
 2a0f:1cc5:f05::/48,HK,,Hong Kong,
 2a0f:1cc5:f06::/48,US,US-UT,Salt Lake City,
-2a0f:1cc5:f07::/48,HK,,Hong Kong,
+2a0f:1cc5:f07::/48,JP,JP-13,Tokyo,
 2a0f:1cc5:f08::/48,NL,NL-NH,Amsterdam,
 2a0f:1cc5:f09::/48,US,US-CA,San Jose,
 2602:f92a:a47d::/48,US,US-CA,Los Angeles,
 2406:840:9178::/48,US,US-CA,Los Angeles,
+
+# AS213625 - G-HO.ST - Last change: Mon, 01 Jun 2026 06:51:23 GMT
+44.30.15.0/24,US,US-WA,Seattle,
 
 # AS214731 - ETO Networks Limited - Last change: Sat, 23 May 2026 05:36:48 GMT
 2a01:e281:ad00::/43,US,US-NV,Las Vegas,
@@ -763,7 +766,7 @@
 23.158.20.224/30,AU,AU-NSW,Melbourne,3004
 23.158.20.228/30,AU,AU-NSW,Melbourne,3004
 
-# AS54286 - Taipei101 Network LLC - Last change: Tue, 26 May 2026 06:03:21 GMT
+# AS54286 - Taipei101 Network LLC - Last change: Mon, 01 Jun 2026 06:51:25 GMT
 23.147.120.0/24,US,US-CA,El Segundo,90245
 64.49.28.0/24,US,US-CA,El Segundo,90245
 23.147.120.231/32,MO,MO,Taipa,420
@@ -785,6 +788,7 @@
 216.23.110.0/23,HK,HK-ISL,Lamma Island,999077
 216.23.108.0/23,JP,JP-36,Okuizumo,699-1511
 85.149.216.0/23,JP,JP-36,Okuizumo,699-1511
+2602:F9A9:110::/44,JP,JP-36,Okuizumo,699-1511
 
 # AS215172 - JianyueLab LTD - Last change: Wed, 27 May 2026 11:26:46 GMT
 82.39.145.0/24,JP,JP-13,Chiyoda,100-0004
