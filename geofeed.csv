@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 02-06-2026 02:49:11
+#Generated on 03-06-2026 02:57:46
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -494,7 +494,7 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-06-01T06:51:26.987648+00:00
+# Generated at: 2026-06-02T06:38:46.010986+00:00
 # Total prefixes: 283
 
 # AS153376 - Jilin Province Brick Business Service Limited - Last change: Thu, 28 May 2026 07:24:37 GMT
