@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 26-05-2026 02:31:36
+#Generated on 04-06-2026 02:52:53
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -271,6 +271,32 @@
 154.39.81.0/24,US,US-CA,Los Angeles,
 154.39.82.0/24,US,US-CA,Los Angeles,
 
+#USA-NewIP-Block
+177.2.16.0/20,US,US-CA,Los Angeles,
+177.2.176.0/21,US,US-CA,Los Angeles,
+177.3.32.0/20,US,US-CA,Los Angeles,
+177.3.80.0/21,US,US-CA,Los Angeles,
+177.5.48.0/20,US,US-CA,Los Angeles,
+177.7.128.0/20,US,US-CA,Los Angeles,
+#SG-NewIP-Block
+177.4.0.0/20,SG,SG-01,Singapor
+177.5.64.0/20,SG,SG-01,Singapor
+#JP-NewIP-Block
+177.2.184.0/21,JP,JP-13,Tokyo,
+177.3.88.0/21,JP,JP-13,Tokyo,
+#HK-NewIP-Block
+177.4.0.0/20,HK,,Hong Kong,
+177.4.32.0/20,HK,,Hong Kong,
+177.5.112.0/20,HK,,Hong Kong,
+177.6.176.0/20,HK,,Hong Kong,
+179.236.96.0/21,HK,,Hong Kong,
+177.5.176.0/20,HK,,Hong Kong,
+191.223.32.0/20,HK,,Hong Kong,
+177.5.64.0/20,HK,,Hong Kong,
+179.236.104.0/21,HK,,Hong Kong,
+177.201.224.0/20,HK,,Hong Kong,
+177.4.80.0/20,HK,,Hong Kong,
+
 # AS199794 EMOCLOUD LIMITED
 87.232.80.0/24,HK,,Hong Kong,#MoeDove-One-Europe
 2a13:a5c3:d000::/46,AL,AL-01,Tirana,
@@ -468,8 +494,39 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-05-25T06:23:56.237875+00:00
-# Total prefixes: 221
+# Generated at: 2026-06-03T06:49:16.383994+00:00
+# Total prefixes: 287
+
+# AS150184 - OwONetwork - Last change: Tue, 02 Jun 2026 12:58:03 GMT
+2406:840:e301::/48,HK,,Hong Kong,
+2406:840:e302::/48,HK,,Hong Kong,
+2a0f:1cc5:3700::/44,HK,,Hong Kong,
+2a0f:1cc5:3710::/44,TW,,Taipei,
+
+# AS153376 - Jilin Province Brick Business Service Limited - Last change: Thu, 28 May 2026 07:24:37 GMT
+2406:840:e600::/44,CN,CN-JL,Changchun,
+2406:840:e600::/45,CN,CN-ZJ,Hangzhou,
+2a0f:1cc5:10::/44,HK,,,
+44.32.191.0/24,HK,,,
+44.32.191.11/32,JP,JP-13,Tokyo,
+44.32.191.12/32,CA,CA-ON,Toronto,
+44.32.191.128/28,CN,CN-JL,Antu,
+44.32.191.13/32,JP,JP-13,Tokyo,
+44.32.191.16/27,CN,CN-ZJ,Hangzhou,
+44.32.191.48/27,JP,JP-13,Tokyo,
+44.32.191.6/32,HK,,,
+44.32.191.7/32,CN,CN-ZJ,Hangzhou,
+44.32.191.8/32,CN,CN-ZJ,Hangzhou,
+44.32.191.80/28,CN,CN-JL,Changchun,
+44.32.191.9/32,CN,CN-SH,Shanghai,
+44.32.191.96/27,CN,CN-JL,Changchun,
+
+# AS197817 - Nyco Cloud Network - Last change: Sun, 31 May 2026 03:24:12 GMT
+2a14:ae00:51::/48,HK,,Hong Kong,
+2a14:ae00:52::/48,US,US-CA,Fremont,
+2a14:ae00:53::/48,JP,JP-13,Tokyo,
+2a14:ae00:54::/48,SG,,Singapore,
+2a14:ae00:55::/48,DE,DE-HE,Frankfurt am Main,
 
 # AS200078 - Potat0 Network - Last change: Sun, 01 Feb 2026 06:16:27 GMT
 2a13:b487:1101::/48,CN,CN-SH,Shanghai,
@@ -482,12 +539,14 @@
 2a13:b487:1109::/48,TW,TW-TPE,Taipei,
 2a13:b487:1110::/48,AU,AU-NSW,Sydney,
 
-# AS203309 - ChocoNet - Last change: Sat, 16 May 2026 07:20:11 GMT
+# AS203309 - ChocoNet - Last change: Sat, 30 May 2026 04:20:38 GMT
 2a0f:1cc5:110::/44,HK,,Kowloon,999077
 2a0f:1cc5:130::/44,JP,JP-13,Tokyo,100-0001
 2a0f:1cc5:140::/44,HK,,Kowloon,999077
 2a0f:1cc5:150::/44,TW,TW-TPE,Taipei,10060
 2a0f:1cc5:160::/44,NL,NL-NH,Amsterdam,1011AB
+2a0f:1cc5:170::/44,JP,JP-13,Tokyo,100-0001
+44.30.131.170/31,JP,JP-13,Tokyo,100-0001
 
 # AS209294 - FansNET - Last change: Mon, 18 May 2026 09:38:43 GMT
 44.31.212.1/32,CN,CN-HB,Wuhan,
@@ -503,7 +562,7 @@
 2a01:e281:a400::/48,CN,CN-HB,Wuhan,
 2a01:e281:a410::/44,JP,JP-13,Tokyo,
 
-# AS210352 - ZeroWolf Network - Last change: Tue, 19 May 2026 16:17:17 GMT
+# AS210352 - ZeroWolf Network - Last change: Sun, 31 May 2026 14:01:23 GMT
 2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
 2a0f:1cc5:f01::/48,HK,,Hong Kong,
 2a0f:1cc5:f02::/48,JP,JP-13,Tokyo,
@@ -511,11 +570,14 @@
 2a0f:1cc5:f04::/48,HK,,Hong Kong,
 2a0f:1cc5:f05::/48,HK,,Hong Kong,
 2a0f:1cc5:f06::/48,US,US-UT,Salt Lake City,
-2a0f:1cc5:f07::/48,HK,,Hong Kong,
+2a0f:1cc5:f07::/48,JP,JP-13,Tokyo,
 2a0f:1cc5:f08::/48,NL,NL-NH,Amsterdam,
 2a0f:1cc5:f09::/48,US,US-CA,San Jose,
-2602:f92a:a47d::/48,TW,TW-TPE,Taipei,
-2406:840:9178::/48,TW,TW-TPE,Taipei,
+2602:f92a:a47d::/48,US,US-CA,Los Angeles,
+2406:840:9178::/48,US,US-CA,Los Angeles,
+
+# AS213625 - G-HO.ST - Last change: Mon, 01 Jun 2026 06:51:23 GMT
+44.30.15.0/24,US,US-WA,Seattle,
 
 # AS214731 - ETO Networks Limited - Last change: Sat, 23 May 2026 05:36:48 GMT
 2a01:e281:ad00::/43,US,US-NV,Las Vegas,
@@ -709,3 +771,45 @@
 23.158.20.220/30,NZ,NZ-AUK,Auckland,1050
 23.158.20.224/30,AU,AU-NSW,Melbourne,3004
 23.158.20.228/30,AU,AU-NSW,Melbourne,3004
+
+# AS54286 - Taipei101 Network LLC - Last change: Mon, 01 Jun 2026 06:51:25 GMT
+23.147.120.0/24,US,US-CA,El Segundo,90245
+64.49.28.0/24,US,US-CA,El Segundo,90245
+23.147.120.231/32,MO,MO,Taipa,420
+23.147.120.232/32,KR,KR-11,Seoul,1006
+23.147.120.233/32,SG,SG-01,Downtown Core,18906
+23.147.120.250/32,TW,TW-TTT,Lyudao Township,951002
+23.147.120.251/32,TW,TW-TTT,Lyudao Township,951002
+23.147.120.252/32,TW,TW-TTT,Lyudao Township,951003
+23.147.120.253/32,TW,TW-TTT,Lyudao Township,951004
+23.147.120.254/32,TW,TW-TTT,Lyudao Township,951005
+2602:faa8:205::/48,US,US-CA,El Segundo,90245
+85.149.222.0/24,TW,TW-TTT,Lyudao Township,951005
+2602:faa8:89::/48,TW,TW-TTT,Lyudao Township,951005
+2602:faa8:204::/48,TW,TW-TTT,Lyudao Township,951005
+2a14:7dc0:530::/48,TW,TW-TTT,Lyudao Township,951005
+2a14:7dc0:531::/48,TW,TW-TTT,Lyudao Township,951005
+2a14:7dc0:532::/48,TW,TW-TTT,Lyudao Township,951005
+2a14:7dc0:533::/48,TW,TW-TTT,Lyudao Township,951005
+216.23.110.0/23,HK,HK-ISL,Lamma Island,999077
+216.23.108.0/23,JP,JP-36,Okuizumo,699-1511
+85.149.216.0/23,JP,JP-36,Okuizumo,699-1511
+2602:F9A9:110::/44,JP,JP-36,Okuizumo,699-1511
+
+# AS215172 - JianyueLab LTD - Last change: Wed, 27 May 2026 11:26:46 GMT
+82.39.145.0/24,JP,JP-13,Chiyoda,100-0004
+178.83.178.0/24,JP,JP-13,Chiyoda,100-0004
+208.68.182.0/24,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:208::/48,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:210::/48,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:220::/44,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:230::/44,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:240::/44,HK,,Hong Kong,
+2a0f:1cc5:250::/44,US,,Fremont,
+2a0f:1cc5:260::/44,TW,,Taipei,
+2a0f:1cc5:270::/44,HK,,Hong Kong,
+2a0f:1cc5:280::/44,MY,,Johor,
+2a0f:1cc5:290::/44,DE,,Frankfurt,
+2a0f:1cc5:2a0::/44,CA,,Toronto,
+2a0f:1cc5:2b0::/44,NL,,Amsterdam,
+2a12:cb40::/29,UK,,London,
