@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 09-06-2026 02:27:18
+#Generated on 10-06-2026 02:40:36
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -500,7 +500,7 @@
 2a13:a5c3:d688::/46,MO,,Macao,
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-06-08T06:39:23.376430+00:00
+# Generated at: 2026-06-09T06:05:55.321645+00:00
 # Total prefixes: 288
 
 # AS150184 - OwONetwork - Last change: Tue, 02 Jun 2026 12:58:03 GMT
