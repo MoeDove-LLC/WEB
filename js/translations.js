@@ -7,7 +7,7 @@ const translations = {
         navNonProfit: "Non-Profit Projects",
         navNetwork: "Our Network",
         ciraBannerText: "Explore our advanced Internet Routing Analytics project:",
-        heroTitle: "Engineering the Future of <br/> Digital Infrastructure.",
+        heroTitle: "Engineering the Future<br/>of Digital Infrastructure.",
         heroSubtitle: "Integrated Cloud, Broadband, and Dedicated Line solutions on a world-class global network.",
         heroButton: "Contact NOC",
         statsCountries: "Countries & Regions",

@@ -7,7 +7,8 @@
     <meta name="description" content="MoeDove LLC provides comprehensive Cloud, Broadband, and Dedicated Line services, powered by a robust global network.">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="js/translations.js"></script>
     
@@ -158,6 +159,25 @@
         .relative-content { position: relative; z-index: 1; }
 
         .nav-dot.active { background-color: #fff; transform: scale(1.5); box-shadow: 0 0 10px rgba(255,255,255,0.8); }
+
+        /* Language-specific font adjustments — unified lighter weight across all langs */
+        html[lang="zh-cn"],
+        html[lang="zh-cn"] body {
+            font-family: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+        }
+        html[lang="zh-tw"],
+        html[lang="zh-tw"] body {
+            font-family: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+        }
+        /* Cap heavy weights globally for all languages */
+        html[lang="zh-cn"] .font-extrabold,
+        html[lang="zh-cn"] .font-black,
+        html[lang="zh-tw"] .font-extrabold,
+        html[lang="zh-tw"] .font-black,
+        html[lang="en"] .font-extrabold,
+        html[lang="en"] .font-black {
+            font-weight: 700 !important;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-white/20 selection:text-white">
@@ -253,8 +273,8 @@
                     Empowering the Next Generation Network
                 </div>
                 
-                <h2 class="text-5xl sm:text-7xl font-extrabold tracking-tight text-gradient-animated animate-gradient-x pb-2 leading-tight" data-lang="heroTitle">
-                    Engineering the Future of <br/> Digital Infrastructure.
+                <h2 class="text-5xl sm:text-7xl font-semibold tracking-tight text-gradient-animated animate-gradient-x pb-2 leading-tight" data-lang="heroTitle">
+                    Engineering the Future<br/>of Digital Infrastructure.
                 </h2>
                 
                 <p class="text-lg text-zinc-400 leading-relaxed font-medium max-w-2xl mx-auto mt-6" data-lang="heroSubtitle">
@@ -277,7 +297,7 @@
                     <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(59,130,246,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
                         <i data-lucide="globe" class="w-5 h-5 text-blue-400 group-hover:text-blue-300"></i>
                     </div>
-                    <span class="text-3xl font-black text-white tracking-tight counter" data-target="36">0</span>
+                    <span class="text-3xl font-bold text-white tracking-tight counter" data-target="36">0</span>
                     <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsCountries">Countries & Regions</span>
                 </div>
             </div>
@@ -286,7 +306,7 @@
                     <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(16,185,129,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
                         <i data-lucide="activity" class="w-5 h-5 text-emerald-400 group-hover:text-emerald-300"></i>
                     </div>
-                    <span class="text-3xl font-black text-white tracking-tight"><span class="counter" data-target="70">0</span>+</span>
+                    <span class="text-3xl font-bold text-white tracking-tight"><span class="counter" data-target="70">0</span>+</span>
                     <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsCapacity">Gbps Capacity</span>
                 </div>
             </div>
@@ -295,7 +315,7 @@
                     <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(168,85,247,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
                         <i data-lucide="network" class="w-5 h-5 text-purple-400 group-hover:text-purple-300"></i>
                     </div>
-                    <span class="text-3xl font-black text-white tracking-tight"><span class="counter" data-target="1170">0</span>+</span>
+                    <span class="text-3xl font-bold text-white tracking-tight"><span class="counter" data-target="1170">0</span>+</span>
                     <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsPeers">Peering Partners</span>
                 </div>
             </div>
@@ -304,7 +324,7 @@
                     <div class="w-10 h-10 rounded-full bg-pink-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(236,72,153,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
                         <i data-lucide="git-branch" class="w-5 h-5 text-pink-400 group-hover:text-pink-300"></i>
                     </div>
-                    <span class="text-3xl font-black text-white tracking-tight"><span class="counter" data-target="100">0</span>+</span>
+                    <span class="text-3xl font-bold text-white tracking-tight"><span class="counter" data-target="100">0</span>+</span>
                     <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsDownstreams">Downstreams</span>
                 </div>
             </div>
@@ -314,7 +334,7 @@
         <section id="mission" class="space-y-6 relative reveal-on-scroll z-20 scroll-mt-24">
             <div class="flex flex-col gap-2 pb-4 border-b border-white/5 text-center items-center relative">
                 <div class="absolute -top-10 w-full h-32 bg-pink-500/5 blur-3xl rounded-full pointer-events-none"></div>
-                <h3 class="text-3xl font-bold tracking-tight text-white flex items-center gap-3 justify-center relative z-10">
+                <h3 class="text-3xl font-semibold tracking-tight text-white flex items-center gap-3 justify-center relative z-10">
                     <div class="p-2 rounded-lg bg-pink-500/10 border border-pink-500/20 shadow-[0_0_15px_rgba(236,72,153,0.2)]">
                         <i data-lucide="heart-handshake" class="w-6 h-6 text-pink-400"></i>
                     </div>
@@ -329,7 +349,7 @@
                     <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-2 shadow-inner group-hover:scale-110 transition-transform duration-500 ease-smooth">
                         <i data-lucide="users" class="w-6 h-6 text-purple-400"></i>
                     </div>
-                    <h4 class="text-lg font-bold text-white tracking-wide" data-lang="missionSub1">Community Driven</h4>
+                    <h4 class="text-lg font-semibold text-white tracking-wide" data-lang="missionSub1">Community Driven</h4>
                     <p class="text-sm text-zinc-400 leading-relaxed font-medium" data-lang="missionText1">
                         MoeDove LLC is a registered business entity, yet we stand apart—we actively adopt community suggestions and are dedicated to strengthening the global digital infrastructure. Our primary goal is not profit, but the advancement of network stability, accessibility, and education.
                     </p>
@@ -340,7 +360,7 @@
                     <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-2 shadow-inner group-hover:scale-110 transition-transform duration-500 ease-smooth">
                         <i data-lucide="server" class="w-6 h-6 text-blue-400"></i>
                     </div>
-                    <h4 class="text-lg font-bold text-white tracking-wide" data-lang="missionSub2">Infrastructure & Education</h4>
+                    <h4 class="text-lg font-semibold text-white tracking-wide" data-lang="missionSub2">Infrastructure & Education</h4>
                     <p class="text-sm text-zinc-400 leading-relaxed font-medium" data-lang="missionText2">
                         We proudly host the RIPE NCC K-ROOT node in Hong Kong to bolster regional DNS resilience. Furthermore, we provide free BGP Connection to researchers and enthusiasts, fostering the next generation of network engineers.
                     </p>
@@ -351,7 +371,7 @@
                     <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-2 shadow-inner group-hover:scale-110 transition-transform duration-500 ease-smooth">
                         <i data-lucide="file-badge" class="w-6 h-6 text-emerald-400"></i>
                     </div>
-                    <h4 class="text-lg font-bold text-white tracking-wide" data-lang="missionSub3">Affordable Resources</h4>
+                    <h4 class="text-lg font-semibold text-white tracking-wide" data-lang="missionSub3">Affordable Resources</h4>
                     <p class="text-sm text-zinc-400 leading-relaxed font-medium" data-lang="missionText3">
                         To support our community, we also offer RIPE and ARIN LIR services (ASN registration and IP allocation) strictly at cost price. We believe in open, affordable access to internet resources for everyone.
                     </p>
