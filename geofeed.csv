@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 12-06-2026 08:03:48
+#Generated on 14-06-2026 02:50:53
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -677,8 +677,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-06-12T06:37:40.318289+00:00
-# Total prefixes: 288
+# Generated at: 2026-06-13T06:13:00.442423+00:00
+# Total prefixes: 291
 
 # AS150184 - OwONetwork - Last change: Tue, 02 Jun 2026 12:58:03 GMT
 2406:840:e301::/48,HK,,Hong Kong,
@@ -686,7 +686,7 @@
 2a0f:1cc5:3700::/44,HK,,Hong Kong,
 2a0f:1cc5:3710::/44,TW,,Taipei,
 
-# AS153376 - Jilin Province Brick Business Service Limited - Last change: Thu, 28 May 2026 07:24:37 GMT
+# AS153376 - Jilin Province Brick Business Service Limited - Last change: Fri, 12 Jun 2026 10:13:31 GMT
 2406:840:e600::/44,CN,CN-JL,Changchun,
 2406:840:e600::/45,CN,CN-ZJ,Hangzhou,
 2a0f:1cc5:10::/44,HK,,,
@@ -703,6 +703,8 @@
 44.32.191.80/28,CN,CN-JL,Changchun,
 44.32.191.9/32,CN,CN-SH,Shanghai,
 44.32.191.96/27,CN,CN-JL,Changchun,
+2a12:cb41:1200::/44,JP,JP-13,Tokyo,
+2a12:cb41:1210::/44,JP,,,
 
 # AS197817 - Nyco Cloud Network - Last change: Sun, 31 May 2026 03:24:12 GMT
 2a14:ae00:51::/48,HK,,Hong Kong,
@@ -955,7 +957,7 @@
 23.158.20.224/30,AU,AU-NSW,Melbourne,3004
 23.158.20.228/30,AU,AU-NSW,Melbourne,3004
 
-# AS54286 - Taipei101 Network LLC - Last change: Sat, 06 Jun 2026 05:51:31 GMT
+# AS54286 - Taipei101 Network LLC - Last change: Sat, 13 Jun 2026 06:12:59 GMT
 23.147.120.0/24,US,US-CA,El Segundo,90245
 64.49.28.0/24,US,US-CA,El Segundo,90245
 23.147.120.231/32,MO,MO,Taipa,420
@@ -977,6 +979,7 @@
 216.23.110.0/23,HK,HK-ISL,Lamma Island,999077
 216.23.108.0/23,JP,JP-36,Okuizumo,699-1511
 85.149.216.0/23,JP,JP-36,Okuizumo,699-1511
+85.149.219.0/24,JP,JP-36,Okuizumo,699-1511
 2602:F9A9:110::/44,JP,JP-36,Okuizumo,699-1511
 2602:FAA8:260::/44,JP,JP-36,Okuizumo,699-1511
 
