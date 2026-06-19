@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 18-06-2026 02:48:37
+#Generated on 19-06-2026 03:34:04
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -687,8 +687,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-06-17T07:05:37.351095+00:00
-# Total prefixes: 294
+# Generated at: 2026-06-18T06:48:34.120358+00:00
+# Total prefixes: 317
 
 # AS150184 - OwONetwork - Last change: Tue, 02 Jun 2026 12:58:03 GMT
 2406:840:e301::/48,HK,,Hong Kong,
@@ -735,6 +735,14 @@
 2a13:b487:1107::/48,CN,CN-GD,Shenzhen,
 2a13:b487:1109::/48,TW,TW-TPE,Taipei,
 2a13:b487:1110::/48,AU,AU-NSW,Sydney,
+
+# AS203923 - Hoyoverse Network - Last change: Wed, 17 Jun 2026 16:38:59 GMT
+2a0f:1cc5:403::/48,JP,JP-13,Tokyo,100-0001
+2a0f:1cc5:405::/48,GB,GB-ENG,London,999020
+2a0f:1cc5:401::/48,HK,,Tsuen Wan,999077
+2a0f:1cc5:402::/48,MO,,Macao,999078
+2a0f:1cc5:404::/48,TW,,Tainan,708
+2406:840:9666::/48,MO,,Macao,999078
 
 # AS209294 - FansNET - Last change: Mon, 18 May 2026 09:38:43 GMT
 44.31.212.1/32,CN,CN-HB,Wuhan,
@@ -830,11 +838,12 @@
 2a0f:1cc5:1e00::/48,JP,JP-13,Tokyo,113-0033
 2a0f:1cc5:1e01::/48,JP,JP-13,Tokyo,113-0033
 
-# AS215502 - Yxom Network - Last change: Wed, 20 May 2026 06:04:01 GMT
+# AS215502 - Yxom Network - Last change: Thu, 18 Jun 2026 06:48:30 GMT
 2a13:aac4:f000::/44,HK,,Central and Western,
 2a13:aac4:f00c::/48,HK,,Central and Western,
 2a13:aac4:f00d::/48,US,US-NV,Las Vegas,89119
 2a06:9f81:4600::/44,TW,TW-TPE,Taipei,
+2a06:9f81:460a::/48,TW,TW-TPE,Taipei,
 2a06:9f81:4610::/44,JP,JP-13,Tokyo,151-0053
 2a06:9f81:4620::/44,DE,DE-HE,Frankfurt,
 2a06:9f81:4640::/44,US,US-NV,Las Vegas,89119
@@ -1013,3 +1022,21 @@
 23.175.201.0/24,HK,,Hong Kong,
 2602:F921::/44,US,,,
 2602:f921:4::/46,US,US-MO,Kansas City,
+
+# AS215172 - JianyueLab LTD - Last change: Thu, 11 Jun 2026 00:21:01 GMT
+82.39.145.0/24,JP,JP-13,Chiyoda,100-0004
+178.83.178.0/24,JP,JP-13,Chiyoda,100-0004
+208.68.182.0/24,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:208::/48,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:210::/48,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:220::/44,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:230::/44,JP,JP-13,Chiyoda,100-0004
+2a0f:1cc5:240::/44,HK,,Hong Kong,
+2a0f:1cc5:250::/44,US,,Fremont,
+2a0f:1cc5:260::/44,TW,,Taipei,
+2a0f:1cc5:270::/44,HK,,Hong Kong,
+2a0f:1cc5:280::/44,MY,,Johor,
+2a0f:1cc5:290::/44,DE,,Frankfurt,
+2a0f:1cc5:2a0::/44,CA,,Toronto,
+2a0f:1cc5:2b0::/44,NL,,Amsterdam,
+2a12:cb40::/29,UK,,London,
