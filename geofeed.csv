@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 20-06-2026 02:38:07
+#Generated on 21-06-2026 02:54:26
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -687,8 +687,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-06-19T07:02:48.622662+00:00
-# Total prefixes: 896
+# Generated at: 2026-06-20T06:17:12.650342+00:00
+# Total prefixes: 914
 
 # AS140227 - HONG KONG COMMUNICATIONS INTERNATIONAL CO., LIMITED - Last change: Tue, 16 Jun 2026 05:38:15 GMT
 177.2.16.0/24,US,US-CA,Los Angeles,
@@ -1308,12 +1308,34 @@
 2a14:ae00:54::/48,SG,,Singapore,
 2a14:ae00:55::/48,DE,DE-HE,Frankfurt am Main,
 
-# AS203923 - Hoyoverse Network - Last change: Wed, 17 Jun 2026 16:38:59 GMT
-2a0f:1cc5:403::/48,JP,JP-13,Tokyo,100-0001
-2a0f:1cc5:405::/48,GB,GB-ENG,London,999020
+# AS200078 - Potat0 Network - Last change: Sun, 01 Feb 2026 06:16:27 GMT
+2a13:b487:1101::/48,CN,CN-SH,Shanghai,
+2a13:b487:1102::/48,CN,CN-SH,Shanghai,
+2a13:b487:1103::/48,US,US-NV,Las Vegas,
+2a13:b487:1104::/48,HK,CN-HK,Hong Kong,
+2a13:b487:1105::/48,DE,DE-HE,Frankfurt,
+2a13:b487:1106::/48,CN,CN-ZJ,Hangzhou,
+2a13:b487:1107::/48,CN,CN-GD,Shenzhen,
+2a13:b487:1109::/48,TW,TW-TPE,Taipei,
+2a13:b487:1110::/48,AU,AU-NSW,Sydney,
+
+# AS203309 - ChocoNet - Last change: Sat, 30 May 2026 04:20:38 GMT
+2a0f:1cc5:110::/44,HK,,Kowloon,999077
+2a0f:1cc5:130::/44,JP,JP-13,Tokyo,100-0001
+2a0f:1cc5:140::/44,HK,,Kowloon,999077
+2a0f:1cc5:150::/44,TW,TW-TPE,Taipei,10060
+2a0f:1cc5:160::/44,NL,NL-NH,Amsterdam,1011AB
+2a0f:1cc5:170::/44,JP,JP-13,Tokyo,100-0001
+44.30.131.170/31,JP,JP-13,Tokyo,100-0001
+
+# AS203923 - Hoyoverse Network - Last change: Fri, 19 Jun 2026 09:26:44 GMT
 2a0f:1cc5:401::/48,HK,,Tsuen Wan,999077
 2a0f:1cc5:402::/48,MO,,Macao,999078
+2a0f:1cc5:403::/48,JP,JP-13,Tokyo,100-0001
 2a0f:1cc5:404::/48,TW,,Tainan,708
+2a0f:1cc5:405::/48,GB,GB-ENG,London,999020
+2a0f:1cc5:406::/48,MY,,Kuala Lumpur,50000
+2a0f:1cc5:407::/48,HK,,Tsuen Wan,999077
 2406:840:9666::/48,MO,,Macao,999078
 
 # AS206069 - Cornseed Limited - Last change: Thu, 18 Jun 2026 07:26:08 GMT
