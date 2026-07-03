@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 02-07-2026 02:33:01
+#Generated on 03-07-2026 02:08:21
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -108,8 +108,8 @@
 
 #Pigeon Internet
 2602:f92a:a000::/40,TW,TW-TPE,Taipei,
-44.30.30.0/25,JP,JP-13,Tokyo,
-44.30.30.128/25,JP,JP-13,Tokyo,
+44.30.30.0/25,TW,TW-TPE,Taipei,
+44.30.30.128/25,TW,TW-TPE,Taipei,
 23.175.25.0/24,TW,TW-TPE,Taipei,
 
 # Cooperating Partners
@@ -228,7 +228,7 @@
 2a13:a5c3:d160::/46,MG,MG-A,Antananarivo,
 2a13:a5c3:d164::/46,MW,MW-C,Lilongwe,
 2a13:a5c3:d168::/46,MR,MR-14,Nouakchott,
-2a13:a5c3:d16c::/46,MU,MU-PL,Port Louis,
+2a13:a5c3:d16c::/46,MU,,Port Louis,
 2a13:a5c3:d170::/46,FR,FR-976,Mamoudzou,
 2a13:a5c3:d174::/46,MA,MA-07,Marrakech,
 2a13:a5c3:d178::/46,MZ,MZ-L,Maputo,
@@ -348,10 +348,10 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-07-01T06:22:13.267421+00:00
-# Total prefixes: 958
+# Generated at: 2026-07-02T05:55:22.792623+00:00
+# Total prefixes: 959
 
-# AS140227 - HONG KONG COMMUNICATIONS INTERNATIONAL CO., LIMITED - Last change: Tue, 30 Jun 2026 01:26:17 GMT
+# AS140227 - HONG KONG COMMUNICATIONS INTERNATIONAL CO., LIMITED - Last change: Wed, 01 Jul 2026 09:08:26 GMT
 177.2.16.0/24,US,US-CA,Los Angeles,
 177.2.17.0/24,US,US-CA,Los Angeles,
 177.2.18.0/24,US,US-CA,Los Angeles,
@@ -416,6 +416,7 @@
 177.5.61.0/24,US,US-CA,Los Angeles,
 177.5.62.0/24,US,US-CA,Los Angeles,
 177.5.63.0/24,US,US-CA,Los Angeles,
+177.7.128.0/20,US,US-CA,Los Angeles,
 177.7.128.0/24,US,US-CA,Los Angeles,
 177.7.129.0/24,US,US-CA,Los Angeles,
 177.7.130.0/24,US,US-CA,Los Angeles,
@@ -576,6 +577,7 @@
 191.223.45.0/24,HK,,Hong Kong,
 191.223.46.0/24,HK,,Hong Kong,
 191.223.47.0/24,HK,,Hong Kong,
+45.194.16.0/21,SG,SG-01,Singapore,
 45.194.16.0/24,SG,SG-01,Singapore,
 45.194.17.0/24,SG,SG-01,Singapore,
 45.194.18.0/24,SG,SG-01,Singapore,
@@ -595,6 +597,7 @@
 38.181.55.0/24,SG,SG-01,Singapore,
 103.148.218.0/24,HK,,Hong Kong,
 103.148.219.0/24,HK,,Hong Kong,
+104.143.32.0/20,HK,,Hong Kong,
 104.143.32.0/24,HK,,Hong Kong,
 104.143.33.0/24,HK,,Hong Kong,
 104.143.34.0/24,HK,,Hong Kong,
@@ -642,6 +645,7 @@
 154.19.97.0/24,HK,,Hong Kong,
 154.19.98.0/24,HK,,Hong Kong,
 154.19.99.0/24,HK,,Hong Kong,
+154.23.176.0/20,HK,,Hong Kong,
 154.23.176.0/24,HK,,Hong Kong,
 154.23.177.0/24,HK,,Hong Kong,
 154.23.178.0/24,HK,,Hong Kong,
@@ -662,10 +666,12 @@
 154.38.117.0/24,HK,,Hong Kong,
 154.38.118.0/24,HK,,Hong Kong,
 154.38.119.0/24,HK,,Hong Kong,
+154.39.64.0/22,HK,,Hong Kong,
 154.39.64.0/24,HK,,Hong Kong,
 154.39.65.0/24,HK,,Hong Kong,
 154.39.66.0/24,HK,,Hong Kong,
 154.39.67.0/24,HK,,Hong Kong,
+154.86.16.0/20,HK,,Hong Kong,
 154.86.16.0/24,HK,,Hong Kong,
 154.86.17.0/24,HK,,Hong Kong,
 154.86.18.0/24,HK,,Hong Kong,
@@ -682,7 +688,6 @@
 154.86.29.0/24,HK,,Hong Kong,
 154.86.30.0/24,HK,,Hong Kong,
 154.86.31.0/24,HK,,Hong Kong,
-155.235.244.0/24,HK,,Hong Kong,
 156.240.104.0/24,HK,,Hong Kong,
 156.240.105.0/24,HK,,Hong Kong,
 156.240.106.0/24,HK,,Hong Kong,
@@ -691,13 +696,12 @@
 156.240.109.0/24,HK,,Hong Kong,
 156.240.110.0/24,HK,,Hong Kong,
 156.240.111.0/24,HK,,Hong Kong,
+172.81.100.0/23,HK,,Hong Kong,
 172.81.100.0/24,HK,,Hong Kong,
 172.81.101.0/24,HK,,Hong Kong,
 198.176.59.0/24,HK,,Hong Kong,
-198.176.60.0/24,HK,,Hong Kong,
-198.176.61.0/24,HK,,Hong Kong,
-198.176.62.0/24,HK,,Hong Kong,
-198.176.63.0/24,HK,,Hong Kong,
+198.176.60.0/22,HK,,Hong Kong,
+206.119.80.0/21,HK,,Hong Kong,
 206.119.80.0/24,HK,,Hong Kong,
 206.119.81.0/24,HK,,Hong Kong,
 206.119.82.0/24,HK,,Hong Kong,
@@ -710,7 +714,6 @@
 206.119.89.0/24,HK,,Hong Kong,
 206.119.90.0/24,HK,,Hong Kong,
 206.119.91.0/24,HK,,Hong Kong,
-218.98.111.0/24,HK,,Hong Kong,
 38.181.0.0/24,HK,,Hong Kong,
 38.181.1.0/24,HK,,Hong Kong,
 38.181.10.0/24,HK,,Hong Kong,
@@ -812,10 +815,8 @@
 103.127.241.0/24,JP,JP-13,Tokyo,
 103.127.242.0/24,JP,JP-13,Tokyo,
 103.127.243.0/24,JP,JP-13,Tokyo,
-172.81.96.0/24,JP,JP-13,Tokyo,
-172.81.97.0/24,JP,JP-13,Tokyo,
-172.81.98.0/24,JP,JP-13,Tokyo,
-172.81.99.0/24,JP,JP-13,Tokyo,
+172.81.96.0/22,JP,JP-13,Tokyo,
+207.56.224.0/21,JP,JP-13,Tokyo,
 207.56.224.0/24,JP,JP-13,Tokyo,
 207.56.225.0/24,JP,JP-13,Tokyo,
 207.56.226.0/24,JP,JP-13,Tokyo,
