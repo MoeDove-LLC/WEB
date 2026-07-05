@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 04-07-2026 02:06:45
+#Generated on 05-07-2026 02:22:01
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -348,8 +348,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-07-03T05:49:36.978262+00:00
-# Total prefixes: 959
+# Generated at: 2026-07-04T05:42:08.238208+00:00
+# Total prefixes: 958
 
 # AS140227 - HONG KONG COMMUNICATIONS INTERNATIONAL CO., LIMITED - Last change: Wed, 01 Jul 2026 09:08:26 GMT
 177.2.16.0/24,US,US-CA,Los Angeles,
@@ -1336,9 +1336,8 @@
 2a0e:aa07:e257::/48,US,US-WA,Seattle,
 2a0e:aa07:e258::/48,US,US-CA,San Jose,
 
-# AS215172 - JianyueLab LTD - Last change: Thu, 11 Jun 2026 00:21:01 GMT
+# AS215172 - JianyueLab LTD - Last change: Fri, 03 Jul 2026 07:28:34 GMT
 82.39.145.0/24,JP,JP-13,Chiyoda,100-0004
-178.83.178.0/24,JP,JP-13,Chiyoda,100-0004
 208.68.182.0/24,JP,JP-13,Chiyoda,100-0004
 2a0f:1cc5:208::/48,JP,JP-13,Chiyoda,100-0004
 2a0f:1cc5:210::/48,JP,JP-13,Chiyoda,100-0004
