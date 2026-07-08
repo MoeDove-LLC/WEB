@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 08-07-2026 19:13:54
+#Generated on 08-07-2026 19:22:41
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -119,8 +119,6 @@
 208.68.181.0/24,NL,NL-NH,Amsterdam,
 2a14:7580:758::/48,NL,NL-NH,Amsterdam,
 2602:F92A:A47C::/48,NL,NL-NH,Amsterdam,
-208.68.182.0/24,JP,JP-13,Chiyoda,100-0004
-
 
 # Geofeed for AS150289 (Sun YanZheng)
 
@@ -146,10 +144,6 @@
 # AS199794 EMOCLOUD LIMITED
 87.232.80.0/24,HK,,Hong Kong,
 #MDONE
-2a13:a5c3:d600::/46,CN,CN-BJ,Beijing,
-2a13:a5c3:d680::/46,TW,TW-TPE,Taipei,
-2a13:a5c3:d684::/46,JP,JP-13,Tokyo,
-2a13:a5c3:d688::/46,MO,,Macao,
 
 #MoeDove-One-Europe
 2a13:a5c3:d000::/46,AL,AL-01,Tirana,
@@ -348,8 +342,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-07-08T19:10:00.608039+00:00
-# Total prefixes: 1007
+# Generated at: 2026-07-08T19:22:03.556415+00:00
+# Total prefixes: 1006
 
 # AS140227 - HONG KONG COMMUNICATIONS INTERNATIONAL CO., LIMITED - Last change: Mon, 06 Jul 2026 07:01:22 GMT
 177.2.16.0/24,US,US-CA,Los Angeles,
@@ -1402,4 +1396,3 @@
 2a0f:1cc5:290::/44,DE,,Frankfurt,
 2a0f:1cc5:2a0::/44,CA,,Toronto,
 2a0f:1cc5:2b0::/44,NL,,Amsterdam,
-2a12:cb40::/29,UK,,London,
