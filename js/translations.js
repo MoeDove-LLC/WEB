@@ -6,7 +6,7 @@ const translations = {
         navServices: "Our Mission",
         navNonProfit: "Non-Profit Projects",
         navNetwork: "Our Network",
-        ciraBannerText: "Explore our advanced Internet Routing Analytics project:",
+        ciraBannerText: "Explore advanced Internet routing analytics and insights.",
         heroTitle: "Engineering the Future<br/>of Digital Infrastructure.",
         heroSubtitle: "Integrated Cloud, Broadband, and Dedicated Line solutions on a world-class global network.",
         heroButton: "Contact NOC",
@@ -17,6 +17,7 @@ const translations = {
 
         // Homepage Mission Section (Replaces Services Grid)
         missionTitle: "Our Non-Profit Mission",
+        missionSummary: "Infrastructure should be open, resilient, and useful to the community that depends on it.",
         missionSub1: "Community Driven",
         missionSub2: "Infrastructure & Education",
         missionSub3: "Affordable Resources",
@@ -32,6 +33,8 @@ const translations = {
         // Non-Profit Page
         npTitle: "Our Non-Profit Initiatives",
         npSubtitle: "Giving back to the community with infrastructure and resources.",
+        activeProjects: "Active Projects",
+        projectsSummary: "Infrastructure made practical, transparent, and accessible.",
         krootTitle: "K-ROOT & RIPE AuthDNS",
         krootDesc: "We host K-ROOT and RIPE AuthDNS in Hong Kong and Kansas. Our AuthDNS handles 10% of the global query rate.",
         krootTag: "Hong Kong & Kansas",
@@ -260,7 +263,7 @@ const translations = {
         navServices: "我们的使命",
         navNonProfit: "非盈利项目",
         navNetwork: "我们的网络",
-        ciraBannerText: "探索我们先进的互联网路由分析项目：",
+        ciraBannerText: "探索先进的互联网路由分析与洞察。",
         heroTitle: "构建数字基础设施的<br/>未来蓝图。",
         heroSubtitle: "在世界级的全球网络上提供集成的云、宽带和专线解决方案。",
         heroButton: "联系 NOC",
@@ -271,6 +274,7 @@ const translations = {
 
         // 首页使命部分（替换服务网格）
         missionTitle: "我们的非营利使命",
+        missionSummary: "基础设施应当开放、可靠，并真正服务于依赖它的社区。",
         missionSub1: "社区驱动",
         missionSub2: "基础设施与教育",
         missionSub3: "负担得起的资源",
@@ -286,6 +290,8 @@ const translations = {
         // Non-Profit Page
         npTitle: "我们的非盈利项目",
         npSubtitle: "通过基础设施和资源回馈社区。",
+        activeProjects: "进行中的项目",
+        projectsSummary: "让基础设施更实用、更透明，也更容易获得。",
         krootTitle: "K-ROOT & RIPE AuthDNS",
         krootDesc: "我们在香港和堪萨斯有 K-ROOT 和 RIPE AuthDNS，AuthDNS 的查询率占全球的 10%。",
         krootTag: "香港和堪萨斯",
@@ -501,7 +507,7 @@ const translations = {
         navServices: "我們的使命",
         navNonProfit: "非盈利專案",
         navNetwork: "我們的網路",
-        ciraBannerText: "探索我們先進的網際網路路由分析專案：",
+        ciraBannerText: "探索先進的網際網路路由分析與洞察。",
         heroTitle: "建構數位基礎設施的<br/>未來藍圖。",
         heroSubtitle: "在世界級的全球網路上提供整合的雲端、寬頻與專線解決方案。",
         heroButton: "聯絡 NOC",
@@ -512,6 +518,7 @@ const translations = {
 
         // 首頁使命部分（替換服務網格）
         missionTitle: "我們的非營利使命",
+        missionSummary: "基礎設施應當開放、可靠，並真正服務於依賴它的社群。",
         missionSub1: "社群驅動",
         missionSub2: "基礎設施與教育",
         missionSub3: "負擔得起的資源",
@@ -527,6 +534,8 @@ const translations = {
         // Non-Profit Page
         npTitle: "我們的非盈利專案",
         npSubtitle: "透過基礎設施和資源回饋社群。",
+        activeProjects: "進行中的專案",
+        projectsSummary: "讓基礎設施更實用、更透明，也更容易取得。",
         krootTitle: "K-ROOT & RIPE AuthDNS",
         krootDesc: "我們在香港和堪薩斯有 K-ROOT 和 RIPE AuthDNS，AuthDNS 的查詢率占全球的 10%。",
         krootTag: "香港和堪薩斯",

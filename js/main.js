@@ -1,181 +1,149 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    // --- Theme Management ---
-    const getSystemTheme = () => {
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    };
-
-    const getInitialTheme = () => {
-        const savedTheme = localStorage.getItem('moedove-theme');
-        if (savedTheme) return savedTheme;
-        return getSystemTheme();
-    };
+    const supportedLanguages = ['en', 'zh-cn', 'zh-tw'];
+    const themeStorageKey = 'moedove-theme-v2';
 
     const setTheme = (theme) => {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('moedove-theme', theme);
+        const safeTheme = theme === 'dark' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', safeTheme);
+        localStorage.setItem(themeStorageKey, safeTheme);
+
+        const themeColor = document.querySelector('meta[name="theme-color"]');
+        if (themeColor) {
+            themeColor.setAttribute('content', safeTheme === 'dark' ? '#181820' : '#fffdf7');
+        }
     };
 
-    const toggleTheme = () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-    };
+    setTheme(localStorage.getItem(themeStorageKey) || 'light');
 
-    // Initialize theme
-    const initialTheme = getInitialTheme();
-    setTheme(initialTheme);
-
-    // Theme toggle button event listener
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
-        themeToggle.addEventListener('click', toggleTheme);
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
     }
 
-    // Listen for system theme changes (optional: auto-update if user hasn't manually set a preference)
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        // Only auto-update if user hasn't manually set a preference
-        if (!localStorage.getItem('moedove-theme')) {
-            setTheme(e.matches ? 'dark' : 'light');
-        }
-    });
-
-
-    // --- Custom Language Switcher Logic ---
-    const customSelect = document.getElementById('custom-language-selector');
-    const selectSelected = customSelect.querySelector('.select-selected');
-    const selectItems = customSelect.querySelector('.select-items');
-    const selectOptions = selectItems.querySelectorAll('div');
+    const languageSelector = document.getElementById('language-selector');
     const elementsToTranslate = document.querySelectorAll('[data-lang]');
 
-    const languageMap = {
-        'en': 'English',
-        'zh-cn': '简体中文',
-        'zh-tw': '繁體中文'
-    };
-
-    const setLanguage = (lang) => {
-        document.documentElement.lang = lang;
-        elementsToTranslate.forEach(element => {
-            const key = element.getAttribute('data-lang');
-            if (translations[lang] && translations[lang][key]) {
-                element.innerHTML = translations[lang][key];
-            }
-        });
-        localStorage.setItem('moedove-lang', lang);
-        selectSelected.textContent = languageMap[lang];
-
-        // Update selected state
-        selectOptions.forEach(option => {
-            option.classList.remove('same-as-selected');
-            if (option.getAttribute('data-value') === lang) {
-                option.classList.add('same-as-selected');
-            }
-        });
-    };
-
     const getInitialLanguage = () => {
-        const savedLang = localStorage.getItem('moedove-lang');
-        if (savedLang && translations[savedLang]) return savedLang;
-        const browserLang = navigator.language.slice(0, 2);
-        if (browserLang === 'zh') return (navigator.language.match(/CN/i)) ? 'zh-cn' : 'zh-tw';
-        if (browserLang === 'ru') return 'ru';
+        const savedLanguage = localStorage.getItem('moedove-lang');
+        if (supportedLanguages.includes(savedLanguage)) {
+            return savedLanguage;
+        }
+
+        const browserLanguage = (navigator.language || '').toLowerCase();
+        if (browserLanguage.startsWith('zh')) {
+            return /cn|hans/.test(browserLanguage) ? 'zh-cn' : 'zh-tw';
+        }
         return 'en';
     };
 
-    // Toggle dropdown
-    selectSelected.addEventListener('click', (e) => {
-        e.stopPropagation();
-        selectItems.classList.toggle('select-hide');
-        selectSelected.classList.toggle('select-arrow-active');
-    });
+    const setLanguage = (language) => {
+        const safeLanguage = supportedLanguages.includes(language) ? language : 'en';
+        const dictionary = typeof translations !== 'undefined' ? translations[safeLanguage] : null;
+        if (!dictionary) return;
 
-    // Select option
-    selectOptions.forEach(option => {
-        option.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const value = option.getAttribute('data-value');
-            setLanguage(value);
-            selectItems.classList.add('select-hide');
-            selectSelected.classList.remove('select-arrow-active');
+        document.documentElement.lang = safeLanguage;
+        elementsToTranslate.forEach((element) => {
+            const key = element.getAttribute('data-lang');
+            if (dictionary[key]) {
+                element.innerHTML = dictionary[key];
+            }
         });
-    });
 
-    // Close dropdown when clicking outside
-    document.addEventListener('click', () => {
-        selectItems.classList.add('select-hide');
-        selectSelected.classList.remove('select-arrow-active');
-    });
-
-    const initialLang = getInitialLanguage();
-    setLanguage(initialLang);
-
-    // --- Header Scroll Effect ---
-    const header = document.getElementById('main-header');
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
+        const titleElement = document.querySelector('title[data-lang]');
+        const titleKey = titleElement ? titleElement.getAttribute('data-lang') : null;
+        if (titleKey && dictionary[titleKey]) {
+            document.title = dictionary[titleKey];
         }
 
-        lastScroll = currentScroll;
-    });
+        if (languageSelector) {
+            languageSelector.value = safeLanguage;
+        }
+        localStorage.setItem('moedove-lang', safeLanguage);
+    };
 
-    // --- Mobile Menu Toggle ---
+    if (languageSelector) {
+        languageSelector.addEventListener('change', (event) => {
+            setLanguage(event.target.value);
+        });
+    }
+    setLanguage(getInitialLanguage());
+
+    const header = document.getElementById('main-header');
+    if (header) {
+        const updateHeader = () => {
+            header.classList.toggle('scrolled', window.scrollY > 18);
+        };
+        updateHeader();
+        window.addEventListener('scroll', updateHeader, { passive: true });
+    }
+
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
-    mobileMenuToggle.addEventListener('click', () => {
-        mobileMenuToggle.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking a link
-    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-    mobileMenuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenuToggle.classList.remove('active');
-            mobileMenu.classList.remove('active');
-        });
-    });
-
-    // --- NEW: Animated Counter for Stats Bar ---
-    const counters = document.querySelectorAll('.stat-number');
-    const speed = 200; // The lower the number, the faster the count
-
-    const animateCounter = (counter) => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const inc = target / speed;
-
-        if (count < target) {
-            counter.innerText = Math.ceil(count + inc);
-            setTimeout(() => animateCounter(counter), 1);
-        } else {
-            counter.innerText = target;
-        }
+    const closeMobileMenu = () => {
+        if (!mobileMenuToggle || !mobileMenu) return;
+        mobileMenuToggle.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('active');
+        document.body.classList.remove('menu-open');
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                counters.forEach(counter => {
-                    animateCounter(counter);
-                });
-                observer.unobserve(entry.target); // Animate only once
-            }
+    if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active', isOpen);
+            mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
+            document.body.classList.toggle('menu-open', isOpen);
         });
-    }, {
-        threshold: 0.5 // Start animation when 50% of the element is visible
-    });
 
-    const statsBar = document.querySelector('.stats-bar');
-    if (statsBar) {
-        observer.observe(statsBar);
+        mobileMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeMobileMenu();
+        });
+    }
+
+    const counters = document.querySelectorAll('.stat-number[data-target]');
+    const animateCounter = (counter) => {
+        if (counter.dataset.animated === 'true') return;
+        counter.dataset.animated = 'true';
+
+        const target = Number(counter.getAttribute('data-target')) || 0;
+        const duration = 1200;
+        const startTime = performance.now();
+
+        const tick = (time) => {
+            const progress = Math.min((time - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 4);
+            counter.textContent = Math.round(target * eased).toString();
+            if (progress < 1) requestAnimationFrame(tick);
+        };
+
+        requestAnimationFrame(tick);
+    };
+
+    if (counters.length) {
+        const statsBar = document.querySelector('.stats-bar');
+        if ('IntersectionObserver' in window && statsBar) {
+            const observer = new IntersectionObserver((entries, observerInstance) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    counters.forEach(animateCounter);
+                    observerInstance.unobserve(entry.target);
+                });
+            }, { threshold: 0.25 });
+            observer.observe(statsBar);
+        } else {
+            counters.forEach(animateCounter);
+        }
+    }
+
+    if (window.lucide) {
+        window.lucide.createIcons();
     }
 });

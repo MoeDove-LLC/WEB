@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fffdf7">
     <title data-lang="privacyMetaTitle">Privacy Policy - MoeDove LLC</title>
     <meta name="description"
         content="MoeDove LLC Privacy Policy - Learn how we collect, use, and protect your personal information in compliance with GDPR, COPPA, and RIR requirements.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Rounded:wght@300;400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <style>
         .privacy-content {
@@ -23,7 +25,7 @@
             font-size: 48px;
             font-weight: 600;
             margin-bottom: 16px;
-            letter-spacing: -0.005em;
+            letter-spacing: 0;
             line-height: 1.15;
         }
 
@@ -40,7 +42,7 @@
             font-weight: 600;
             margin-top: 56px;
             margin-bottom: 20px;
-            letter-spacing: -0.003em;
+            letter-spacing: 0;
             scroll-margin-top: 100px;
         }
 
@@ -49,7 +51,7 @@
             font-weight: 600;
             margin-top: 32px;
             margin-bottom: 16px;
-            letter-spacing: -0.002em;
+            letter-spacing: 0;
         }
 
         .privacy-content p {
@@ -166,10 +168,10 @@
     </style>
 </head>
 
-<body>
+<body class="legal-page">
 
-    <header id="main-header">
-        <nav class="container">
+    <header id="main-header" class="site-header">
+        <nav class="container site-nav" aria-label="Primary navigation">
             <a href="index.html" class="logo" aria-label="MoeDove LLC">
                 <img src="MoeDove-Logo.png" alt="MoeDove LLC" class="logo-img">
             </a>
@@ -177,38 +179,25 @@
                 <li><a href="index.html" data-lang="navHome">Home</a></li>
                 <li><a href="index.html#mission" data-lang="navServices">Our Mission</a></li>
                 <li><a href="non-profit.html" data-lang="navNonProfit">Non-Profit Projects</a></li>
-                <li><a href="https://network.moedove.com/" data-lang="navNetwork">Our Network</a></li>
+                <li><a href="https://network.moedove.com/" target="_blank" rel="noopener"
+                        data-lang="navNetwork">Our Network</a></li>
             </ul>
             <div class="header-right">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
+                <button class="theme-toggle icon-button" id="theme-toggle" type="button" aria-label="Toggle theme"
+                    title="Toggle theme">
+                    <i class="theme-icon theme-icon-moon" data-lucide="moon" aria-hidden="true"></i>
+                    <i class="theme-icon theme-icon-sun" data-lucide="sun" aria-hidden="true"></i>
                 </button>
-                <div class="lang-selector">
-                    <div class="custom-select" id="custom-language-selector">
-                        <div class="select-selected">繁體中文</div>
-                        <div class="select-items select-hide">
-                            <div data-value="en">English</div>
-                            <div data-value="zh-cn">简体中文</div>
-                            <div data-value="zh-tw" class="same-as-selected">繁體中文</div>
-                        </div>
-                    </div>
-                </div>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                <label class="lang-selector" aria-label="Language">
+                    <i data-lucide="languages" aria-hidden="true"></i>
+                    <select id="language-selector" aria-label="Language">
+                        <option value="en">English</option>
+                        <option value="zh-cn">简体中文</option>
+                        <option value="zh-tw">繁體中文</option>
+                    </select>
+                </label>
+                <button class="mobile-menu-toggle icon-button" id="mobile-menu-toggle" type="button"
+                    aria-label="Toggle menu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -219,12 +208,12 @@
             <a href="index.html" data-lang="navHome">Home</a>
             <a href="index.html#mission" data-lang="navServices">Our Mission</a>
             <a href="non-profit.html" data-lang="navNonProfit">Non-Profit Projects</a>
-            <a href="https://network.moedove.com/" data-lang="navNetwork">Our Network</a>
+            <a href="https://network.moedove.com/" target="_blank" rel="noopener" data-lang="navNetwork">Our Network</a>
         </div>
     </header>
 
     <main>
-        <section style="padding-top: 120px; padding-bottom: 80px;">
+        <section class="legal-section">
             <div class="privacy-content">
                 <h1 data-lang="privacyTitle">Privacy Policy</h1>
                 <p class="last-updated" data-lang="privacyLastUpdated">Last Updated: January 16, 2026</p>
@@ -457,14 +446,24 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 MoeDove LLC. <span data-lang="footerRights">All Rights Reserved.</span> | <a
-                    href="privacy.html" data-lang="footerPrivacy">Privacy Policy</a> | <a href="tos.html"
-                    data-lang="footerTOS">Terms of Service</a></p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="MoeDove-Logo.png" alt="MoeDove Logo" class="footer-logo">
+                <span>GLOBAL INFRASTRUCTURE · COMMUNITY FIRST</span>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 MoeDove LLC. <span data-lang="footerRights">All Rights Reserved.</span></p>
+                <div class="footer-links">
+                    <a href="privacy.html" data-lang="footerPrivacy">Privacy Policy</a>
+                    <span>/</span>
+                    <a href="tos.html" data-lang="footerTOS">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -1,665 +1,179 @@
 <!DOCTYPE html>
-<html lang="en" class="antialiased dark scroll-smooth">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fffdf7">
     <title data-lang="metaTitle">MoeDove LLC - Global Digital Infrastructure</title>
-    <meta name="description" content="MoeDove LLC provides comprehensive Cloud, Broadband, and Dedicated Line services, powered by a robust global network.">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="js/translations.js"></script>
-    
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                    },
-                    colors: {
-                        brand: {
-                            DEFAULT: '#ffffff',
-                            muted: '#a1a1aa', 
-                            dark: '#09090b',
-                            card: '#18181b',
-                            border: '#27272a'
-                        }
-                    },
-                    boxShadow: {
-                        'glow': '0 0 40px -10px rgba(255, 255, 255, 0.1)',
-                        'glow-blue': '0 0 40px -10px rgba(59, 130, 246, 0.4)',
-                        'glow-purple': '0 0 40px -10px rgba(168, 85, 247, 0.4)',
-                        'glow-pink': '0 0 40px -10px rgba(236, 72, 153, 0.4)',
-                        'dropdown': '0 10px 40px -10px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.05)',
-                        'glass-edge': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.05)'
-                    },
-                    animation: {
-                        'gradient-x': 'gradient-x 8s ease infinite',
-                        'float': 'float 8s ease-in-out infinite',
-                        'float-reverse': 'float-reverse 10s ease-in-out infinite',
-                        'float-slow': 'float 12s ease-in-out infinite',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite'
-                    },
-                    transitionTimingFunction: {
-                        'smooth': 'cubic-bezier(0.16, 1, 0.3, 1)',
-                        'spring': 'cubic-bezier(0.175, 0.885, 0.32, 1.05)'
-                    },
-                    keyframes: {
-                        'gradient-x': {
-                            '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
-                            '50%': { 'background-size': '200% 200%', 'background-position': 'right center' },
-                        },
-                        'float': {
-                            '0%, 100%': { transform: 'translateY(0) translateX(0)' },
-                            '50%': { transform: 'translateY(-20px) translateX(10px)' },
-                        },
-                        'float-reverse': {
-                            '0%, 100%': { transform: 'translateY(0) translateX(0)' },
-                            '50%': { transform: 'translateY(20px) translateX(-10px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* 全局深色重置与 CIRA 保持一致 */
-        body { 
-            background-color: #050505; 
-            color: #ededed;
-            overflow-x: hidden;
-        }
-        
-        #scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #ec4899, #10b981);
-            z-index: 1000;
-            transition: width 0.1s ease-out;
-            box-shadow: 0 0 15px rgba(236, 72, 153, 0.8);
-        }
-
-        .custom-scrollbar::-webkit-scrollbar { width: 4px; height: 4px; }
-        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
-        .custom-scrollbar::-webkit-scrollbar-thumb { background-color: rgba(255,255,255,0.1); border-radius: 10px; }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background-color: rgba(255,255,255,0.2); }
-
-        /* 环境光晕 */
-        #ambient-orbs {
-            position: fixed;
-            inset: 0;
-            z-index: -3;
-            overflow: hidden;
-            pointer-events: none;
-        }
-        .orb {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(140px);
-            opacity: 0.12;
-            animation: float 12s ease-in-out infinite alternate;
-        }
-        .orb-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: #3b82f6; }
-        .orb-2 { bottom: -10%; right: -10%; width: 60vw; height: 60vw; background: #ec4899; animation-delay: -5s; }
-        .orb-3 { top: 40%; left: 40%; width: 40vw; height: 40vw; background: #8b5cf6; opacity: 0.08; animation-delay: -2s; }
-
-        #network-canvas { position: fixed; inset: 0; z-index: -4; pointer-events: none; opacity: 0.7; }
-        #bg-canvas {
-            position: fixed; inset: 0; z-index: -2;
-            background-image: radial-gradient(circle at center, rgba(255,255,255,0.08) 1px, transparent 1px);
-            background-size: 32px 32px; opacity: 0.5; pointer-events: none;
-            mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
-            -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
-        }
-        #glow-cursor {
-            position: fixed; inset: 0; z-index: -1; pointer-events: none;
-            background: 
-                radial-gradient(400px circle at var(--x, 50vw) var(--y, 50vh), rgba(59, 130, 246, 0.08), transparent 40%),
-                radial-gradient(800px circle at var(--x, 50vw) var(--y, 50vh), rgba(236, 72, 153, 0.04), transparent 40%);
-            will-change: background;
-        }
-
-        /* 探照灯卡片 (Spotlight Card) */
-        .spotlight-card { position: relative; }
-        .spotlight-card::before, .spotlight-card::after {
-            content: ""; position: absolute; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity 0.5s ease;
-        }
-        .spotlight-card::before {
-            inset: -1px; padding: 1px;
-            background: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.2), transparent 40%);
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor; mask-composite: exclude; z-index: 10;
-        }
-        .spotlight-card::after {
-            inset: 0; background: radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.04), transparent 40%); z-index: 0;
-        }
-        .spotlight-card:hover::before, .spotlight-card:hover::after { opacity: 1; }
-
-        /* 动画与交互 */
-        .dropdown-menu { transform-origin: top; transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.2s ease; }
-        .hidden-ani { opacity: 0; transform: scaleY(0.95) translateY(-5px); pointer-events: none; visibility: hidden; filter: blur(4px); }
-        .show-ani { opacity: 1; transform: scaleY(1) translateY(0); pointer-events: auto; visibility: visible; filter: blur(0); }
-
-        .text-gradient-animated {
-            background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(to right, #ffffff, #a1a1aa, #ffffff, #8b5cf6, #ec4899, #ffffff);
-            background-size: 200% auto;
-        }
-        
-        .reveal-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-        .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
-        .relative-content { position: relative; z-index: 1; }
-
-        .nav-dot.active { background-color: #fff; transform: scale(1.5); box-shadow: 0 0 10px rgba(255,255,255,0.8); }
-
-        /* Language-specific font adjustments — unified lighter weight across all langs */
-        html[lang="zh-cn"],
-        html[lang="zh-cn"] body {
-            font-family: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-        }
-        html[lang="zh-tw"],
-        html[lang="zh-tw"] body {
-            font-family: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-        }
-        /* Cap heavy weights globally for all languages */
-        html[lang="zh-cn"] .font-extrabold,
-        html[lang="zh-cn"] .font-black,
-        html[lang="zh-tw"] .font-extrabold,
-        html[lang="zh-tw"] .font-black,
-        html[lang="en"] .font-extrabold,
-        html[lang="en"] .font-black {
-            font-weight: 700 !important;
-        }
-    </style>
+    <meta name="description"
+        content="MoeDove LLC provides resilient global network infrastructure, community services, and routing intelligence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="min-h-screen flex flex-col selection:bg-white/20 selection:text-white">
 
-    <div id="scroll-progress"></div>
-    <canvas id="network-canvas"></canvas>
+<body class="home-page">
+    <header id="main-header" class="site-header">
+        <nav class="container site-nav" aria-label="Primary navigation">
+            <a href="index.html" class="logo" aria-label="MoeDove LLC home">
+                <img src="MoeDove-Logo.png" alt="MoeDove LLC" class="logo-img">
+            </a>
 
-    <div id="ambient-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-    <div id="bg-canvas"></div>
-    <div id="glow-cursor"></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" data-lang="navHome">Home</a></li>
+                <li><a href="#mission" data-lang="navServices">Our Mission</a></li>
+                <li><a href="non-profit.html" data-lang="navNonProfit">Non-Profit Projects</a></li>
+                <li><a href="https://network.moedove.com/" target="_blank" rel="noopener"
+                        data-lang="navNetwork">Our Network</a></li>
+            </ul>
 
-    <!-- 側邊導航點 -->
-    <nav class="fixed right-6 top-1/2 -translate-y-1/2 z-50 hidden xl:flex flex-col gap-5">
-        <a href="#hero" class="nav-dot w-2 h-2 rounded-full bg-white/20 hover:bg-white/80 transition-all duration-300 relative group" data-section="hero">
-            <span class="absolute right-6 top-1/2 -translate-y-1/2 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-white/10 pointer-events-none" data-lang="navHome">Overview</span>
-        </a>
-        <a href="#stats" class="nav-dot w-2 h-2 rounded-full bg-white/20 hover:bg-white/80 transition-all duration-300 relative group" data-section="stats">
-            <span class="absolute right-6 top-1/2 -translate-y-1/2 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-white/10 pointer-events-none">Metrics</span>
-        </a>
-        <a href="#mission" class="nav-dot w-2 h-2 rounded-full bg-white/20 hover:bg-white/80 transition-all duration-300 relative group" data-section="mission">
-            <span class="absolute right-6 top-1/2 -translate-y-1/2 px-2 py-1 rounded bg-black/80 backdrop-blur-md text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-white/10 pointer-events-none" data-lang="navServices">Our Mission</span>
-        </a>
-    </nav>
-
-    <!-- CIRA Top Banner -->
-    <div class="relative z-50 w-full bg-gradient-to-r from-purple-500/20 via-pink-500/20 to-blue-500/20 border-b border-white/5 backdrop-blur-xl">
-        <div class="max-w-6xl mx-auto px-4 py-2 flex items-center justify-center text-xs sm:text-sm font-medium text-zinc-300 hover:text-white transition-colors cursor-pointer group" onclick="window.open('https://cira.moedove.com/', '_blank')">
-            <span class="relative flex h-2 w-2 mr-2.5">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
-            </span>
-            <span data-lang="ciraBannerText">Explore our advanced Internet Routing Analytics project:</span>
-            <span class="ml-1.5 font-bold text-white flex items-center group-hover:underline decoration-pink-500 underline-offset-4">
-                MoeDove CIRA <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1 group-hover:translate-x-1 transition-transform"></i>
-            </span>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="sticky top-0 z-40 w-full border-b border-white/5 bg-black/40 backdrop-blur-2xl backdrop-saturate-150">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center space-x-3 group cursor-pointer" onclick="window.scrollTo(0,0)">
-                <!-- 替换为原生 Logo -->
-                <img src="https://www.moedove.com/MoeDove-Logo.png" alt="MoeDove LLC" class="h-9 sm:h-10 w-auto object-contain group-hover:scale-105 transition-transform duration-300 filter drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">
-                <h1 class="sr-only">MoeDove LLC</h1>
-            </div>
-            
-            <div class="hidden md:flex items-center space-x-8 absolute left-1/2 -translate-x-1/2">
-                <a href="#hero" class="text-sm font-semibold text-zinc-400 hover:text-white transition-colors" data-lang="navHome">Home</a>
-                <a href="#mission" class="text-sm font-semibold text-zinc-400 hover:text-white transition-colors" data-lang="navServices">Our Mission</a>
-                <a href="non-profit.html" class="text-sm font-semibold text-zinc-400 hover:text-white transition-colors" data-lang="navNonProfit">Non-Profit Projects</a>
-                <a href="https://network.moedove.com/" target="_blank" class="text-sm font-semibold text-zinc-400 hover:text-white transition-colors flex items-center gap-1">
-                    <span data-lang="navNetwork">Our Network</span> <i data-lucide="external-link" class="w-3 h-3"></i>
-                </a>
-            </div>
-
-            <div class="flex items-center gap-3 relative" id="lang-dropdown-container">
-                <button type="button" id="lang-btn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-zinc-300 hover:text-white hover:bg-white/10 transition-colors shadow-glass-edge backdrop-blur-md focus:outline-none">
-                    <i data-lucide="globe" class="w-3.5 h-3.5"></i>
-                    <span id="current-lang-label">EN</span>
-                    <i data-lucide="chevron-down" class="w-3 h-3 transition-transform" id="lang-icon"></i>
+            <div class="header-right">
+                <button class="theme-toggle icon-button" id="theme-toggle" type="button" aria-label="Toggle theme"
+                    title="Toggle theme">
+                    <i class="theme-icon theme-icon-moon" data-lucide="moon" aria-hidden="true"></i>
+                    <i class="theme-icon theme-icon-sun" data-lucide="sun" aria-hidden="true"></i>
                 </button>
-                <div id="lang-menu" class="dropdown-menu hidden-ani absolute right-0 top-10 w-32 rounded-xl bg-zinc-900/95 border border-white/10 shadow-dropdown overflow-hidden backdrop-blur-3xl backdrop-saturate-200 z-[100]">
-                    <ul class="p-1.5 space-y-0.5">
-                        <li class="cursor-pointer px-3 py-2 rounded-lg text-xs font-medium text-zinc-300 hover:bg-white/10 hover:text-white transition-colors" data-val="en">English</li>
-                        <li class="cursor-pointer px-3 py-2 rounded-lg text-xs font-medium text-zinc-300 hover:bg-white/10 hover:text-white transition-colors" data-val="zh-tw">繁體中文</li>
-                        <li class="cursor-pointer px-3 py-2 rounded-lg text-xs font-medium text-zinc-300 hover:bg-white/10 hover:text-white transition-colors" data-val="zh-cn">简体中文</li>
-                    </ul>
-                </div>
+                <label class="lang-selector" aria-label="Language">
+                    <i data-lucide="languages" aria-hidden="true"></i>
+                    <select id="language-selector" aria-label="Language">
+                        <option value="en">English</option>
+                        <option value="zh-cn">简体中文</option>
+                        <option value="zh-tw">繁體中文</option>
+                    </select>
+                </label>
+                <button class="mobile-menu-toggle icon-button" id="mobile-menu-toggle" type="button"
+                    aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
+        </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" class="active" data-lang="navHome">Home</a>
+            <a href="#mission" data-lang="navServices">Our Mission</a>
+            <a href="non-profit.html" data-lang="navNonProfit">Non-Profit Projects</a>
+            <a href="https://network.moedove.com/" target="_blank" rel="noopener" data-lang="navNetwork">Our Network</a>
         </div>
     </header>
 
-    <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full space-y-32">
-        
-        <!-- Hero Section -->
-        <section id="hero" class="text-center space-y-8 max-w-3xl mx-auto relative mt-8 reveal-on-scroll is-visible z-10 scroll-mt-32">
-            <!-- Floating Tech Terms -->
-            <div class="absolute inset-0 overflow-visible pointer-events-none z-0">
-                <div class="absolute -top-10 -left-16 text-blue-500/20 font-mono text-xl animate-float font-bold blur-[1px]">Anycast DNS</div>
-                <div class="absolute top-20 -right-12 text-pink-500/20 font-mono text-lg animate-float-reverse font-bold blur-[1px]">Global Backbone</div>
-                <div class="absolute -bottom-10 left-10 text-emerald-500/20 font-mono text-2xl animate-float-slow font-bold blur-[2px]">Cloud Infra</div>
-                <div class="absolute top-1/2 -left-28 text-zinc-600/20 font-mono text-sm animate-float-reverse font-bold">100Gbps Capacity</div>
-            </div>
-
-            <div class="relative z-10">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-xs font-mono tracking-wide shadow-glass-edge backdrop-blur-md cursor-default hover:bg-white/10 transition-colors mb-6">
-                    <i data-lucide="zap" class="w-3.5 h-3.5 text-pink-400"></i>
-                    Empowering the Next Generation Network
-                </div>
-                
-                <h2 class="text-5xl sm:text-7xl font-semibold tracking-tight text-gradient-animated animate-gradient-x pb-2 leading-tight" data-lang="heroTitle">
-                    Engineering the Future<br/>of Digital Infrastructure.
-                </h2>
-                
-                <p class="text-lg text-zinc-400 leading-relaxed font-medium max-w-2xl mx-auto mt-6" data-lang="heroSubtitle">
-                    Integrated Cloud, Broadband, and Dedicated Line solutions on a world-class global network.
-                </p>
-
-                <div class="mt-8 flex justify-center gap-4">
-                    <a href="mailto:noc@moedove.com" class="inline-flex items-center justify-center rounded-xl bg-white text-black px-6 py-3.5 text-sm font-bold shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] hover:scale-105 transition-all duration-300 ease-smooth">
-                        <span data-lang="heroButton">Contact NOC</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="hero-japanese" aria-hidden="true">モエドーヴ・ネットワーク</p>
+                    <h1>MoeDove <span>Network</span></h1>
+                    <p class="hero-statement" data-lang="heroTitle">Engineering the Future<br>of Digital Infrastructure.</p>
+                    <p class="hero-subtitle" data-lang="heroSubtitle">
+                        Integrated Cloud, Broadband, and Dedicated Line solutions on a world-class global network.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="mailto:noc@moedove.com" class="btn btn-primary">
+                            <span data-lang="heroButton">Contact NOC</span>
+                            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="non-profit.html" class="btn btn-secondary">
+                            <span data-lang="navNonProfit">Non-Profit Projects</span>
+                            <i data-lucide="arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <a class="cira-link" href="https://cira.moedove.com/" target="_blank" rel="noopener">
+                        <span class="cira-status" aria-hidden="true"></span>
+                        <span><strong>MoeDove CIRA</strong> · <span data-lang="ciraBannerText">Explore advanced Internet routing analytics and insights.</span></span>
+                        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
-        </section>
+            <div class="hero-scene-label" aria-hidden="true"><span>SCENE 01</span><span>GLOBAL INFRASTRUCTURE</span></div>
 
-        <!-- Stats Overview Row -->
-        <section id="stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal-on-scroll z-10 scroll-mt-24">
-            <div class="spotlight-card rounded-2xl border border-white/5 bg-zinc-900/60 backdrop-blur-xl backdrop-saturate-150 p-5 shadow-glass-edge group hover:-translate-y-1.5 hover:shadow-glow transition-all duration-500 ease-smooth">
-                <div class="relative-content flex flex-col items-center text-center space-y-1">
-                    <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(59,130,246,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
-                        <i data-lucide="globe" class="w-5 h-5 text-blue-400 group-hover:text-blue-300"></i>
+            <div class="stats-bar" id="stats" aria-label="Network metrics">
+                <div class="container stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-value"><span class="stat-number" data-target="36">0</span></span>
+                        <span class="stat-label" data-lang="statsCountries">Countries &amp; Regions</span>
                     </div>
-                    <span class="text-3xl font-bold text-white tracking-tight counter" data-target="36">0</span>
-                    <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsCountries">Countries & Regions</span>
-                </div>
-            </div>
-            <div class="spotlight-card rounded-2xl border border-white/5 bg-zinc-900/60 backdrop-blur-xl backdrop-saturate-150 p-5 shadow-glass-edge group hover:-translate-y-1.5 hover:shadow-glow transition-all duration-500 ease-smooth">
-                <div class="relative-content flex flex-col items-center text-center space-y-1">
-                    <div class="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(16,185,129,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
-                        <i data-lucide="activity" class="w-5 h-5 text-emerald-400 group-hover:text-emerald-300"></i>
+                    <div class="stat-item">
+                        <span class="stat-value"><span class="stat-number" data-target="70">0</span><span>+</span></span>
+                        <span class="stat-label" data-lang="statsCapacity">Gbps Capacity</span>
                     </div>
-                    <span class="text-3xl font-bold text-white tracking-tight"><span class="counter" data-target="70">0</span>+</span>
-                    <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsCapacity">Gbps Capacity</span>
-                </div>
-            </div>
-            <div class="spotlight-card rounded-2xl border border-white/5 bg-zinc-900/60 backdrop-blur-xl backdrop-saturate-150 p-5 shadow-glass-edge group hover:-translate-y-1.5 hover:shadow-glow transition-all duration-500 ease-smooth">
-                <div class="relative-content flex flex-col items-center text-center space-y-1">
-                    <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(168,85,247,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
-                        <i data-lucide="network" class="w-5 h-5 text-purple-400 group-hover:text-purple-300"></i>
+                    <div class="stat-item">
+                        <span class="stat-value"><span class="stat-number" data-target="1170">0</span><span>+</span></span>
+                        <span class="stat-label" data-lang="statsPeers">Peering Partners</span>
                     </div>
-                    <span class="text-3xl font-bold text-white tracking-tight"><span class="counter" data-target="1170">0</span>+</span>
-                    <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsPeers">Peering Partners</span>
-                </div>
-            </div>
-            <div class="spotlight-card rounded-2xl border border-white/5 bg-zinc-900/60 backdrop-blur-xl backdrop-saturate-150 p-5 shadow-glass-edge group hover:-translate-y-1.5 hover:shadow-glow transition-all duration-500 ease-smooth">
-                <div class="relative-content flex flex-col items-center text-center space-y-1">
-                    <div class="w-10 h-10 rounded-full bg-pink-500/10 flex items-center justify-center mb-2 shadow-[0_0_15px_rgba(236,72,153,0.15)] group-hover:scale-110 transition-all duration-500 ease-smooth">
-                        <i data-lucide="git-branch" class="w-5 h-5 text-pink-400 group-hover:text-pink-300"></i>
+                    <div class="stat-item">
+                        <span class="stat-value"><span class="stat-number" data-target="100">0</span><span>+</span></span>
+                        <span class="stat-label" data-lang="statsDownstreams">Downstreams</span>
                     </div>
-                    <span class="text-3xl font-bold text-white tracking-tight"><span class="counter" data-target="100">0</span>+</span>
-                    <span class="text-xs font-semibold text-zinc-500 uppercase tracking-wider" data-lang="statsDownstreams">Downstreams</span>
                 </div>
             </div>
         </section>
 
-        <!-- Mission Section -->
-        <section id="mission" class="space-y-6 relative reveal-on-scroll z-20 scroll-mt-24">
-            <div class="flex flex-col gap-2 pb-4 border-b border-white/5 text-center items-center relative">
-                <div class="absolute -top-10 w-full h-32 bg-pink-500/5 blur-3xl rounded-full pointer-events-none"></div>
-                <h3 class="text-3xl font-semibold tracking-tight text-white flex items-center gap-3 justify-center relative z-10">
-                    <div class="p-2 rounded-lg bg-pink-500/10 border border-pink-500/20 shadow-[0_0_15px_rgba(236,72,153,0.2)]">
-                        <i data-lucide="heart-handshake" class="w-6 h-6 text-pink-400"></i>
+        <div class="signal-strip" aria-hidden="true">
+            <div>ANYCAST DNS <span>✦</span> BGP <span>✦</span> CLOUD INFRASTRUCTURE <span>✦</span> COMMUNITY NETWORK <span>✦</span> ANYCAST DNS</div>
+        </div>
+
+        <section class="mission-section" id="mission">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">MISSION / ミッション</span>
+                        <h2 class="section-title" data-lang="missionTitle">Our Non-Profit Mission</h2>
                     </div>
-                    <span data-lang="missionTitle">Our Non-Profit Mission</span>
-                </h3>
-                <p class="text-sm text-zinc-500 max-w-2xl mt-2 relative z-10">Building a stronger, accessible internet for everyone through community-driven initiatives.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
-                <!-- Mission Card 1 -->
-                <div class="spotlight-card rounded-2xl border border-white/5 bg-zinc-900/50 backdrop-blur-xl backdrop-saturate-150 p-8 flex flex-col space-y-4 shadow-glass-edge transition-all duration-500 ease-smooth relative z-10 group hover:-translate-y-1.5 hover:shadow-glow-purple border-t-purple-500/10">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-2 shadow-inner group-hover:scale-110 transition-transform duration-500 ease-smooth">
-                        <i data-lucide="users" class="w-6 h-6 text-purple-400"></i>
-                    </div>
-                    <h4 class="text-lg font-semibold text-white tracking-wide" data-lang="missionSub1">Community Driven</h4>
-                    <p class="text-sm text-zinc-400 leading-relaxed font-medium" data-lang="missionText1">
-                        MoeDove LLC is a registered business entity, yet we stand apart—we actively adopt community suggestions and are dedicated to strengthening the global digital infrastructure. Our primary goal is not profit, but the advancement of network stability, accessibility, and education.
-                    </p>
+                    <p class="section-summary" data-lang="missionSummary">Infrastructure should be open, resilient, and useful to the community that depends on it.</p>
                 </div>
 
-                <!-- Mission Card 2 -->
-                <div class="spotlight-card rounded-2xl border border-white/5 bg-zinc-900/50 backdrop-blur-xl backdrop-saturate-150 p-8 flex flex-col space-y-4 shadow-glass-edge transition-all duration-500 ease-smooth relative z-10 group hover:-translate-y-1.5 hover:shadow-glow-blue border-t-blue-500/10">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-2 shadow-inner group-hover:scale-110 transition-transform duration-500 ease-smooth">
-                        <i data-lucide="server" class="w-6 h-6 text-blue-400"></i>
-                    </div>
-                    <h4 class="text-lg font-semibold text-white tracking-wide" data-lang="missionSub2">Infrastructure & Education</h4>
-                    <p class="text-sm text-zinc-400 leading-relaxed font-medium" data-lang="missionText2">
-                        We proudly host the RIPE NCC K-ROOT node in Hong Kong to bolster regional DNS resilience. Furthermore, we provide free BGP Connection to researchers and enthusiasts, fostering the next generation of network engineers.
-                    </p>
-                </div>
+                <div class="mission-grid">
+                    <article class="mission-item mission-pink">
+                        <div class="mission-topline">
+                            <span class="mission-icon"><i data-lucide="users" aria-hidden="true"></i></span>
+                        </div>
+                        <h3 data-lang="missionSub1">Community Driven</h3>
+                        <p data-lang="missionText1">MoeDove LLC is a registered business entity, yet we stand apart - we actively adopt community suggestions and are dedicated to strengthening the global digital infrastructure.</p>
+                    </article>
 
-                <!-- Mission Card 3 -->
-                <div class="spotlight-card rounded-2xl border border-white/5 bg-zinc-900/50 backdrop-blur-xl backdrop-saturate-150 p-8 flex flex-col space-y-4 shadow-glass-edge transition-all duration-500 ease-smooth relative z-10 group hover:-translate-y-1.5 hover:shadow-glow-emerald border-t-emerald-500/10">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-2 shadow-inner group-hover:scale-110 transition-transform duration-500 ease-smooth">
-                        <i data-lucide="file-badge" class="w-6 h-6 text-emerald-400"></i>
-                    </div>
-                    <h4 class="text-lg font-semibold text-white tracking-wide" data-lang="missionSub3">Affordable Resources</h4>
-                    <p class="text-sm text-zinc-400 leading-relaxed font-medium" data-lang="missionText3">
-                        To support our community, we also offer RIPE and ARIN LIR services (ASN registration and IP allocation) strictly at cost price. We believe in open, affordable access to internet resources for everyone.
-                    </p>
+                    <article class="mission-item mission-blue">
+                        <div class="mission-topline">
+                            <span class="mission-icon"><i data-lucide="radio-tower" aria-hidden="true"></i></span>
+                        </div>
+                        <h3 data-lang="missionSub2">Infrastructure &amp; Education</h3>
+                        <p data-lang="missionText2">We proudly host the RIPE NCC K-ROOT node in Hong Kong and provide free BGP connectivity to researchers and enthusiasts.</p>
+                    </article>
+
+                    <article class="mission-item mission-yellow">
+                        <div class="mission-topline">
+                            <span class="mission-icon"><i data-lucide="badge-dollar-sign" aria-hidden="true"></i></span>
+                        </div>
+                        <h3 data-lang="missionSub3">Affordable Resources</h3>
+                        <p data-lang="missionText3">We offer RIPE and ARIN LIR services strictly at cost price because internet resources should remain open and affordable.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="border-t border-white/5 bg-black/80 backdrop-blur-xl py-12 mt-20 relative z-10">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col items-center justify-center space-y-4 text-center">
-            <!-- 替换为原生 Logo -->
-            <div class="flex items-center justify-center mb-2">
-                <img src="https://www.moedove.com/MoeDove-Logo.png" alt="MoeDove Logo" class="h-14 sm:h-16 w-auto object-contain hover:scale-110 transition-transform duration-300 filter drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] cursor-pointer" onclick="window.scrollTo(0,0)">
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="MoeDove-Logo.png" alt="MoeDove Logo" class="footer-logo">
+                <span>GLOBAL INFRASTRUCTURE · COMMUNITY FIRST</span>
             </div>
-            <p class="font-bold text-zinc-300 text-sm">&copy; <span id="year"></span> MoeDove LLC. <span data-lang="footerRights">All Rights Reserved.</span></p>
-            <div class="flex items-center justify-center gap-4 text-xs font-mono text-zinc-600">
-                <a href="privacy.html" class="hover:text-zinc-300 transition-colors" data-lang="footerPrivacy">Privacy Policy</a>
-                <span>|</span>
-                <a href="tos.html" class="hover:text-zinc-300 transition-colors" data-lang="footerTOS">Terms of Service</a>
+            <div class="footer-meta">
+                <p>&copy; 2026 MoeDove LLC. <span data-lang="footerRights">All Rights Reserved.</span></p>
+                <div class="footer-links">
+                    <a href="privacy.html" data-lang="footerPrivacy">Privacy Policy</a>
+                    <span>/</span>
+                    <a href="tos.html" data-lang="footerTOS">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- 返回顶部按钮 -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-white hover:bg-white/20 hover:shadow-glow transition-all" aria-label="Back to Top" onclick="window.scrollTo(0,0)">
-        <i data-lucide="arrow-up" class="w-5 h-5"></i>
-    </button>
-
-    <script>
-        // ==========================================
-        // 核心初始化
-        // ==========================================
-        lucide.createIcons();
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-        // 顶部进度条与返回顶部按钮
-        const backToTopBtn = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            document.getElementById("scroll-progress").style.width = scrolled + "%";
-
-            if (winScroll > 500) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
-
-        // 側邊導航點邏輯 (Scroll Spy)
-        const sections = document.querySelectorAll('section[id]');
-        const navDots = document.querySelectorAll('.nav-dot');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 300)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navDots.forEach(dot => {
-                dot.classList.remove('active');
-                if (dot.getAttribute('data-section') === current) {
-                    dot.classList.add('active');
-                }
-            });
-        });
-
-        // 背景光效跟随
-        const glowCursor = document.getElementById('glow-cursor');
-        window.addEventListener('mousemove', (e) => {
-            glowCursor.style.setProperty('--x', `${e.clientX}px`);
-            glowCursor.style.setProperty('--y', `${e.clientY}px`);
-        });
-
-        // ==========================================
-        // 智慧封包網絡拓撲動畫
-        // ==========================================
-        const canvas = document.getElementById('network-canvas');
-        const ctx = canvas.getContext('2d');
-        let width, height, particles;
-
-        function initCanvas() {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
-            particles = [];
-            const particleCount = Math.min(Math.floor(width / 20), 80); 
-            
-            for (let i = 0; i < particleCount; i++) {
-                particles.push({
-                    id: i,
-                    x: Math.random() * width,
-                    y: Math.random() * height,
-                    vx: (Math.random() - 0.5) * 0.4,
-                    vy: (Math.random() - 0.5) * 0.4,
-                    radius: Math.random() * 1.5 + 0.5
-                });
-            }
-        }
-
-        function drawNetwork() {
-            ctx.clearRect(0, 0, width, height);
-            ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
-            ctx.lineWidth = 0.5;
-
-            const time = Date.now();
-
-            for (let i = 0; i < particles.length; i++) {
-                let p = particles[i];
-                p.x += p.vx;
-                p.y += p.vy;
-
-                if (p.x < 0 || p.x > width) p.vx *= -1;
-                if (p.y < 0 || p.y > height) p.vy *= -1;
-
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fill();
-
-                for (let j = i + 1; j < particles.length; j++) {
-                    let p2 = particles[j];
-                    let dx = p.x - p2.x;
-                    let dy = p.y - p2.y;
-                    let dist = Math.sqrt(dx * dx + dy * dy);
-
-                    if (dist < 150) {
-                        ctx.beginPath();
-                        ctx.strokeStyle = `rgba(255, 255, 255, ${0.1 - dist / 1500})`;
-                        ctx.moveTo(p.x, p.y);
-                        ctx.lineTo(p2.x, p2.y);
-                        ctx.stroke();
-
-                        let speed = 2000;
-                        let offset = (p.id * 7 + p2.id * 11) % 1000 / 1000; 
-                        let progress = ((time % speed) / speed + offset) % 1;
-                        
-                        if ((p.id + p2.id) % 3 === 0) {
-                            let packetX = p.x + dx * progress * -1;
-                            let packetY = p.y + dy * progress * -1;
-                            
-                            ctx.beginPath();
-                            ctx.arc(packetX, packetY, 1.5, 0, Math.PI * 2);
-                            const colors = ['rgba(59,130,246,0.8)', 'rgba(236,72,153,0.8)', 'rgba(16,185,129,0.8)'];
-                            ctx.fillStyle = colors[(p.id + p2.id) % 3];
-                            ctx.fill();
-                            
-                            ctx.shadowBlur = 10;
-                            ctx.shadowColor = ctx.fillStyle;
-                            ctx.fill();
-                            ctx.shadowBlur = 0;
-                            ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
-                        }
-                    }
-                }
-            }
-            requestAnimationFrame(drawNetwork);
-        }
-
-        window.addEventListener('resize', initCanvas);
-        initCanvas();
-        drawNetwork();
-
-        // ==========================================
-        // 滚动揭示动画
-        // ==========================================
-        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    const counters = entry.target.querySelectorAll('.counter');
-                    counters.forEach(counter => animateValue(counter));
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal-on-scroll').forEach(section => {
-            if (section.getBoundingClientRect().top < window.innerHeight) {
-                section.classList.add('is-visible');
-                section.querySelectorAll('.counter').forEach(counter => animateValue(counter));
-            } else {
-                observer.observe(section);
-            }
-        });
-
-        function animateValue(obj) {
-            if (obj.classList.contains('animated')) return;
-            obj.classList.add('animated');
-            const target = parseInt(obj.getAttribute('data-target'));
-            const duration = 2000;
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const easeProgress = 1 - Math.pow(1 - progress, 4); 
-                obj.innerHTML = Math.floor(easeProgress * target);
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
-        }
-
-        // 探照灯光效绑定
-        function bindSpotlightCards() {
-            document.querySelectorAll('.spotlight-card').forEach(card => {
-                card.addEventListener('mousemove', e => {
-                    const rect = card.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-                    card.style.setProperty('--mouse-x', `${x}px`);
-                    card.style.setProperty('--mouse-y', `${y}px`);
-                });
-            });
-        }
-        setTimeout(bindSpotlightCards, 100);
-
-        // ==========================================
-        // 国际化 (i18n) 语言切换模块
-        // translations 对象来自外部 js/translations.js
-        // ==========================================
-
-        const langBtn = document.getElementById('lang-btn');
-        const langMenu = document.getElementById('lang-menu');
-        const langIcon = document.getElementById('lang-icon');
-        const langLabel = document.getElementById('current-lang-label');
-        const langContainer = document.getElementById('lang-dropdown-container');
-
-        langBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const isHidden = langMenu.classList.contains('hidden-ani');
-            if (isHidden) {
-                langMenu.classList.remove('hidden-ani');
-                langMenu.classList.add('show-ani');
-                langIcon.classList.add('rotate-180');
-            } else {
-                langMenu.classList.add('hidden-ani');
-                langMenu.classList.remove('show-ani');
-                langIcon.classList.remove('rotate-180');
-            }
-        });
-
-        document.addEventListener('click', (e) => {
-            if (!langContainer.contains(e.target)) {
-                langMenu.classList.add('hidden-ani');
-                langMenu.classList.remove('show-ani');
-                langIcon.classList.remove('rotate-180');
-            }
-        });
-
-        const setLanguage = (langCode) => {
-            const data = translations[langCode];
-            if (!data) return;
-
-            document.querySelectorAll('[data-lang]').forEach(el => {
-                const key = el.getAttribute('data-lang');
-                if (data[key]) {
-                    el.innerHTML = data[key];
-                }
-            });
-
-            document.title = data.metaTitle;
-            document.documentElement.lang = langCode;
-            localStorage.setItem('moedove-lang', langCode);
-
-            const labelMap = { 'en': 'EN', 'zh-tw': '繁', 'zh-cn': '简' };
-            langLabel.textContent = labelMap[langCode];
-
-            langMenu.classList.add('hidden-ani');
-            langMenu.classList.remove('show-ani');
-            langIcon.classList.remove('rotate-180');
-        };
-
-        langMenu.querySelectorAll('li').forEach(li => {
-            li.addEventListener('click', () => {
-                setLanguage(li.getAttribute('data-val'));
-            });
-        });
-
-        const savedLang = localStorage.getItem('moedove-lang') || 'en';
-        setLanguage(savedLang);
-
-    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,135 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fffdf7">
     <title data-lang="metaTitle">MoeDove LLC - Global Digital Infrastructure</title>
     <meta name="description"
-        content="MoeDove LLC Non-Profit Projects: K-ROOT Hosting, Free BGP VMs, and Community Resources.">
-    <link rel="stylesheet" href="css/style.css">
+        content="MoeDove LLC Non-Profit Projects: K-ROOT hosting, free BGP vIXP access, and community network resources.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Rounded:wght@300;400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-    <header id="main-header">
-        <nav class="container">
-            <a href="index.html" class="logo" aria-label="MoeDove LLC">
+<body class="project-page">
+    <header id="main-header" class="site-header">
+        <nav class="container site-nav" aria-label="Primary navigation">
+            <a href="index.html" class="logo" aria-label="MoeDove LLC home">
                 <img src="MoeDove-Logo.png" alt="MoeDove LLC" class="logo-img">
             </a>
             <ul class="nav-links">
                 <li><a href="index.html" data-lang="navHome">Home</a></li>
                 <li><a href="index.html#mission" data-lang="navServices">Our Mission</a></li>
-                <li><a href="#" class="active" data-lang="navNonProfit">Non-Profit Projects</a></li>
-                <li><a href="https://network.moedove.com/" data-lang="navNetwork">Our Network</a></li>
+                <li><a href="non-profit.html" class="active" data-lang="navNonProfit">Non-Profit Projects</a></li>
+                <li><a href="https://network.moedove.com/" target="_blank" rel="noopener"
+                        data-lang="navNetwork">Our Network</a></li>
             </ul>
             <div class="header-right">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
+                <button class="theme-toggle icon-button" id="theme-toggle" type="button" aria-label="Toggle theme"
+                    title="Toggle theme">
+                    <i class="theme-icon theme-icon-moon" data-lucide="moon" aria-hidden="true"></i>
+                    <i class="theme-icon theme-icon-sun" data-lucide="sun" aria-hidden="true"></i>
                 </button>
-                <div class="lang-selector">
-                    <div class="custom-select" id="custom-language-selector">
-                        <div class="select-selected">繁體中文</div>
-                        <div class="select-items select-hide">
-                            <div data-value="en">English</div>
-                            <div data-value="zh-cn">简体中文</div>
-                            <div data-value="zh-tw" class="same-as-selected">繁體中文</div>
-                        </div>
-                    </div>
-                </div>
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <label class="lang-selector" aria-label="Language">
+                    <i data-lucide="languages" aria-hidden="true"></i>
+                    <select id="language-selector" aria-label="Language">
+                        <option value="en">English</option>
+                        <option value="zh-cn">简体中文</option>
+                        <option value="zh-tw">繁體中文</option>
+                    </select>
+                </label>
+                <button class="mobile-menu-toggle icon-button" id="mobile-menu-toggle" type="button"
+                    aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
                 </button>
             </div>
         </nav>
         <div class="mobile-menu" id="mobile-menu">
             <a href="index.html" data-lang="navHome">Home</a>
             <a href="index.html#mission" data-lang="navServices">Our Mission</a>
-            <a href="#" class="active" data-lang="navNonProfit">Non-Profit Projects</a>
-            <a href="https://network.moedove.com/" data-lang="navNetwork">Our Network</a>
+            <a href="non-profit.html" class="active" data-lang="navNonProfit">Non-Profit Projects</a>
+            <a href="https://network.moedove.com/" target="_blank" rel="noopener" data-lang="navNetwork">Our Network</a>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content container">
-                <h1 class="hero-title" data-lang="npTitle">Our Non-Profit Initiatives</h1>
-                <p class="hero-subtitle" data-lang="npSubtitle">Giving back to the community with infrastructure and
-                    resources.</p>
+        <section class="page-hero">
+            <div class="container page-hero-inner">
+                <div>
+                    <span class="section-kicker">COMMUNITY / コミュニティ</span>
+                    <h1 data-lang="npTitle">Our Non-Profit Initiatives</h1>
+                    <p data-lang="npSubtitle">Giving back to the community with infrastructure and resources.</p>
+                </div>
+                <div class="page-index" aria-hidden="true">
+                    <span>02</span>
+                    <small>PROJECTS</small>
+                </div>
             </div>
         </section>
 
+        <div class="signal-strip signal-strip-blue" aria-hidden="true">
+            <div>OPEN NETWORK <span>✦</span> FREE BGP <span>✦</span> ROOT DNS <span>✦</span> COMMUNITY NOC <span>✦</span> OPEN NETWORK</div>
+        </div>
+
         <section class="non-profit-projects">
             <div class="container">
+                <div class="projects-intro">
+                    <span data-lang="activeProjects">Active Projects</span>
+                    <p data-lang="projectsSummary">Infrastructure made practical, transparent, and accessible.</p>
+                </div>
                 <div class="services-grid">
-                    <!-- K-ROOT -->
-                    <div class="service-card">
-                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-                        </svg>
-                        <h3 data-lang="krootTitle">K-ROOT & RIPE AuthDNS</h3>
+                    <article class="service-card service-pink">
+                        <div class="service-card-head">
+                            <span class="service-icon"><i data-lucide="globe-2" aria-hidden="true"></i></span>
+                        </div>
+                        <h2 data-lang="krootTitle">K-ROOT &amp; RIPE AuthDNS</h2>
                         <p data-lang="krootDesc">We host K-ROOT and RIPE AuthDNS in Hong Kong and Kansas. Our AuthDNS handles 10% of the global query rate.</p>
-                        <div class="price-tag" data-lang="krootTag">Hong Kong & Kansas</div>
-                    </div>
-                    <!-- Free VMs -->
-                    <div class="service-card">
-                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path
-                                d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" />
-                        </svg>
-                        <h3 data-lang="vmTitle">Free BGP VMs</h3>
-                        <p data-lang="vmDesc">Providing free Virtual Machines in Hong Kong for BGP enthusiasts and
-                            researchers.</p>
-                        <div class="price-tag">Free</div>
-                    </div>
-                    <!-- Telegram Channel -->
-                    <div class="service-card">
-                        <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.29-.48.8-.74 3.08-1.34 5.15-2.23 6.19-2.66 2.95-1.23 3.56-1.44 3.97-1.44.09 0 .28.02.41.11.11.08.19.26.2.43 0 .07 0 .17.01.48z" />
-                        </svg>
-                        <h3 data-lang="channelTitle">MoeDove NOC</h3>
-                        <p data-lang="channelDesc">Join our Telegram channel for network updates and community
-                            discussions: @MoeDoveNOC</p>
-                        <a href="https://t.me/MoeDoveNOC" target="_blank" class="btn btn-secondary">Join Channel</a>
-                    </div>
+                        <div class="price-tag" data-lang="krootTag">Hong Kong &amp; Kansas</div>
+                    </article>
+
+                    <article class="service-card service-blue">
+                        <div class="service-card-head">
+                            <span class="service-icon"><i data-lucide="network" aria-hidden="true"></i></span>
+                        </div>
+                        <h2 data-lang="vmTitle">Free BGP vIXP Access</h2>
+                        <p data-lang="vmDesc">Free IPT in Hong Kong for BGP enthusiasts with high-quality blended upstream and automatic filtering.</p>
+                        <div class="price-tag">FREE / 公益</div>
+                    </article>
+
+                    <article class="service-card service-yellow">
+                        <div class="service-card-head">
+                            <span class="service-icon"><i data-lucide="send" aria-hidden="true"></i></span>
+                        </div>
+                        <h2 data-lang="channelTitle">MoeDove NOC</h2>
+                        <p data-lang="channelDesc">Join our Telegram channel for network updates and community discussions: @MoeDoveNOC</p>
+                        <a href="https://t.me/MoeDoveNOC" target="_blank" rel="noopener" class="btn btn-primary">
+                            <span>Telegram</span><i data-lucide="arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 MoeDove LLC. <span data-lang="footerRights">All Rights Reserved.</span></p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="MoeDove-Logo.png" alt="MoeDove Logo" class="footer-logo">
+                <span>GLOBAL INFRASTRUCTURE · COMMUNITY FIRST</span>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 MoeDove LLC. <span data-lang="footerRights">All Rights Reserved.</span></p>
+                <div class="footer-links">
+                    <a href="privacy.html" data-lang="footerPrivacy">Privacy Policy</a>
+                    <span>/</span>
+                    <a href="tos.html" data-lang="footerTOS">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
 </body>
