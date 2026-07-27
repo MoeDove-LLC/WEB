@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 26-07-2026 01:59:53
+#Generated on 27-07-2026 02:07:46
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -342,7 +342,7 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-07-25T05:12:54.729823+00:00
+# Generated at: 2026-07-26T05:28:01.143017+00:00
 # Total prefixes: 1003
 
 # AS140227 - HONG KONG COMMUNICATIONS INTERNATIONAL CO., LIMITED - Last change: Tue, 14 Jul 2026 09:26:14 GMT
