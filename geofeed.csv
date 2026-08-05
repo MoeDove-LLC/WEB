@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 04-08-2026 01:47:12
+#Generated on 05-08-2026 01:48:58
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -342,8 +342,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-08-03T05:37:50.031749+00:00
-# Total prefixes: 1040
+# Generated at: 2026-08-04T05:11:26.112769+00:00
+# Total prefixes: 1036
 
 # AS135671 - RBB InfoTech - Last change: Fri, 17 Jul 2026 06:18:14 GMT
 44.31.28.0/24,US,US-MO,Kansas City,
@@ -1414,12 +1414,6 @@
 2602:F9A9:110::/44,JP,JP-36,Okuizumo,699-1511
 2602:FAA8:260::/44,JP,JP-36,Okuizumo,699-1511
 2602:faa8:609::/48,DE,DE-HE,Frankfurt am Main,60311
-
-# AS62711 - Maxwell Telecom LLC - Last change: Sun, 14 Jun 2026 18:34:09 GMT
-23.175.200.0/24,US,US-CA,Los Angeles,
-23.175.201.0/24,HK,,Hong Kong,
-2602:F921::/44,US,,,
-2602:f921:4::/46,US,US-MO,Kansas City,
 
 # AS204921 - YunZheng LAB - Last change: Thu, 25 Jun 2026 06:03:04 GMT
 142.249.114.0/24,HK,,Kwai Chung,
