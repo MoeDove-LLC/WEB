@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 05-08-2026 01:48:58
+#Generated on 06-08-2026 01:49:28
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -342,8 +342,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-08-04T05:11:26.112769+00:00
-# Total prefixes: 1036
+# Generated at: 2026-08-05T05:11:07.149343+00:00
+# Total prefixes: 1024
 
 # AS135671 - RBB InfoTech - Last change: Fri, 17 Jul 2026 06:18:14 GMT
 44.31.28.0/24,US,US-MO,Kansas City,
@@ -1062,20 +1062,6 @@
 2a14:7586:6111::/48,JP,JP-13,Tokyo,
 2a14:7586:6112::/48,JP,JP-13,Tokyo,
 2a14:7586:6114::/48,JP,JP-13,Tokyo,
-
-# AS209294 - FansNET - Last change: Mon, 18 May 2026 09:38:43 GMT
-44.31.212.1/32,CN,CN-HB,Wuhan,
-44.31.212.2/31,HK,,,
-44.31.212.4/31,JP,JP-13,Tokyo,
-44.31.212.6/31,JP,JP-13,Tokyo,
-44.31.212.8/31,JP,JP-13,Tokyo,
-44.31.212.10/31,US,US-MO,Kansas City,
-44.31.212.14/31,HK,,,
-44.31.212.16/31,NL,NL-NH,Amsterdam,
-44.31.212.24/29,JP,JP-13,Tokyo,
-44.31.212.128/25,JP,JP-13,Tokyo,
-2a01:e281:a400::/48,CN,CN-HB,Wuhan,
-2a01:e281:a410::/44,JP,JP-13,Tokyo,
 
 # AS210352 - ZeroWolf Network - Last change: Thu, 11 Jun 2026 17:01:56 GMT
 2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
