@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 09-08-2026 01:04:32
+#Generated on 10-08-2026 01:06:13
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -342,8 +342,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-08-08T03:20:50.736656+00:00
-# Total prefixes: 1041
+# Generated at: 2026-08-09T03:29:25.936156+00:00
+# Total prefixes: 1032
 
 # AS135671 - RBB InfoTech - Last change: Fri, 17 Jul 2026 06:18:14 GMT
 44.31.28.0/24,US,US-MO,Kansas City,
@@ -1074,19 +1074,6 @@
 2a01:e281:a400::/48,CN,CN-HB,Wuhan,
 2a01:e281:a410::/44,JP,JP-13,Tokyo,
 
-# AS210352 - ZeroWolf Network - Last change: Thu, 11 Jun 2026 17:01:56 GMT
-2a0f:1cc5:f00::/48,TW,TW-TPE,Taipei,
-2a0f:1cc5:f01::/48,HK,,Hong Kong,
-2a0f:1cc5:f02::/48,JP,JP-13,Tokyo,
-2a0f:1cc5:f03::/48,DE,DE-HE,Frankfurt,
-2a0f:1cc5:f04::/48,HK,,Hong Kong,
-2a0f:1cc5:f05::/48,HK,,Hong Kong,
-2a0f:1cc5:f06::/48,US,US-UT,Salt Lake City,
-2a0f:1cc5:f07::/48,JP,JP-13,Tokyo,
-2a0f:1cc5:f08::/48,NL,NL-NH,Amsterdam,
-2a0f:1cc5:f09::/48,US,US-CA,San Jose,
-2602:f92a:a47d::/48,US,US-CA,Los Angeles,90201
-
 # AS212985 - SKH Network - Last change: Sat, 18 Jul 2026 10:57:07 GMT
 2a13:a5c7:3301::/48,HK,,Hong Kong,
 2a13:a5c7:3302::/48,JP,JP-13,Tokyo,
@@ -1215,12 +1202,13 @@
 2a0a:d685:301::/48,CN,,,
 2a0f:1cc5:4701::/48,CN,,,
 
-# AS219378 - Sakarin Network - Last change: Thu, 06 Aug 2026 17:17:15 GMT
+# AS219378 - Sakarin Network - Last change: Sat, 08 Aug 2026 14:09:55 GMT
 2a0f:1cc5:45ff::/48,,,,
 2a0f:1cc5:4500::/45,CN,CN-SH,Shanghai,200000
 2a0f:1cc5:4508::/46,HK,,Hong Kong,
 2a0f:1cc5:450c::/47,FR,FR-59,Gravelines,59820
 2a0f:1cc5:450e::/48,MO,,Macao,
+2a0f:1cc5:4510::/46,JP,JP-13,Tokyo,
 
 # AS23347 - ZYC Network LLC - Last change: Mon, 15 Jun 2026 03:43:35 GMT
 2602:814:F000::/46,US,,,
@@ -1416,11 +1404,12 @@
 2602:faa8:609::/48,DE,DE-HE,Frankfurt am Main,60311
 23.246.167.0/24,US,US-CA,El Segundo,90245
 
-# AS62711 - Maxwell Telecom LLC - Last change: Sun, 14 Jun 2026 18:34:09 GMT
+# AS62711 - Maxwell Telecom LLC - Last change: Sat, 08 Aug 2026 18:28:35 GMT
 23.175.200.0/24,US,US-CA,Los Angeles,
 23.175.201.0/24,HK,,Hong Kong,
 2602:F921::/44,US,,,
 2602:f921:4::/46,US,US-MO,Kansas City,
+2602:F921:E00::/48,PH,PH-00,Manila,
 
 # AS204921 - YunZheng LAB - Last change: Thu, 25 Jun 2026 06:03:04 GMT
 142.249.114.0/24,HK,,Kwai Chung,
