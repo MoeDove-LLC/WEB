@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 12-08-2026 01:13:03
+#Generated on 13-08-2026 01:14:26
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -342,7 +342,7 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-08-11T03:38:52.026331+00:00
+# Generated at: 2026-08-12T04:02:14.121757+00:00
 # Total prefixes: 1042
 
 # AS135671 - RBB InfoTech - Last change: Fri, 17 Jul 2026 06:18:14 GMT
