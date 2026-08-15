@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 14-08-2026 01:13:34
+#Generated on 15-08-2026 00:45:22
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -104,6 +104,7 @@
 2602:f92a:c00::/40,TW,TW-TPE,Taipei,
 44.31.231.0/24,TW,TW-TPE,Taipei,
 82.47.57.0/24,TW,TW-TPE,Taipei,
+177.177.82.0/24,TW,TW-TPE,Taipei,
 
 
 #Pigeon Internet
@@ -342,7 +343,7 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-08-13T04:06:35.977062+00:00
+# Generated at: 2026-08-14T04:03:06.307693+00:00
 # Total prefixes: 1043
 
 # AS135671 - RBB InfoTech - Last change: Fri, 17 Jul 2026 06:18:14 GMT
