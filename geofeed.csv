@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 08-09-2026 02:18:38
+#Generated on 09-09-2026 02:21:36
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -343,8 +343,8 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-09-07T06:56:07.433459+00:00
-# Total prefixes: 1084
+# Generated at: 2026-09-08T06:51:08.710948+00:00
+# Total prefixes: 1098
 
 # AS135671 - RBB InfoTech - Last change: Wed, 26 Aug 2026 09:08:39 GMT
 44.31.28.0/24,US,US-MO,Kansas City,
@@ -987,6 +987,13 @@
 2a12:cb41:13f0::/44,,,,
 44.32.191.128/28,CN,CN-JL,Antu,
 
+# AS199794 - EMOCLOUD LTD - Last change: Tue, 08 Sep 2026 06:50:56 GMT
+194.62.119.0/24,JP,JP-13,Tokyo,
+91.200.222.0/24,HK,,Tsuen Wan,
+2a0f:1cc6:ff00::/40,JP,JP-13,Tokyo,
+2a0f:1cc6:fe00::/40,HK,,Tsuen Wan,
+2a0f:1cc6:b160::/44,DE,DE-HE,Frankfurt am Main,
+
 # AS200078 - Potat0 Network - Last change: Sun, 01 Feb 2026 06:16:27 GMT
 2a13:b487:1101::/48,CN,CN-SH,Shanghai,
 2a13:b487:1102::/48,CN,CN-SH,Shanghai,
@@ -1236,6 +1243,16 @@
 2a07:54c1:2205::/48,HK,,,
 2a07:54c1:2200::/48,US,,,
 
+# AS218883 - Melspectrum Technology Co., Ltd. - Last change: Mon, 07 Sep 2026 03:48:21 GMT
+2602:f92a:a463:400::/56,US,US-CA,Los Angeles,
+2602:f92a:a463:ff00::/64,US,US-UT,Salt Lake City,
+2a13:c8c3:e803::/64,NL,NL-NH,Amsterdam,
+2a13:c8c3:e803:100::/56,,,,
+2a13:c8c3:e803:300::/56,CN,CN-GD,Shenzhen,
+2a13:c8c3:e803:400::/56,US,US-CA,Los Angeles,
+2a13:c8c3:e803:ff00::1/128,NL,NL-NH,Amsterdam,
+2a13:c8c3:e803:ff00::2/128,US,US-UT,Salt Lake City,
+
 # AS219332 - Pmman Network - Last change: Thu, 06 Aug 2026 09:41:16 GMT
 2a0f:1cc5:4700::/40,JP,JP-13,Tokyo,
 2a0a:d685:300::/40,JP,JP-13,Tokyo,
@@ -1287,7 +1304,7 @@
 5.181.226.0/24,TW,,Taipei,
 2a0e:800::/48,TW,,Taipei,
 
-# AS402333 - Tianshome Network Services - Last change: Mon, 08 Jun 2026 06:39:23 GMT
+# AS402333 - Tianshome Network Services - Last change: Tue, 08 Sep 2026 06:51:06 GMT
 2001:678:1184:8500::/56,HK,,Hong Kong (Chek Lap Kok),
 2001:678:1184:8700::/56,MO,,Macau (Taipa),
 2001:678:1184:4400::/56,GB,GB-ENG,London,E14 9SZ
@@ -1395,6 +1412,7 @@
 23.158.20.220/30,NZ,NZ-AUK,Auckland,1050
 23.158.20.224/30,AU,AU-NSW,Melbourne,3004
 23.158.20.228/30,AU,AU-NSW,Melbourne,3004
+23.158.20.232/30,JP,JP-13,Shibuya-ku,150-0002
 
 # AS51087 - Bling Network Ltd - Last change: Fri, 26 Jun 2026 21:23:14 GMT
 44.32.175.0/24,JP,JP-13,Tokyo,
