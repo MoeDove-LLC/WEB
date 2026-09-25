@@ -104,7 +104,9 @@
 44.31.231.0/24,TW,TW-TPE,Taipei,
 82.47.57.0/24,TW,TW-TPE,Taipei,
 177.177.82.0/24,TW,TW-TPE,Taipei,
-
+109.66.108.0/23,TW,TW-TPE,Taipei,
+109.66.108.0/24,TW,TW-TPE,Taipei,
+109.66.109.0/24,TW,TW-TPE,Taipei,
 
 #Pigeon Internet
 2602:f92a:a000::/40,TW,TW-TPE,Taipei,
