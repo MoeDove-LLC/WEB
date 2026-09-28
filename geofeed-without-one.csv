@@ -112,6 +112,8 @@
 109.66.109.64/26,VN,VN-HN,Hanoi,
 109.66.109.128/26,PH,PH-00,Manila,
 109.66.109.192/26,TH,TH-10,Bangkok,
+2a0f:1cc4:a170::/44,HK,,Hong Kong,
+2a0f:1cc4:a370::/44,JP,JP-13,Tokyo,
 
 #Pigeon Internet
 2602:f92a:a000::/40,TW,TW-TPE,Taipei,
