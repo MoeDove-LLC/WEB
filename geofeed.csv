@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 28-09-2026 02:48:47
+#Generated on 29-09-2026 03:29:57
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -113,6 +113,8 @@
 109.66.109.64/26,VN,VN-HN,Hanoi,
 109.66.109.128/26,PH,PH-00,Manila,
 109.66.109.192/26,TH,TH-10,Bangkok,
+2a0f:1cc4:a170::/44,HK,,Hong Kong,
+2a0f:1cc4:a370::/44,JP,JP-13,Tokyo,
 
 #Pigeon Internet
 2602:f92a:a000::/40,TW,TW-TPE,Taipei,
@@ -350,7 +352,7 @@
 
 # === Community Geofeed (from moegeo) ===
 # Geofeed Community Aggregation by MoeDove LLC
-# Generated at: 2026-09-27T07:30:48.409188+00:00
+# Generated at: 2026-09-28T08:08:08.190837+00:00
 # Total prefixes: 1422
 
 # AS135671 - RBB InfoTech - Last change: Wed, 26 Aug 2026 09:08:39 GMT
