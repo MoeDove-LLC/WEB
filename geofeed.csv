@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 30-09-2026 03:14:30
+#Generated on 30-09-2026 04:57:36
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -129,6 +129,7 @@
 208.68.181.0/24,NL,NL-NH,Amsterdam,
 2a14:7580:758::/48,NL,NL-NH,Amsterdam,
 2602:F92A:A47C::/48,NL,NL-NH,Amsterdam,
+66.212.22.0/24,,TH,TH-10,Bangkok,
 
 # Geofeed for AS150289 (Sun YanZheng)
 
