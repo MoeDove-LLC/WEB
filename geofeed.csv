@@ -1,5 +1,5 @@
 #This file contains a self-published geofeed as defined in http://tools.ietf.org/html/draft-google-self-published-geofeeds-02 (draft02)
-#Generated on 13-10-2026 04:46:20
+#Generated on 13-10-2026 07:44:54
 #If you have any questions or need assistance with the data, please contact us.
 #prefix,country_code,region_code,city,postal
 # North America
@@ -129,7 +129,6 @@
 208.68.181.0/24,NL,NL-NH,Amsterdam,
 2a14:7580:758::/48,NL,NL-NH,Amsterdam,
 2602:F92A:A47C::/48,NL,NL-NH,Amsterdam,
-66.212.22.0/24,,TH,TH-10,Bangkok,
 
 # Geofeed for AS150289 (Sun YanZheng)
 
@@ -151,9 +150,6 @@
 2a0f:1cc5:26c0::/44,US,US-MO,Kansas City,
 2a0f:1cc5:2680::/46,SG,SG-01,Singapore,
 2a0f:1cc5:2640::/45,JP,JP-13,Tokyo,
-
-# AS199794 EMOCLOUD LIMITED
-87.232.80.0/24,HK,,Hong Kong,
 #MDONE
 
 #MoeDove-One-Europe
