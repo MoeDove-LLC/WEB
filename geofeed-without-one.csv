@@ -115,6 +115,31 @@
 2a0f:1cc4:a170::/44,HK,,Hong Kong,
 2a0f:1cc4:a370::/44,JP,JP-13,Tokyo,
 
+# BWQ
+# LAX
+38.187.244.0/24,US,US-CA,Los Angeles,
+38.187.245.0/24,US,US-CA,Los Angeles,
+38.187.246.0/24,US,US-CA,Los Angeles,
+38.187.247.0/24,US,US-CA,Los Angeles,
+154.41.240.0/24,US,US-CA,Los Angeles,
+154.41.241.0/24,US,US-CA,Los Angeles,
+154.51.16.0/24,US,US-CA,Los Angeles,
+154.51.17.0/24,US,US-CA,Los Angeles,
+154.51.18.0/24,US,US-CA,Los Angeles,
+154.51.19.0/24,US,US-CA,Los Angeles,
+205.198.104.0/24,US,US-CA,Los Angeles,
+205.198.105.0/24,US,US-CA,Los Angeles,
+205.198.106.0/24,US,US-CA,Los Angeles,
+205.198.107.0/24,US,US-CA,Los Angeles,
+38.75.88.0/24,US,US-CA,Los Angeles,
+38.75.89.0/24,US,US-CA,Los Angeles,
+149.7.6.0/24,US,US-CA,Los Angeles,
+149.7.7.0/24,US,US-CA,Los Angeles,
+154.18.154.0/24,US,US-CA,Los Angeles,
+154.18.155.0/24,US,US-CA,Los Angeles,
+
+
+
 #Pigeon Internet
 2602:f92a:a000::/40,TW,TW-TPE,Taipei,
 44.30.30.0/25,TW,TW-TPE,Taipei,
